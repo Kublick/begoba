@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+    width: 100%;
+    min-height: calc(50vh - 2rem);
+    padding: 40px 40px 40px 40px;
+    background-position: bottom center;
+    background-repeat: repeat-y;
+    background-size: cover;   
+}
