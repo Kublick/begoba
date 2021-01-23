@@ -20,7 +20,7 @@ const Formulario = () => {
 				<input
 					type="text"
 					name="nombre"
-					className="block mb-4"
+					className="block mb-4 lg:w-64"
 					ref={register}
 				/>
 				<label htmlFor="email" className="block font-bold">
@@ -29,8 +29,8 @@ const Formulario = () => {
 				<input
 					type="email"
 					name="email"
-					className="block mb-4"
-					ref={register}
+					className="block mb-4 lg:w-64"
+					ref={register({ required: true })}
 				/>
 				<input
 					type="submit"

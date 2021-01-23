@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 .bg {
-    width: 100%;
-    min-height: calc(50vh - 2rem);
-    padding: 40px 40px 40px 40px;
-    background-position: bottom center;
-    background-repeat: repeat-y;
-    background-size: cover;   
+  height: 750px; 
 }
+
+.texto-imagen {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content:center;
+}
+
+.download {
+    
+    background: linear-gradient(180deg, #F2F7FB 0%, #FFFFFF 100%);
+}
+
