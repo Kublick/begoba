@@ -6,6 +6,10 @@
   height: 750px; 
 }
 
+.bg-envio {
+  height: 600px;
+}
+
 .texto-imagen {
     height: 100%;
     display: flex;

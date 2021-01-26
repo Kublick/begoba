@@ -10,6 +10,7 @@ module.exports = {
 		author: `@psicberenicebastidas`,
 	},
 	plugins: [
+		`gatsby-plugin-fontawesome-css`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
