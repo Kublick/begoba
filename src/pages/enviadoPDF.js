@@ -3,6 +3,7 @@ import BackgroundImage from "gatsby-background-image";
 import { graphql, useStaticQuery } from "gatsby";
 import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import gmailLogo from "../images/gmail.png";
 import chains from "../images/chains_t.png";
 import people from "../images/people_t.png";
@@ -18,11 +19,19 @@ const EnviadoPDF = () => {
 						}
 					}
 				}
+				thumbs: file(relativePath: { eq: "thumbs.png" }) {
+					childImageSharp {
+						fluid(quality: 90, maxWidth: 1080) {
+							...GatsbyImageSharpFluid_withWebp
+						}
+					}
+				}
 			}
 		`
 	);
 
 	const imageData = data.desktop.childImageSharp.fluid;
+	const thumbData = data.thumbs.childImageSharp.fluid;
 
 	return (
 		<>
@@ -57,7 +66,7 @@ const EnviadoPDF = () => {
 				</div>
 			</div>
 			<div className="pb-8 bg-gray-200">
-				<h1 className="py-4 mt-4 text-3xl text-center">¿Dónde está?</h1>
+				<h1 className="py-4 text-3xl text-center">¿Dónde está?</h1>
 				<div className="lg:mx-64">
 					<div className="grid mx-auto lg:grid lg:grid-cols-3">
 						<div className="flex flex-col items-center justify-center mx-auto">
@@ -86,19 +95,58 @@ const EnviadoPDF = () => {
 					</div>
 				</div>
 			</div>
-			<div className="grid grid-cols-2">
+			<BackgroundImage fluid={thumbData}>
+				<div className="grid grid-cols-2">
+					<div className="flex justify-center my-auto">
+						<h1 className="text-3xl font-bold text-red-600">
+							¿Eres Psicólogo y te gustaría tener mas pacientes?
+						</h1>
+					</div>
+					<div className="flex justify-center py-4 ">
+						<div className="flex flex-col w-1/2 py-6 text-red-600 bg-white rounded-lg">
+							<p>
+								<span>
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+								</span>
+								Unete a la Comunidad Exitosos
+							</p>
+							<p>
+								<span>
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+								</span>
+								Es un espacio creado para ti
+							</p>
+							<p>
+								<span>
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+								</span>
+								Dónde puedes compartir con Psicólogos
+							</p>
+							<p>
+								<span>
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+								</span>
+								Has clic en el botón
+							</p>
+						</div>
+					</div>
+				</div>
+			</BackgroundImage>
+
+			<div className="grid grid-cols-2 bg-red-600">
 				<div>
-					<h1>¿Eres Psicólogo y te gustaría tener mas pacientes?</h1>
+					<h1 className="mt-8 text-3xl font-bold text-center text-white">
+						<h1>Quiero pertenecer a la exclusiva Comunidad Exitosos</h1>
+					</h1>
 				</div>
-				<div className="text-red-600 bg-white">
-					<p>Unete a la Comunidad Exitosos</p>
-					<p>Es un espacio creado para ti</p>
-					<p>Dónde puedes compartir con Psicólogos</p>
-					<p>Has clic en el botón</p>
+				<div className="py-4 my-auto bg-red-600">
+					<div className="flex justify-center py-4">
+						<button className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110">
+							<FontAwesomeIcon icon={faFacebookSquare} className="mx-4" />
+							Ir A La Comunidad
+						</button>
+					</div>
 				</div>
-			</div>
-			<div className="bg-red-600">
-				<h1>Quiero pertenecer a la exlusiva Comunidad Exitosos</h1>
 			</div>
 		</>
 	);
