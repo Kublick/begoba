@@ -18,7 +18,7 @@ const EnviadoPDF = () => {
 	const data = useStaticQuery(
 		graphql`
 			query {
-				desktop: file(relativePath: { eq: "fondoPDF.png" }) {
+				desktop: file(relativePath: { eq: "fondo_PDF.png" }) {
 					childImageSharp {
 						fluid(quality: 90, maxWidth: 1080) {
 							...GatsbyImageSharpFluid_withWebp
@@ -56,13 +56,13 @@ const EnviadoPDF = () => {
 					</button>
 				</div>
 			</BackgroundImage>
-			<div className="grid grid-cols-2">
+			<div className="lg:grid lg:grid-cols-2">
 				<div>
 					<p className="px-8 mt-8 text-lg font-bold text-center ">
 						Te hemos enviado el enlace privado para acceder a la guía en formato
 						PDF descargable, por correo electrónico.
 					</p>
-					<h1 className="mt-8 text-3xl font-bold text-center text-red-600">
+					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-red-600">
 						Se parte de la comunidad exitosos exclusivo para
 					</h1>
 				</div>
@@ -72,7 +72,15 @@ const EnviadoPDF = () => {
 					</h1>
 
 					<div className="flex justify-center py-4">
-						<button className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110">
+						<button
+							className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
+							onClick={() =>
+								window.open(
+									"http://www.facebook.com/groups/2375070212786505/",
+									"_blank"
+								)
+							}
+						>
 							<FontAwesomeIcon icon={faFacebookSquare} className="mx-4" />
 							Ir A La Comunidad
 						</button>
@@ -110,35 +118,35 @@ const EnviadoPDF = () => {
 				</div>
 			</div>
 			<BackgroundImage fluid={thumbData}>
-				<div className="grid grid-cols-2">
+				<div className="lg:grid lg:grid-cols-2">
 					<div className="flex justify-center my-auto">
-						<h1 className="text-3xl font-bold text-red-600">
+						<h1 className="mx-8 my-4 text-3xl font-bold text-center text-red-600 ">
 							¿Eres Psicólogo y te gustaría tener mas pacientes?
 						</h1>
 					</div>
 					<div className="flex justify-center py-10 ">
-						<div className="flex flex-col w-1/2 py-6 text-red-600 bg-white rounded-lg">
+						<div className="flex flex-col px-4 py-6 text-red-600 bg-white rounded-lg">
 							<p>
 								<span>
-									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-2" />
 								</span>
 								Unete a la Comunidad Exitosos
 							</p>
 							<p>
 								<span>
-									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-2" />
 								</span>
 								Es un espacio creado para ti
 							</p>
 							<p>
 								<span>
-									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-2" />
 								</span>
 								Dónde puedes compartir con Psicólogos
 							</p>
 							<p>
 								<span>
-									<FontAwesomeIcon icon={faCheckCircle} className="mx-4" />
+									<FontAwesomeIcon icon={faCheckCircle} className="mx-2" />
 								</span>
 								Has clic en el botón
 							</p>
@@ -147,15 +155,23 @@ const EnviadoPDF = () => {
 				</div>
 			</BackgroundImage>
 
-			<div className="grid grid-cols-2 py-4 bg-red-600">
+			<div className="py-4 bg-red-600 lg:grid lg:grid-cols-2">
 				<div>
-					<h1 className="mt-8 text-3xl font-bold text-center text-white">
+					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-white">
 						<h1>Quiero pertenecer a la exclusiva Comunidad Exitosos</h1>
 					</h1>
 				</div>
 				<div className="my-auto bg-red-600">
 					<div className="flex justify-center py-4">
-						<button className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110">
+						<button
+							className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
+							onClick={() =>
+								window.open(
+									"http://www.facebook.com/groups/2375070212786505/",
+									"_blank"
+								)
+							}
+						>
 							<FontAwesomeIcon icon={faFacebookSquare} className="mx-4" />
 							Ir A La Comunidad
 						</button>
@@ -184,7 +200,7 @@ const EnviadoPDF = () => {
 			</div>
 			<div>
 				<h1 className="text-lg text-center">Siguenos en redes sociales</h1>
-				<div className="flex flex-row justify-center py-4">
+				<div className="flex flex-row justify-center py-8">
 					<button
 						className="mx-4 text-red-600 bg-red-200 rounded-full outline-none shape hover:bg-red-600 hover:text-white focus:outline-none"
 						onClick={() =>

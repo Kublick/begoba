@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
 						<input type="hidden" name="v" value="2" />
 
 						<label htmlFor="nombre" className="block font-bold">
-							Nombre Completo
+							Nombre
 						</label>
 						<input
 							type="text"

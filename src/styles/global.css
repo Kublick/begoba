@@ -8,6 +8,11 @@
 
 .bg-envio {
   height: 600px;
+
+  @media (mix-width: 768px) {
+		height: 300px;
+	}
+
 }
 
 .texto-imagen {
@@ -16,7 +21,12 @@
     flex-direction: column;
     flex: 1;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
+
+    @media (mix-width: 768px) {
+      height: 50vh;
+    }
+
 }
 
 .download {

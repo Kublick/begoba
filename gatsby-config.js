@@ -9,6 +9,7 @@ module.exports = {
 		description: `Curso para psicologos para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
+	pathPrefix: "/registro",
 	plugins: [
 		`gatsby-plugin-fontawesome-css`,
 		{
@@ -25,9 +26,9 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-tailwind`,
-				short_name: `starter`,
-				start_url: `/`,
+				name: `Begoba`,
+				short_name: `Begoba`,
+				start_url: `/registro`,
 				background_color: fullConfig.theme.colors.white,
 				theme_color: fullConfig.theme.colors.green["500"],
 				display: `minimal-ui`,

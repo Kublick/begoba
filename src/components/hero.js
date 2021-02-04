@@ -24,11 +24,11 @@ const Hero = () => {
 		<>
 			<BackgroundImage fluid={imageData} className="bg">
 				<div className="texto-imagen lg:flex-row">
-					<h1 className="flex items-center justify-center px-4 py-8 my-8 text-2xl text-center text-red-600 bg-white lg:w-64 lg:h-64">
+					<h1 className="flex items-center justify-center px-4 text-2xl text-center text-red-600 bg-white lg:my-8 lg:py-8 lg:w-64 lg:h-64">
 						Conoce la estrategia que ha logrado que psicólogos incremente su
 						número de pacientes.
 					</h1>
-					<h1 className="flex items-center justify-center w-64 my-8 text-2xl text-white bg-red-600 lg:h-64">
+					<h1 className="flex items-center justify-center w-64 my-2 text-2xl text-white bg-red-600 lg:my-8 lg:h-64">
 						Regístrate Aquí
 					</h1>
 					<div className="p-4 ml-2 bg-white rounded-lg">

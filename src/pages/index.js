@@ -12,7 +12,7 @@ function IndexPage() {
 				title="Incrementa tu numero de pacientes"
 			/>
 			<Hero />
-			<h1 className="py-24 text-3xl text-center text-red-600 bg-white">
+			<h1 className="text-3xl text-center text-red-600 bg-white pb-36 lg:py-24">
 				¡Registro Gratis!
 			</h1>
 			<div className="py-32 download">
