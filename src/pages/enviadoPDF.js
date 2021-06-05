@@ -11,8 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faStar } from "@fortawesome/free-solid-svg-icons";
 import Img from "gatsby-image";
 import gmailLogo from "../images/gmail.png";
-import chains from "../images/chains_t.png";
+// import chains from "../images/chains_t.png";
 import people from "../images/people_t.png";
+import { chainsIcon } from "../components/svg";
 
 const EnviadoPDF = () => {
 	const data = useStaticQuery(
@@ -59,8 +60,8 @@ const EnviadoPDF = () => {
 			<div className="lg:grid lg:grid-cols-2">
 				<div>
 					<p className="px-8 mt-8 text-lg font-bold text-center ">
-						Te hemos enviado el enlace privado para acceder a la guía en formato
-						PDF descargable, por correo electrónico.
+						Te hemos enviado a tu correo electronico los detalles revisalo, ahi
+						recíbiras un email con todos los detalles.
 					</p>
 					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-red-600">
 						Se parte de la comunidad exitosos exclusivo para
@@ -68,12 +69,12 @@ const EnviadoPDF = () => {
 				</div>
 				<div className="py-4 bg-red-600 px-auto">
 					<h1 className="py-4 text-4xl font-bold text-center text-white">
-						Psicólogos
+						Profesionales de la salud
 					</h1>
 
 					<div className="flex justify-center py-4">
 						<button
-							className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
+							className="px-8 py-4 text-xl font-bold text-blue-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
 							onClick={() =>
 								window.open(
 									"http://www.facebook.com/groups/2375070212786505/",
@@ -92,11 +93,12 @@ const EnviadoPDF = () => {
 				<div className="lg:mx-64">
 					<div className="grid mx-auto lg:grid lg:grid-cols-3">
 						<div className="flex flex-col items-center justify-center mx-auto">
-							<img src={chains} alt="pdflogo" style={{ width: "120px" }} />
+							{/* <img src={chains} alt="pdflogo" style={{ width: "120px" }} /> */}
+							{chainsIcon}
 							<p className="w-64">
 								Enlace personal Busca en tu bandeja de correo electrónico el
-								asunto: “Felicidades ya puedes descargar tu regalo...” abre el
-								correo.
+								asunto: <strong>“¡Ya está apartado tu lugar!...</strong>” abre
+								el correo.
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center mx-auto">
@@ -109,9 +111,9 @@ const EnviadoPDF = () => {
 						<div className="flex flex-col items-center justify-center mx-auto">
 							<img src={people} alt="pdflogo" style={{ width: "120px" }} />
 							<p className="w-64">
-								Saca el mayor provecho a esta Guia te extendemos la invitación
-								para que te unas a la comunidad exitosos en Facebook es
-								exclusiva para psicólogos.
+								Saca el mayor provecho a este evento te extendemos la invitación
+								para que te unas a la comunidad exitotos en facebook exclusiva
+								para profesionales de la salud
 							</p>
 						</div>
 					</div>
@@ -121,7 +123,7 @@ const EnviadoPDF = () => {
 				<div className="lg:grid lg:grid-cols-2">
 					<div className="flex justify-center my-auto">
 						<h1 className="mx-8 my-4 text-3xl font-bold text-center text-red-600 ">
-							¿Eres Psicólogo y te gustaría tener mas pacientes?
+							¿Eres profesional de la salud y te gustaría tener mas pacientes?
 						</h1>
 					</div>
 					<div className="flex justify-center py-10 ">
@@ -142,7 +144,7 @@ const EnviadoPDF = () => {
 								<span>
 									<FontAwesomeIcon icon={faCheckCircle} className="mx-2" />
 								</span>
-								Dónde puedes compartir con Psicólogos
+								Dónde puedes compartir con Profesionales de la salud
 							</p>
 							<p>
 								<span>
@@ -164,7 +166,7 @@ const EnviadoPDF = () => {
 				<div className="my-auto bg-red-600">
 					<div className="flex justify-center py-4">
 						<button
-							className="px-8 py-4 text-xl font-bold text-red-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
+							className="px-8 py-4 text-xl font-bold text-blue-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
 							onClick={() =>
 								window.open(
 									"http://www.facebook.com/groups/2375070212786505/",
