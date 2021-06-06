@@ -46,7 +46,7 @@ function IndexPage() {
 			</div>
 			<div className="py-12 bg-gradient-to-b from-black to-gray-600">
 				<h1 className="px-4 mb-8 text-3xl font-bold text-center text-red-600">
-					¿Te gustatia incrementar tu número de pacientes, si tu preofesión es
+					¿Te gustatia incrementar tu número de pacientes, si tu profesión es
 					alguna de las siguientes?
 				</h1>
 				<div>
@@ -61,7 +61,7 @@ function IndexPage() {
 			<div className="bg-red-500">
 				<h1 className="px-4 py-8 text-2xl font-bold text-center text-white">
 					¡Tú puedes incrementar tu numero de pacientes con estrategia a través
-					de internet!
+					de internet incluso empezando desde cero!
 				</h1>
 			</div>
 		</>

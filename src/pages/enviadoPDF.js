@@ -159,7 +159,7 @@ const EnviadoPDF = () => {
 
 			<div className="py-4 bg-red-600 lg:grid lg:grid-cols-2">
 				<div>
-					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-white">
+					<h1 className="px-2 mt-8 mb-8 text-3xl font-bold text-center text-white">
 						<h1>Quiero pertenecer a la exclusiva Comunidad Exitosos</h1>
 					</h1>
 				</div>
