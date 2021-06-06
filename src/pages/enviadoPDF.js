@@ -60,8 +60,8 @@ const EnviadoPDF = () => {
 			<div className="lg:grid lg:grid-cols-2">
 				<div>
 					<p className="px-8 mt-8 text-lg font-bold text-center ">
-						Te hemos enviado a tu correo electronico los detalles revisalo, ahi
-						recíbiras un email con todos los detalles.
+						Te hemos enviado a tu correo electronico revisalo, ahi recíbiras un
+						email con todos los detalles.
 					</p>
 					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-red-600">
 						Se parte de la comunidad exitosos exclusivo para
@@ -112,7 +112,7 @@ const EnviadoPDF = () => {
 							<img src={people} alt="pdflogo" style={{ width: "120px" }} />
 							<p className="w-64">
 								Saca el mayor provecho a este evento te extendemos la invitación
-								para que te unas a la comunidad exitotos en facebook exclusiva
+								para que te unas a la comunidad exitosos en facebook exclusiva
 								para profesionales de la salud
 							</p>
 						</div>
