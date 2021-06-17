@@ -4,12 +4,28 @@ import Hero from "../components/hero";
 import pdfLogo from "../images/pdf.png";
 import gmailLogo from "../images/gmail.png";
 import Countdown from "react-countdown";
+// import CookieConsent from "react-cookie-consent";
 
 function IndexPage() {
+	// if (typeof window !== "undefined") {
+	// 	if (window.fbq != null) {
+	// 		window.fbq("track", "PageView");
+	// 		window.fbq("track", "ViewContent");
+	// 	}
+	// }
+
 	return (
 		<>
 			<SEO
-				keywords={[`psicologo`, `curso`, `pacientes`, `formacion`]}
+				keywords={[
+					`psicologo`,
+					`curso`,
+					`pacientes`,
+					`formacion`,
+					`nutriologos`,
+					`medicos`,
+					`fisioterapeutas`,
+				]}
 				title="Incrementa tu numero de pacientes"
 			/>
 			<Hero />
@@ -46,13 +62,13 @@ function IndexPage() {
 			</div>
 			<div className="py-12 bg-gradient-to-b from-black to-gray-600">
 				<h1 className="px-4 mb-8 text-3xl font-bold text-center text-red-600">
-					¿Te gustatia incrementar tu número de pacientes, si tu profesión es
+					¿Te gustaría incrementar tu número de pacientes, si tu profesión es
 					alguna de las siguientes?
 				</h1>
 				<div>
 					<ul className="text-xl text-center text-white">
 						<li>Psícologo</li>
-						<li>Nutriologo</li>
+						<li>Nutriólogo</li>
 						<li>Fisioterapeuta</li>
 						<li>Profesional de la salud</li>
 					</ul>
@@ -60,10 +76,27 @@ function IndexPage() {
 			</div>
 			<div className="bg-red-500">
 				<h1 className="px-4 py-8 text-2xl font-bold text-center text-white">
-					¡Tú puedes incrementar tu numero de pacientes con estrategia a través
+					¡Tú puedes incrementar tu número de pacientes con estrategia a través
 					de internet incluso empezando desde cero!
 				</h1>
 			</div>
+			{/* <CookieConsent
+				enableDeclineButton
+				location="bottom"
+				buttonText="OK"
+				declineButtonText="Politica de Privacidad"
+				cookieName="begobapp"
+				style={{ background: "#2B373B" }}
+				buttonStyle={{ color: "#ffff", fontSize: "13px" }}
+				expires={150}
+				onDecline={() =>
+					window.open("http://www.begoba.com/registro/privacy-policy", "_blank")
+				}
+			>
+				Utilizamos cookies para asegurar que damos la mejor experiencia al
+				usuario en nuestra web. Si sigues utilizando este sitio asumiremos que
+				estás de acuerdo.
+			</CookieConsent> */}
 		</>
 	);
 }

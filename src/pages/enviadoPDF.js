@@ -14,6 +14,7 @@ import gmailLogo from "../images/gmail.png";
 // import chains from "../images/chains_t.png";
 import people from "../images/people_t.png";
 import { chainsIcon } from "../components/svg";
+import ReactPlayer from "react-player/lazy";
 
 const EnviadoPDF = () => {
 	const data = useStaticQuery(
@@ -48,19 +49,31 @@ const EnviadoPDF = () => {
 	const thumbData = data.thumbs.childImageSharp.fluid;
 	const portrait = data.berenice.childImageSharp.fluid;
 
+	const videoUrl = "https://youtu.be/qjXPU9eExfA";
+
+	if (typeof window !== "undefined") {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq("track", "CompleteRegistration");
+		}
+	}
+
 	return (
 		<>
 			<BackgroundImage fluid={imageData} className="bg-envio">
-				<div className="flex h-full">
-					<button className="px-16 py-8 m-auto text-2xl font-bold text-red-600 bg-white bg-opacity-75 rounded-lg">
-						¡Gracias por registrarte!
-					</button>
+				<div className="h-full ">
+					<ReactPlayer
+						url={videoUrl}
+						className="mx-auto my-auto"
+						width="100%"
+						height="100%"
+					/>
 				</div>
 			</BackgroundImage>
 			<div className="lg:grid lg:grid-cols-2">
 				<div>
 					<p className="px-8 mt-8 text-lg font-bold text-center ">
-						Te hemos enviado a tu correo electronico revisalo, ahi recíbiras un
+						Te hemos enviado a tu correo electrónico revísalo, ahí recibirás un
 						email con todos los detalles.
 					</p>
 					<h1 className="mt-8 mb-8 text-3xl font-bold text-center text-red-600">
@@ -96,7 +109,7 @@ const EnviadoPDF = () => {
 							{/* <img src={chains} alt="pdflogo" style={{ width: "120px" }} /> */}
 							{chainsIcon}
 							<p className="w-64">
-								Enlace personal Busca en tu bandeja de correo electrónico el
+								Enlace personal busca en tu bandeja de correo electrónico el
 								asunto: <strong>“¡Ya está apartado tu lugar!...</strong>” abre
 								el correo.
 							</p>
