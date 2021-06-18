@@ -53,5 +53,11 @@ module.exports = {
 				],
 			},
 		},
+		{
+			resolve: `gatsby-plugin-s3`,
+			options: {
+				bucketName: "www.beremx.com",
+			},
+		},
 	],
 };
