@@ -14,7 +14,6 @@ import gmailLogo from "../images/gmail.png";
 // import chains from "../images/chains_t.png";
 import people from "../images/people_t.png";
 import { chainsIcon } from "../components/svg";
-import ReactPlayer from "react-player/lazy";
 
 const EnviadoPDF = () => {
 	const data = useStaticQuery(
@@ -49,7 +48,7 @@ const EnviadoPDF = () => {
 	const thumbData = data.thumbs.childImageSharp.fluid;
 	const portrait = data.berenice.childImageSharp.fluid;
 
-	const videoUrl = "https://youtu.be/qjXPU9eExfA";
+	// const videoUrl = "https://youtu.be/qjXPU9eExfA";
 
 	if (typeof window !== "undefined") {
 		if (window.fbq != null) {
@@ -61,13 +60,10 @@ const EnviadoPDF = () => {
 	return (
 		<>
 			<BackgroundImage fluid={imageData} className="bg-envio">
-				<div className="h-full ">
-					<ReactPlayer
-						url={videoUrl}
-						className="mx-auto my-auto"
-						width="100%"
-						height="100%"
-					/>
+				<div className="flex h-full">
+					<button className="px-16 py-8 m-auto text-2xl font-bold text-red-600 bg-white bg-opacity-75 rounded-lg">
+						¡Gracias por registrarte!
+					</button>
 				</div>
 			</BackgroundImage>
 			<div className="lg:grid lg:grid-cols-2">

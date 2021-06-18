@@ -7,12 +7,12 @@ import Countdown from "react-countdown";
 // import CookieConsent from "react-cookie-consent";
 
 function IndexPage() {
-	// if (typeof window !== "undefined") {
-	// 	if (window.fbq != null) {
-	// 		window.fbq("track", "PageView");
-	// 		window.fbq("track", "ViewContent");
-	// 	}
-	// }
+	if (typeof window !== "undefined") {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq("track", "ViewContent");
+		}
+	}
 
 	return (
 		<>
