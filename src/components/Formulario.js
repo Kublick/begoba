@@ -44,8 +44,8 @@ export default class IndexPage extends React.Component {
 			<div>
 				<div>
 					<form onSubmit={this._handleSubmit} className="mx-4">
-						<input type="hidden" name="u" value="17" />
-						<input type="hidden" name="f" value="17" />
+						<input type="hidden" name="u" value="27" />
+						<input type="hidden" name="f" value="27" />
 						<input type="hidden" name="s" />
 						<input type="hidden" name="c" value="0" />
 						<input type="hidden" name="m" value="0" />
