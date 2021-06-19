@@ -86,7 +86,7 @@ const EnviadoPDF = () => {
 							className="px-8 py-4 text-xl font-bold text-blue-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
 							onClick={() =>
 								window.open(
-									"http://www.facebook.com/groups/2375070212786505/",
+									"https://www.facebook.com/groups/2375070212786505/",
 									"_blank"
 								)
 							}
@@ -178,7 +178,7 @@ const EnviadoPDF = () => {
 							className="px-8 py-4 text-xl font-bold text-blue-600 transition duration-500 ease-in-out transform bg-white rounded-lg hover:bg-white hover:-translate-y-1 hover:scale-110"
 							onClick={() =>
 								window.open(
-									"http://www.facebook.com/groups/2375070212786505/",
+									"https://www.facebook.com/groups/2375070212786505/",
 									"_blank"
 								)
 							}
@@ -241,7 +241,7 @@ const EnviadoPDF = () => {
 						className="mx-4 text-red-600 bg-red-200 rounded-full shape hover:bg-red-600 hover:text-white focus:outline-none"
 						onClick={() =>
 							window.open(
-								"http://www.instagram.com/berenicebastidas/?hl=es-la",
+								"https://www.instagram.com/berenicebastidas/?hl=es-la",
 								"_blank"
 							)
 						}
