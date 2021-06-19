@@ -1,4 +1,5 @@
 import React from "react";
+import { navigate } from "gatsby";
 
 export default class IndexPage extends React.Component {
 	state = {
@@ -29,7 +30,7 @@ export default class IndexPage extends React.Component {
 				}, 2000);
 
 				if (this.state.submit === true) {
-					window.location.href = "/enviadoPDF";
+					navigate("/enviadoPDF");
 				}
 			})
 			.catch((err) => {
