@@ -44,7 +44,7 @@
     "fix:lint": "eslint --ext .jsx --ext .js . --fix",
     "fix:prettier": "prettier --write \"**/*.{css,js,jsx,json,md}\"",
     "fix": "npm run fix:lint && npm run fix:prettier",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "deploy": "gatsby-plugin-s3 deploy",
     "dev": "npm run develop",
