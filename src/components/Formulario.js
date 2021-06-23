@@ -77,7 +77,6 @@ export default class IndexPage extends React.Component {
 							value="Enviar"
 						/>
 					</form>
-					<button onClick={() => navigate("/enviadoPDF")}> Navigate </button>
 				</div>
 			</div>
 		);
