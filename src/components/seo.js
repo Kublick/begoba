@@ -56,9 +56,13 @@ function SEO({ description, lang, meta, keywords, title }) {
 					name: `twitter:description`,
 					content: metaDescription,
 				},
+				// {
+				// 	name: "facebook-domain-verification",
+				// 	content: "ac6ekx6s96zsil9z0znv0948d2koxq",
+				// },
 				{
 					name: "facebook-domain-verification",
-					content: "ac6ekx6s96zsil9z0znv0948d2koxq",
+					content: "c3pln46uf7mbkadl8949zruvwdbykg",
 				},
 			]
 				.concat(

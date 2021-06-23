@@ -6,7 +6,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 module.exports = {
 	siteMetadata: {
 		title: `GRATIS -- De Egresado a Profesional `,
-		description: `Curso para psicologos para incrementar tus pacientes`,
+		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
 	pathPrefix: "/registro",
