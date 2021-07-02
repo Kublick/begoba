@@ -6,6 +6,13 @@ const formulario = () => {
 	const data = useStaticQuery(
 		graphql`
 			query {
+				mobile: file(relativePath: { eq: "mobileFormulario.png" }) {
+					childImageSharp {
+						fixed(quality: 90, width: 720) {
+							...GatsbyImageSharpFixed_withWebp
+						}
+					}
+				}
 				desktop: file(relativePath: { eq: "formulario.png" }) {
 					childImageSharp {
 						fixed(quality: 90, width: 720) {
@@ -17,12 +24,20 @@ const formulario = () => {
 		`
 	);
 
-	const imageData = data.desktop.childImageSharp.fixed;
+	const sources = [
+		data.mobile.childImageSharp.fixed,
+		{
+			...data.desktop.childImageSharp.fixed,
+			media: `(min-width: 768px)`,
+		},
+	];
+
+	//	const imageData = data.desktop.childImageSharp.fixed;
 	return (
 		<>
 			<div className="flex flex-col justify-center h-screen align-middle bg-gray-100">
 				<Img
-					fixed={imageData}
+					fixed={sources}
 					objectFit="cover"
 					className="mx-auto sm:bg__encuesta"
 				/>
