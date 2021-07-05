@@ -43,11 +43,7 @@ const formulario = () => {
 				/>
 				<button
 					className="p-4 m-8 mx-auto mt-12 text-white bg-green-600 outline-none sm:text-xl lg:text-3xl lg:w-1/3 rounded-2xl animate-bounce"
-					onClick={() =>
-						window.open(
-							"https://es.surveymonkey.com/r/VS35J5C?fbclid=IwAR3Oo7OvFWRfpFLhZoQK_QkWRW5-oDlrL9ZsJV5Mg6gwFXIvbdX_KzpNRoQ"
-						)
-					}
+					onClick={() => window.open("https://es.surveymonkey.com/r/3V88KV5")}
 				>
 					Llena tu formulario de aplicación
 				</button>
