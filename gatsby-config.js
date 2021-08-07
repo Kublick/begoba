@@ -1,5 +1,5 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+const resolveConfig = require('tailwindcss/resolveConfig');
+const tailwindConfig = require('./tailwind.config.js');
 
 const fullConfig = resolveConfig(tailwindConfig);
 
@@ -9,9 +9,8 @@ module.exports = {
 		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
-	pathPrefix: "/registro",
+	pathPrefix: '/registro',
 	plugins: [
-		`gatsby-plugin-fontawesome-css`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -30,7 +29,7 @@ module.exports = {
 				short_name: `Begoba`,
 				start_url: `/registro`,
 				background_color: fullConfig.theme.colors.white,
-				theme_color: fullConfig.theme.colors.green["500"],
+				theme_color: fullConfig.theme.colors.green['500'],
 				display: `minimal-ui`,
 				icon: `src/images/logo192.png`,
 			},
@@ -38,7 +37,7 @@ module.exports = {
 		{
 			resolve: `@hutsoninc/gatsby-plugin-facebook-pixel`,
 			options: {
-				pixelId: "227610218315785",
+				pixelId: '227610218315785',
 			},
 		},
 		{
