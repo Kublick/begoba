@@ -9,7 +9,6 @@ module.exports = {
 		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
-	pathPrefix: '/registro',
 	plugins: [
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -22,14 +21,14 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Begoba`,
-				short_name: `Begoba`,
-				start_url: `/registro`,
+				name: `Incrementa tu consulta`,
+				short_name: `Incrementatuconsulta`,
+				start_url: `/`,
 				background_color: fullConfig.theme.colors.white,
-				theme_color: fullConfig.theme.colors.green['500'],
 				display: `minimal-ui`,
 				icon: `src/images/logo192.png`,
 			},

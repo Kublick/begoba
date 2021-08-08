@@ -42,7 +42,7 @@ export default class IndexPage extends React.Component {
 	render() {
 		return (
 			<>
-				<div className="container flex justify-center mt-10">
+				<div className="container flex justify-center md:mt-10">
 					<div className="flex flex-col items-center gap-2 px-8 py-4 shadow-md min-w-3/4 rounded-xl justify-content center bg-secondary">
 						<p className="font-semibold text-white font-3xl">
 							Registrate <span className="font-bold">GRATIS</span>

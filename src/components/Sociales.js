@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import {
 	fbmango,
 	movie,
@@ -12,19 +12,15 @@ import {
 const Sociales = () => {
 	const data = useStaticQuery(
 		graphql`
-			query {
+			{
 				mobile: file(relativePath: { eq: "Ft1 460x427px.png" }) {
 					childImageSharp {
-						fluid(quality: 100, maxWidth: 460) {
-							...GatsbyImageSharpFluid_withWebp
-						}
+						gatsbyImageData(quality: 100, width: 460, layout: CONSTRAINED)
 					}
 				}
 				desktop: file(relativePath: { eq: "Ft1 964x460px-03.png" }) {
 					childImageSharp {
-						fluid(quality: 90, maxWidth: 964) {
-							...GatsbyImageSharpFluid_withWebp
-						}
+						gatsbyImageData(quality: 90, width: 964, layout: CONSTRAINED)
 					}
 				}
 			}
@@ -32,24 +28,26 @@ const Sociales = () => {
 	);
 
 	return (
-		<div className="px-20 py-20 mt-10 bg-primary-light">
-			<h1 className="mb-20 title">Que incluye</h1>
-			<div className="grid gap-8 md:grid-cols-2">
+		<div className="p-5 mt-10 md:px-20 lg:p-20 bg-primary-light">
+			<h1 className="mb-10 md:my-20 title">Que incluye</h1>
+			<div className="grid gap-8 lg:grid-cols-2">
 				<div className="flex flex-col">
 					<div>
-						<Image
-							fluid={data.desktop.childImageSharp.fluid}
+						<GatsbyImage
+							image={data.desktop.childImageSharp.gatsbyImageData}
 							className="rounded-lg shadow-2xl "
 						/>
 						<div className="flex justify-end">
-							<button className="w-64 mt-8 btn-main">Registrate Ahora</button>
+							<button className="w-full mt-8 lg:w-64 btn-main">
+								Registrate Ahora
+							</button>
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-6 px-10">
-					<div className="flex items-center gap-4">
-						{fbmango}
-						<p className="font-semibold">
+				<div className="flex flex-col gap-4 px-5 md:gap-6">
+					<div className="flex items-center gap-6">
+						<span className="logo-fb">{fbmango} </span>
+						<p className="text-sm font-semibold">
 							Pertencer a la comunidad del grupo exclusivo en Facebook
 						</p>
 					</div>
@@ -59,18 +57,19 @@ const Sociales = () => {
 					</div>
 
 					<div className="flex items-center gap-4">
-						{notebook}
+						<span className="logo-ws">{notebook} </span>
+
 						<p className="font-semibold">Cuaderno de trabajo del taller</p>
 					</div>
 					<div className="flex flex-row-reverse items-center gap-4">
-						{wsmango}
+						<span className="logo-ws">{wsmango} </span>
 						<p className="font-semibold">
 							Serás parte de la comunidad dentro del grupo de Whatsapp para
 							notificaciones
 						</p>
 					</div>
 					<div className="flex items-center gap-4">
-						{live}
+						<span className="logo-live">{live}</span>
 						<p className="font-semibold">
 							Participación en vivo en la clase especial número 5
 						</p>

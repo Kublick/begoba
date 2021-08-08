@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Image from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import {
 	whitelogo,
 	fbwhite,
@@ -11,19 +11,15 @@ import {
 const Footer = () => {
 	const data = useStaticQuery(
 		graphql`
-			query {
+			{
 				mobile: file(relativePath: { eq: "Ft2 460x427px.png" }) {
 					childImageSharp {
-						fluid(quality: 100, maxWidth: 460) {
-							...GatsbyImageSharpFluid_withWebp
-						}
+						gatsbyImageData(quality: 100, width: 460, layout: CONSTRAINED)
 					}
 				}
 				desktop: file(relativePath: { eq: "Ft1 964x460px.png" }) {
 					childImageSharp {
-						fluid(quality: 90, maxWidth: 964) {
-							...GatsbyImageSharpFluid_withWebp
-						}
+						gatsbyImageData(quality: 90, width: 964, layout: CONSTRAINED)
 					}
 				}
 			}
@@ -32,10 +28,10 @@ const Footer = () => {
 
 	return (
 		<>
-			<div className="px-20 pt-20 bwhitelogog-primary-light">
+			<div className="px-5 pt-10 md:px-20 md:pt-20 bg-primary-light">
 				<h1 className="title">Este entrenamiento es para ti, si eres:</h1>
-				<div className="grid grid-cols-2 my-10">
-					<div className="grid items-center w-3/4 grid-cols-2 gap-4">
+				<div className="grid my-10 md:grid-cols-2">
+					<div className="grid items-center grid-cols-2 gap-4 mb-4 md:w-3/4">
 						<p className="footer-btn-secondary justify-self-end">Psicologo</p>
 						<p className="footer-btn-primary">Nutriologo</p>
 						<p className="footer-btn-primary justify-self-end">Cosmetóloga</p>
@@ -47,31 +43,31 @@ const Footer = () => {
 						<p className="footer-btn-primary">Coach</p>
 					</div>
 					<div>
-						<Image
-							fluid={data.desktop.childImageSharp.fluid}
-							className="w-3/4 rounded-lg shadow-2xl"
+						<GatsbyImage
+							image={data.desktop.childImageSharp.gatsbyImageData}
+							className="rounded-lg shadow-2xl md:w-3/4"
 						/>
 					</div>
 				</div>
 				<div className="flex justify-center pb-8">
-					<button className="px-4 py-1 text-white border-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark">
+					<button className="w-full py-1 text-white border-2 lg:w-64 md:px-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark">
 						Registate Ahora
 					</button>
 				</div>
 				<div></div>
 			</div>
 			<div className="border-t-8 border-b-8 border-t-mango border-b-primary" />
-			<div className="px-20 pt-4 bg-secondary">
-				<div className="flex justify-between">
+			<div className="px-5 pt-4 pb-12 md:px-20 bg-secondary">
+				<div className="grid gap-4 lg:grid-cols-4 justify-items-center">
 					{whitelogo}
-					<p className="w-1/2 text-center text-white footer-text">
+					<p className="w-1/2 col-span-2 text-center text-white footer-text place-selft-center">
 						Legal Terms - Acerca de las politicas de privacidad y uso de cookies
 						Incrementa tu consulta Derechos reservados 2021
 						https://incrementatuconsulta.com Psicologa Berenice Bastidas
 						Mexicali Baja California, México <br /> Whatsapp: + 52 (686)
 						234-9366
 					</p>
-					<div className="flex gap-4">
+					<div className="flex gap-4 mb-2 md:mb-0">
 						<button className="white-btn">{fbwhite}</button>
 						<button className="white-btn">{ytwhite}</button>
 						<button className="white-btn">{inswhite}</button>
