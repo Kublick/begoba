@@ -7,8 +7,9 @@ import {
 	ytwhite,
 	inswhite,
 } from '../components/helpers/logos';
+import PropTypes from 'prop-types';
 
-const Footer = () => {
+const Footer = (props) => {
 	const data = useStaticQuery(
 		graphql`
 			{
@@ -50,7 +51,10 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="flex justify-center pb-8">
-					<button className="w-full py-1 text-white border-2 lg:w-64 md:px-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark">
+					<button
+						className="w-full py-1 text-white border-2 lg:w-64 md:px-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark"
+						onClick={props.handleBackClick}
+					>
 						Registate Ahora
 					</button>
 				</div>
@@ -60,7 +64,7 @@ const Footer = () => {
 			<div className="px-5 pt-4 pb-12 md:px-20 bg-secondary">
 				<div className="grid gap-4 lg:grid-cols-4 justify-items-center">
 					{whitelogo}
-					<p className="w-1/2 col-span-2 text-center text-white footer-text place-selft-center">
+					<p className="w-1/2 text-center text-white lg:col-span-2 footer-text place-selft-center">
 						Legal Terms - Acerca de las politicas de privacidad y uso de cookies
 						Incrementa tu consulta Derechos reservados 2021
 						https://incrementatuconsulta.com Psicologa Berenice Bastidas
@@ -93,3 +97,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+Footer.propTypes = {
+	handleBackClick: PropTypes.func,
+};

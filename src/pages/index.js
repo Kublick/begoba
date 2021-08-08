@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import SEO from '../components/seo';
 import Hero from '../components/Hero';
 import Sesiones from '../components/Sesiones';
 import Sociales from '../components/Sociales';
 import Anfrition from '../components/Anfrition';
 import Footer from '../components/Footer';
+import PropTypes from 'prop-types';
+
 // import Countdown from "react-countdown";
 
 function IndexPage() {
@@ -14,6 +16,12 @@ function IndexPage() {
 	// 		window.fbq('track', 'ViewContent');
 	// 	}
 	// }
+
+	const formRef = useRef();
+
+	function handleBackClick() {
+		formRef.current.scrollIntoView({ behavior: 'smooth' });
+	}
 
 	return (
 		<>
@@ -31,7 +39,7 @@ function IndexPage() {
 			/>
 
 			<section>
-				<Hero />
+				<Hero formRef={formRef} />
 			</section>
 			<div>
 				<section>
@@ -40,17 +48,21 @@ function IndexPage() {
 			</div>
 
 			<section>
-				<Sociales />
+				<Sociales handleBackClick={handleBackClick} />
 			</section>
 
 			<section>
 				<Anfrition />
 			</section>
 			<footer>
-				<Footer />
+				<Footer handleBackClick={handleBackClick} />
 			</footer>
 		</>
 	);
 }
 
 export default IndexPage;
+
+IndexPage.propTypes = {
+	ref: PropTypes.oneOfType([PropTypes.func]),
+};

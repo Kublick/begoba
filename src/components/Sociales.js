@@ -8,8 +8,9 @@ import {
 	wsmango,
 	live,
 } from '../components/helpers/logos';
+import PropTypes from 'prop-types';
 
-const Sociales = () => {
+const Sociales = (props) => {
 	const data = useStaticQuery(
 		graphql`
 			{
@@ -38,7 +39,10 @@ const Sociales = () => {
 							className="rounded-lg shadow-2xl "
 						/>
 						<div className="flex justify-end">
-							<button className="w-full mt-8 lg:w-64 btn-main">
+							<button
+								className="w-full mt-8 lg:w-64 btn-main"
+								onClick={props.handleBackClick}
+							>
 								Registrate Ahora
 							</button>
 						</div>
@@ -81,3 +85,7 @@ const Sociales = () => {
 };
 
 export default Sociales;
+
+Sociales.propTypes = {
+	handleBackClick: PropTypes.func,
+};

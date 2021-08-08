@@ -2,8 +2,9 @@ import React from 'react';
 // import { graphql, useStaticQuery } from 'gatsby';
 import { mainLogo } from './helpers/logos';
 import Formulario from './Formulario';
+import PropTypes from 'prop-types';
 
-const Hero = () => {
+const Hero = (props) => {
 	return (
 		<section className="grid bg-gray-100 md:py-8 md:grid-cols-2">
 			<div className="flex flex-col items-center justify-center">
@@ -39,7 +40,7 @@ const Hero = () => {
 					Para conseguir pacientes en redes sociales
 				</h2>
 
-				<p className="text-gray-500 md:text-xl">
+				<p ref={props.formRef} className="text-gray-500 md:text-xl">
 					Tu próximo paciente a un click de distancia
 				</p>
 				<Formulario />
@@ -49,3 +50,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+Hero.propTypes = {
+	formRef: PropTypes.oneOfType([PropTypes.func]),
+};

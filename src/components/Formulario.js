@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
 				}, 2000);
 
 				if (this.state.submit === true) {
-					navigate('/enviadoPDF');
+					navigate('/');
 				}
 			})
 			.catch((err) => {
