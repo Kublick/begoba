@@ -9,11 +9,11 @@ body {
 }
 
 .btn-main {
-	@apply text-white border-2 bg-primary border-mango rounded-xl;
+	@apply py-1 text-white border-4 bg-primary border-mango rounded-xl;
 }
 
 .btn-main:hover {
-	@apply border-2 bg-primary-dark border-primary-dark;
+	@apply border-4 bg-primary-dark border-primary-dark;
 }
 
 .logos {
@@ -31,4 +31,27 @@ body {
 
 .title {
 	@apply text-4xl font-bold text-center text-primary;
+}
+
+.footer-btn-secondary {
+	@apply flex items-center justify-center w-32 h-16 text-white rounded-md bg-secondary;
+}
+
+.footer-btn-primary {
+	@apply flex items-center justify-center w-32 h-16 text-white rounded-md bg-primary;
+}
+
+.white-btn {
+	@apply flex items-center justify-center w-6 h-6 bg-white rounded-full;
+}
+
+.footer-text {
+	font-size: 0.6rem;
+}
+
+.text-mini {
+	font-size: 0.5rem;
+	color: #fff;
+	margin-top: 0.5rem;
+	text-align: center;
 }

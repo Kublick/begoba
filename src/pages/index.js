@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Sesiones from '../components/Sesiones';
 import Sociales from '../components/Sociales';
 import Anfrition from '../components/Anfrition';
+import Footer from '../components/Footer';
 // import Countdown from "react-countdown";
 
 function IndexPage() {
@@ -45,6 +46,9 @@ function IndexPage() {
 			<section>
 				<Anfrition />
 			</section>
+			<footer>
+				<Footer />
+			</footer>
 		</>
 	);
 }

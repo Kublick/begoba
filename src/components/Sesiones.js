@@ -39,7 +39,7 @@ const Sesiones = () => {
 	);
 
 	return (
-		<div className="container mx-10">
+		<div className="mx-10">
 			<h1 className="mt-12 text-4xl font-bold text-center text-primary">
 				Que vas a descubrir en este taller:
 			</h1>

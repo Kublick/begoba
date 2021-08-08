@@ -17,7 +17,7 @@ module.exports = {
 				secondary: {
 					light: '#F6AFC8',
 					DEFAULT: '#E7407B',
-					dark: '#F6AFC8',
+					dark: '#a22d56',
 				},
 				mango: {
 					DEFAULT: '#FF833D',
