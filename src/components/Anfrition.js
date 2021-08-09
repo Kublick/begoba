@@ -20,9 +20,8 @@ const Anfrition = () => {
 		`,
 	);
 
-	console.log(data);
 	return (
-		<div className="px-10 pt-20">
+		<div className="px-10 py-5 lg:py-20">
 			<h1 className="title">Anfitrión del taller</h1>
 			<div className="grid lg:grid-cols-2">
 				<div className="flex flex-col justify-center md:mx-24">
@@ -42,6 +41,7 @@ const Anfrition = () => {
 					<GatsbyImage
 						image={data.mobile.childImageSharp.gatsbyImageData}
 						className="w-1/2"
+						alt="foto anfitrion"
 					/>
 				</div>
 			</div>

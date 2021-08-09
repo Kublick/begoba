@@ -52,5 +52,8 @@ const Hero = (props) => {
 export default Hero;
 
 Hero.propTypes = {
-	formRef: PropTypes.oneOfType([PropTypes.func]),
+	formRef: PropTypes.oneOfType([
+		PropTypes.func,
+		PropTypes.shape({ current: PropTypes.any }),
+	]),
 };

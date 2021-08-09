@@ -37,6 +37,7 @@ const Sociales = (props) => {
 						<GatsbyImage
 							image={data.desktop.childImageSharp.gatsbyImageData}
 							className="rounded-lg shadow-2xl "
+							alt="persona frente a computadora"
 						/>
 						<div className="flex justify-end">
 							<button

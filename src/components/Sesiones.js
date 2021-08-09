@@ -39,7 +39,10 @@ const Sesiones = () => {
 				<div>
 					<div className="flex gap-4">
 						<p className="sesiones-circle">1</p>
-						<GatsbyImage image={data.redes.childImageSharp.gatsbyImageData} />
+						<GatsbyImage
+							image={data.redes.childImageSharp.gatsbyImageData}
+							alt="icono redes sociales"
+						/>
 					</div>
 					<p className="sesiones-text">
 						Tu oportunidad de tener pacientes desde las redes sociales
@@ -50,6 +53,7 @@ const Sesiones = () => {
 						<p className="sesiones-circle">2</p>
 						<GatsbyImage
 							image={data.incrementar.childImageSharp.gatsbyImageData}
+							alt="icono incrementa ventas"
 						/>
 					</div>
 					<p className="sesiones-text">
@@ -62,6 +66,7 @@ const Sesiones = () => {
 							<p className="sesiones-circle">3</p>
 							<GatsbyImage
 								image={data.vender.childImageSharp.gatsbyImageData}
+								alt="icono incrementar ventas"
 							/>
 						</div>
 					</div>
@@ -72,7 +77,10 @@ const Sesiones = () => {
 				<div>
 					<div className="flex gap-4">
 						<p className="sesiones-circle">4</p>
-						<GatsbyImage image={data.miedos.childImageSharp.gatsbyImageData} />
+						<GatsbyImage
+							image={data.miedos.childImageSharp.gatsbyImageData}
+							alt="icono vence tus miedos"
+						/>
 					</div>
 					<p className="sesiones-text">
 						Derriba tus miedos y de ese siguiente paso para vivir de tu consulta

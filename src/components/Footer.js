@@ -47,6 +47,7 @@ const Footer = (props) => {
 						<GatsbyImage
 							image={data.desktop.childImageSharp.gatsbyImageData}
 							className="rounded-lg shadow-2xl md:w-3/4"
+							alt="grupo de personas"
 						/>
 					</div>
 				</div>
