@@ -1,7 +1,20 @@
 import React from 'react';
 import { mainLogo } from '../components/helpers/logos';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const Gracias = () => {
+	const data = useStaticQuery(
+		graphql`
+			{
+				desktop: file(relativePath: { eq: "Berenice_profile.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData(quality: 90, width: 320, layout: CONSTRAINED)
+					}
+				}
+			}
+		`,
+	);
 	return (
 		<div>
 			<div className="flex justify-center transform scale-75">{mainLogo}</div>
@@ -12,9 +25,16 @@ const Gracias = () => {
 					<span className="font-semibold"> DOS PASOS</span> muy pequeños e
 					IMPORTANTES
 				</h1>
-				<div className="grid grid-cols-2 my-6">
-					<div>
-						<p className="text-lg font-bold text-center md:text-2xl text-primary">
+				<div className="grid my-6 md:grid-cols-2">
+					<div className="box">
+						<div className="flex justify-center">
+							<GatsbyImage
+								image={data.desktop.childImageSharp.gatsbyImageData}
+								className="m-4 transform scale-75 circle"
+								alt="Imagen Berenice"
+							/>
+						</div>
+						<p className="pb-8 text-lg font-bold text-center md:text-2xl text-primary">
 							¡Nos vemos en el taller!
 						</p>
 					</div>
@@ -27,12 +47,15 @@ const Gracias = () => {
 							semana del <span>TALLER</span> sólo da click aquí mismo.
 						</p>
 
-						<button className="w-3/4 btn-green">Unirme AL GRUPO</button>
-
+						<div className="flex justify-center gap-4 align-middle">
+							<button className="shadow-lg btn-green logo-container">
+								Unirme AL GRUPO
+							</button>
+						</div>
 						<p>
 							Ir a tu <span className="font-semibold">BANDEJA</span> de
 							<span className="font-semibold"> CORREO</span> con el cual te
-							registraste a esta <span>SEMANA</span>
+							registraste a esta <span>SEMANA </span>
 							del <span className="font-semibold">TALLER</span> y busca el
 							<span className="font-semibold"> CORREO</span> con el
 							<span className="font-semibold"> TÍTULO</span>:
@@ -51,11 +74,11 @@ const Gracias = () => {
 							el temario y los horarios, si no lo haces tristemente no podré
 							enviártelo
 						</p>
-						<p className="self-end text-2xl text-secondary font-cursive">
-							Gracias por Registrarte
-						</p>
 					</div>
 				</div>
+				<p className="text-2xl text-center text-secondary font-cursive">
+					Gracias por Registrarte
+				</p>
 			</div>
 		</div>
 	);
