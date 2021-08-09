@@ -22,6 +22,9 @@ module.exports = {
 				mango: {
 					DEFAULT: '#FF833D',
 				},
+				whats: {
+					DEFAULT: '#25d366',
+				},
 			},
 		},
 	},
