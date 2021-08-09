@@ -2,7 +2,7 @@ import React from 'react';
 import Countdown from 'react-countdown';
 
 const Counter = () => {
-	let eventDate = '12 September 2021 17:30';
+	let eventDate = '20 September 2021 17:30';
 	const renderer = ({ days, hours, minutes }) => {
 		let timeDay = 'D';
 		let timeHour = 'H';

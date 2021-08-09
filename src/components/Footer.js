@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import {
 	whitelogo,
-	fbwhite,
+	fbsecondary,
 	ytwhite,
 	inswhite,
 } from '../components/helpers/logos';
@@ -73,7 +73,7 @@ const Footer = (props) => {
 						234-9366
 					</p>
 					<div className="flex gap-4 mb-2 md:mb-0">
-						<button className="white-btn">{fbwhite}</button>
+						<button className="white-btn">{fbsecondary}</button>
 						<button className="white-btn">{ytwhite}</button>
 						<button className="white-btn">{inswhite}</button>
 					</div>
