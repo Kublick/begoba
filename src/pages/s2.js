@@ -5,7 +5,7 @@ import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
-const S1 = () => {
+const S2 = () => {
 	return (
 		<>
 			<header>
@@ -81,4 +81,4 @@ const S1 = () => {
 	);
 };
 
-export default S1;
+export default S2;

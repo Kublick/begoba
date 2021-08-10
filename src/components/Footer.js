@@ -46,7 +46,7 @@ const Footer = (props) => {
 					<div>
 						<GatsbyImage
 							image={data.desktop.childImageSharp.gatsbyImageData}
-							className="rounded-lg shadow-2xl md:w-3/4"
+							className="rounded-lg shadow-2xl md:max-w-xl"
 							alt="grupo de personas"
 						/>
 					</div>
@@ -73,9 +73,32 @@ const Footer = (props) => {
 						234-9366
 					</p>
 					<div className="flex gap-4 mb-2 md:mb-0">
-						<button className="white-btn">{fbsecondary}</button>
-						<button className="white-btn">{ytwhite}</button>
-						<button className="white-btn">{inswhite}</button>
+						<button
+							className="white-btn"
+							onClick={() =>
+								window.open('http://www.facebook.com/groups/2375070212786505/')
+							}
+						>
+							{fbsecondary}
+						</button>
+						<button
+							className="white-btn"
+							onClick={() =>
+								window.open(
+									'https://www.youtube.com/channel/UCoiQ74yUzLm6ZRUcB_rhPIQ',
+								)
+							}
+						>
+							{ytwhite}
+						</button>
+						<button
+							className="white-btn"
+							onClick={() =>
+								window.open('https://www.instagram.com/psicologaberenice/')
+							}
+						>
+							{inswhite}
+						</button>
 					</div>
 				</div>
 				<p className="text-mini">

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactPlayer from 'react-player/lazy';
+import PropTypes from 'prop-types';
 
-const Videoplayer = () => {
+const Videoplayer = ({ url }) => {
 	//{ videoUrl, urlRedirect, buttonText, date }
 	// const [button, setButton] = useState(false);
 
@@ -31,7 +32,7 @@ const Videoplayer = () => {
 		<>
 			<div className="player-wrapper">
 				<ReactPlayer
-					url="https://www.youtube.com/watch?v=rHN1ICqWVcQ"
+					url={url}
 					// onStart={() => communityButton()}
 					className="h-full"
 				/>
@@ -52,3 +53,7 @@ const Videoplayer = () => {
 };
 
 export default Videoplayer;
+
+Videoplayer.propTypes = {
+	url: PropTypes.string,
+};
