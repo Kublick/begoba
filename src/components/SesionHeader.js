@@ -1,6 +1,5 @@
 import React from 'react';
 import Counter from './Counter';
-// import { headerLogo } from './helpers/logos';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
 

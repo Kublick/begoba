@@ -5,7 +5,7 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
 	siteMetadata: {
-		title: `GRATIS -- De Egresado a Profesional `,
+		title: `Incrementa tu consulta`,
 		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
@@ -34,7 +34,7 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `@hutsoninc/gatsby-plugin-facebook-pixel`,
+			resolve: `gatsby-plugin-facebook-pixel`,
 			options: {
 				pixelId: '227610218315785',
 			},
