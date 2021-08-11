@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 import CommentsFacebook from '../components/CommentsFacebook';
 import ReactPlayer from 'react-player';
 
-const S1 = () => {
+const S3 = () => {
 	return (
 		<>
 			<header>
@@ -16,7 +16,7 @@ const S1 = () => {
 			<main>
 				<div className="grid lg:grid-cols-4">
 					<div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-						<div className="p-8 rounded-lg shadow-lg bg-secondary">
+						<div className="p-8 rounded-lg shadow-lg bg-primary">
 							<div className="flex items-center ">
 								<h2 className="text-3xl font-bold text-white">TIP</h2>
 								<svg
@@ -72,53 +72,19 @@ const S1 = () => {
 					<div className="order-first py-8 bg-gray-100 shadow-lg lg:col-span-2 lg:order-none">
 						<div className="flex flex-col gap-2 md:gap-6">
 							<h1 className="self-center text-2xl font-semibold text-center md:w-3/4 text-secondary">
-								Tu oportunidad de tener pacientes desde las redes sociales
+								Como vender tu consulta online con la estrategia D.E.P.E.
 							</h1>
 							<div>
-								<Videoplayer url={'http://youtu.be/M4V8T0hl7cA'} />
+								<Videoplayer url={'https://youtu.be/rpQD0JK7Ul0'} />
 							</div>
 
 							<p className="self-center font-semibold ">
-								<span className="font-bold text-secondary">CLASE:</span> 1 DE 4
+								<span className="font-bold text-secondary">CLASE:</span> 3 DE 4
 							</p>
 						</div>
 					</div>
 
 					<div className="flex flex-col gap-4 p-4 md:gap-8 md:p-10">
-						<div className="">
-							<Link to="/s2">
-								<StaticImage
-									src="../images/Miniaturas 640px-02.png"
-									className="rounded-md shadow-lg"
-									alt="foto sesion 2"
-								/>
-							</Link>
-							<div className="flex justify-end flex-grow-0">
-								<p className="px-1 text-xl font-bold text-white p bg-mango">
-									21
-								</p>
-								<p className="px-1 text-xl font-bold text-white bg-secondary">
-									SEP
-								</p>
-							</div>
-						</div>
-						<div className="">
-							<Link to="/s3">
-								<StaticImage
-									src="../images/Miniaturas 640px-03.png"
-									className="rounded-md shadow-lg"
-									alt="foto sesion 3"
-								/>
-							</Link>
-							<div className="flex justify-end flex-grow-0">
-								<p className="px-1 text-xl font-bold text-white p bg-mango">
-									22
-								</p>
-								<p className="px-1 text-xl font-bold text-white bg-secondary">
-									SEP
-								</p>
-							</div>
-						</div>
 						<div>
 							<Link to="/s4">
 								<StaticImage
@@ -133,6 +99,40 @@ const S1 = () => {
 								</p>
 								<p className="px-1 text-xl font-bold text-white bg-secondary">
 									SEP
+								</p>
+							</div>
+						</div>
+						<div className="">
+							<Link to="/s1">
+								<StaticImage
+									src="../images/Miniaturas 640px-01.png"
+									className="rounded-md shadow-lg"
+									alt="foto sesion 1"
+								/>
+							</Link>
+							<div className="flex justify-end flex-grow-0">
+								<p className="px-1 text-xl font-bold text-white p bg-mango">
+									YA
+								</p>
+								<p className="px-1 text-xl font-bold text-white bg-secondary">
+									DISPONIBLE
+								</p>
+							</div>
+						</div>
+						<div className="">
+							<Link to="/s3">
+								<StaticImage
+									src="../images/Miniaturas 640px-03.png"
+									className="rounded-md shadow-lg"
+									alt="foto sesion 3"
+								/>
+							</Link>
+							<div className="flex justify-end flex-grow-0">
+								<p className="px-1 text-xl font-bold text-white p bg-mango">
+									YA
+								</p>
+								<p className="px-1 text-xl font-bold text-white bg-secondary">
+									DISPONIBLE
 								</p>
 							</div>
 						</div>
@@ -182,4 +182,4 @@ const S1 = () => {
 	);
 };
 
-export default S1;
+export default S3;
