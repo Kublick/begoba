@@ -1,8 +1,10 @@
 import React from 'react';
 import Countdown from 'react-countdown';
+import PropTypes from 'prop-types';
 
-const Counter = () => {
-	let eventDate = '20 September 2021 17:30';
+const Counter = ({ date }) => {
+	let eventDate = date;
+
 	const renderer = ({ days, hours, minutes }) => {
 		let timeDay = 'D';
 		let timeHour = 'H';
@@ -48,3 +50,7 @@ const Counter = () => {
 };
 
 export default Counter;
+
+Counter.propTypes = {
+	date: PropTypes.string,
+};

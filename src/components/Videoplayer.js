@@ -33,8 +33,10 @@ const Videoplayer = ({ url }) => {
 			<div className="player-wrapper">
 				<ReactPlayer
 					url={url}
+					className="react-player"
+					height="100%"
+					width="100%"
 					// onStart={() => communityButton()}
-					className="h-full"
 				/>
 			</div>
 
