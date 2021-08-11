@@ -23,7 +23,7 @@ body {
 }
 
 .btn-social {
-	@apply flex items-center gap-2 px-6 py-2 text-sm font-semibold text-white rounded-lg lg:w-72;
+	@apply flex items-center w-full gap-2 px-4 py-2 text-sm font-semibold text-white rounded-lg md:w-52;
 }
 
 .logos {

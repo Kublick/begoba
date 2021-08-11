@@ -30,7 +30,7 @@ module.exports = {
 				start_url: `/`,
 				background_color: fullConfig.theme.colors.white,
 				display: `minimal-ui`,
-				icon: `src/images/logo192.png`,
+				icon: `src/images/icon-192x192.png`,
 			},
 		},
 		{

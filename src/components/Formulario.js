@@ -14,6 +14,7 @@ export default class IndexPage extends React.Component {
 
 	_handleSubmit = (e) => {
 		e.preventDefault();
+		console.log('sent');
 		const data = new FormData(e.target);
 
 		fetch('https://psicologaberenicebastidas.activehosted.com/proc.php', {
@@ -30,7 +31,7 @@ export default class IndexPage extends React.Component {
 				}, 2000);
 
 				if (this.state.submit === true) {
-					navigate('/');
+					navigate('/gracias');
 				}
 			})
 			.catch((err) => {

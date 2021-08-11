@@ -14,9 +14,9 @@ const S1 = () => {
 				<SesionHeader color="bg-mango" date="20 September 2021 15:30" />
 			</header>
 			<main>
-				<div className="grid grid-cols-4">
-					<div className="flex flex-col gap-6 p-10">
-						<div className="p-4 rounded-lg shadow-lg bg-secondary">
+				<div className="grid lg:grid-cols-4">
+					<div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+						<div className="p-8 rounded-lg shadow-lg bg-secondary">
 							<div className="flex items-center">
 								<h2 className="text-3xl font-bold text-white">TIP</h2>
 								<svg
@@ -46,22 +46,22 @@ const S1 = () => {
 							tus servicios profesionales en redes sociales?
 						</p>
 						<p className="font-semibold">!Nos vemos en los comentarios!</p>
-						<div className="flex flex-col items-center gap-4">
+						<div className="flex flex-col items-center gap-4 mx-2">
 							<button className="bg-secondary btn-social">
 								{notebookWhite} Cuaderno de Trabajo
 							</button>
 
 							<button className="bg-green-600 btn-social">
-								{wswhite} Comunidad en Whatsapp
+								{wswhite} Grupo en Whatsapp
 							</button>
 							<button className=" btn-social bg-primary">
-								{fbwhite} No te pierdas de Nada
+								{fbwhite} No te lo pierdas
 							</button>
 						</div>
 					</div>
 
-					<div className="col-span-2 py-8 bg-gray-100 shadow-lg">
-						<div className="flex flex-col gap-6">
+					<div className="order-first py-8 bg-gray-100 shadow-lg lg:col-span-2 lg:order-none">
+						<div className="flex flex-col gap-2 md:gap-6">
 							<h1 className="self-center text-2xl font-semibold text-center md:w-3/4 text-secondary">
 								Tu oportunidad de tener pacientes desde las redes sociales
 							</h1>
@@ -75,7 +75,7 @@ const S1 = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-8 p-10">
+					<div className="flex flex-col gap-4 p-4 md:gap-8 md:p-10">
 						<div className="">
 							<Link to="/s2">
 								<StaticImage
@@ -102,11 +102,15 @@ const S1 = () => {
 					</div>
 				</div>
 			</main>
-			<div className="grid grid-cols-2 gap-8 p-10 bg-gray-50">
+			<div className="grid gap-6 pt-8 mx-2 md:grid-cols-2 bg-gray-50">
 				<div>
 					<CommentsFacebook />
 				</div>
+
 				<div className="flex flex-col items-center p-4">
+					<h1 className="mb-4 text-2xl font-bold text-secondary">
+						Testimonios
+					</h1>
 					<ReactPlayer
 						url="https://youtu.be/iGA3w0YVac8"
 						width={320}
