@@ -66,13 +66,11 @@ const S1 = () => {
 								Tu oportunidad de tener pacientes desde las redes sociales
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/M4V8T0hl7cA'} />
+								<Videoplayer url={'http://youtu.be/M4V8T0hl7cA'} />
 							</div>
 
-							<p
-								className="self-center font-semibold "
-							>
-								<span className="font-bold  text-secondary">CLASE:</span> 1 DE 4
+							<p className="self-center font-semibold ">
+								<span className="font-bold text-secondary">CLASE:</span> 1 DE 4
 							</p>
 						</div>
 					</div>

@@ -24,15 +24,15 @@ const Counter = ({ date }) => {
 
 		return (
 			<div className="flex counter-num">
-				<div className="flex flex-col items-center w-16 p-4 text-white bg-black rounded-l-md">
-					<p className="text-3xl">{days}</p> <p>{timeDay}</p>
+				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4 rounded-l-md">
+					<p className="text-xl lg:text-3xl">{days}</p> <p>{timeDay}</p>
 				</div>
-				<div className="flex flex-col items-center w-16 p-4 text-white bg-black">
-					<p className="text-3xl">{hours}</p>
+				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4">
+					<p className="text-xl lg:text-3xl">{hours}</p>
 					<p>{timeHour}</p>
 				</div>
-				<div className="flex flex-col items-center w-16 p-4 text-white bg-black rounded-r-md">
-					<p className="text-3xl">{minutes}</p>
+				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4 rounded-r-md">
+					<p className="text-xl lg:text-3xl">{minutes}</p>
 					<p>{timeMinutes}</p>
 				</div>
 			</div>
