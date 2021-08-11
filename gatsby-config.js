@@ -8,6 +8,7 @@ module.exports = {
 		title: `Incrementa tu consulta`,
 		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
+		siteUrl: `https://www.incrementatuconsulta.com`,
 	},
 	plugins: [
 		{
@@ -17,6 +18,7 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 		},
+		'gatsby-plugin-robots-txt',
 		`gatsby-plugin-eslint`,
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
