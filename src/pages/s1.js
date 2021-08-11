@@ -84,20 +84,48 @@ const S1 = () => {
 									alt="foto sesion 2"
 								/>
 							</Link>
+							<div className="flex justify-end flex-grow-0">
+								<p className="px-1 text-xl font-bold text-white p bg-mango">
+									21
+								</p>
+								<p className="px-1 text-xl font-bold text-white bg-secondary">
+									SEP
+								</p>
+							</div>
 						</div>
 						<div className="">
-							<StaticImage
-								src="../images/Miniaturas 640px-03.png"
-								className="rounded-md shadow-lg"
-								alt="foto sesion 3"
-							/>
+							<Link to="/s3">
+								<StaticImage
+									src="../images/Miniaturas 640px-03.png"
+									className="rounded-md shadow-lg"
+									alt="foto sesion 3"
+								/>
+							</Link>
+							<div className="flex justify-end flex-grow-0">
+								<p className="px-1 text-xl font-bold text-white p bg-mango">
+									22
+								</p>
+								<p className="px-1 text-xl font-bold text-white bg-secondary">
+									SEP
+								</p>
+							</div>
 						</div>
 						<div>
-							<StaticImage
-								src="../images/Miniaturas 640px-04.png"
-								className="rounded-md shadow-lg"
-								alt="foto sesion 3"
-							/>
+							<Link to="/s4">
+								<StaticImage
+									src="../images/Miniaturas 640px-04.png"
+									className="rounded-md shadow-lg"
+									alt="foto sesion 4"
+								/>
+							</Link>
+							<div className="flex justify-end flex-grow-0">
+								<p className="px-1 text-xl font-bold text-white p bg-mango">
+									23
+								</p>
+								<p className="px-1 text-xl font-bold text-white bg-secondary">
+									SEP
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
