@@ -9,10 +9,10 @@ const CommentsFacebook = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="w-full">
 			<div id="fb-root"></div>
 			<div
-				className="px-2 mx-2 fb-comments"
+				className="fb-comments"
 				data-href="https://www.begoba.com/interno"
 				data-numposts="15"
 				data-width="100%"
