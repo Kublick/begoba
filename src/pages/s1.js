@@ -47,14 +47,7 @@ const S1 = () => {
 								</p>
 							</div>
 						</div>
-						{/* <h1 className="text-lg font-semibold text-primary">
-							Cuéntanos en que podamos ayudarte:
-						</h1>
-						<p>
-							¿Cual es el mayor desafío que tuviste al querer ofrecer o vender
-							tus servicios profesionales en redes sociales?
-						</p>
-						<p className="font-semibold">!Nos vemos en los comentarios!</p> */}
+
 						<div className="flex flex-col items-center gap-4 mx-2">
 							<button className="bg-secondary btn-social">
 								{notebookWhite} Cuaderno de Trabajo

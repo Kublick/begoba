@@ -16,28 +16,6 @@ const S2 = () => {
 			<main>
 				<div className="grid lg:grid-cols-4">
 					<div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-						{/* <div className="p-8 rounded-lg shadow-lg bg-secondary">
-							<div className="flex items-center">
-								<h2 className="text-3xl font-bold text-white">TIP</h2>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									className="w-6 h-6 ml-2 font-bold"
-									viewBox="0 0 24 24"
-									stroke="#fff"
-								>
-									<path
-										strokeLinecap="round"
-										strokeLinejoin="round"
-										strokeWidth={2}
-										d="M16 17l-4 4m0 0l-4-4m4 4V3"
-									/>
-								</svg>
-							</div>
-							<p className="block font-semibold text-white">
-								¿No pudiste tomar nota o tienes dudas?
-							</p>
-							<p className="block text-white">¡No te preocupes!</p>
-						</div> */}
 						<h1 className="text-lg font-semibold text-primary">
 							Cuéntanos en que podamos ayudarte:
 						</h1>
