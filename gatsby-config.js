@@ -1,17 +1,15 @@
-const resolveConfig = require("tailwindcss/resolveConfig");
-const tailwindConfig = require("./tailwind.config.js");
+const resolveConfig = require('tailwindcss/resolveConfig');
+const tailwindConfig = require('./tailwind.config.js');
 
 const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
 	siteMetadata: {
-		title: `GRATIS -- De Egresado a Profesional `,
+		title: `Incrementa tu consulta`,
 		description: `Curso para profesionales de la salud para incrementar tus pacientes`,
 		author: `@psicberenicebastidas`,
 	},
-	pathPrefix: "/registro",
 	plugins: [
-		`gatsby-plugin-fontawesome-css`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -23,22 +21,22 @@ module.exports = {
 		`gatsby-plugin-react-helmet`,
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Begoba`,
-				short_name: `Begoba`,
-				start_url: `/registro`,
+				name: `Incrementa tu consulta`,
+				short_name: `Incrementatuconsulta`,
+				start_url: `/`,
 				background_color: fullConfig.theme.colors.white,
-				theme_color: fullConfig.theme.colors.green["500"],
 				display: `minimal-ui`,
-				icon: `src/images/logo192.png`,
+				icon: `src/images/icon-192x192.png`,
 			},
 		},
 		{
-			resolve: `@hutsoninc/gatsby-plugin-facebook-pixel`,
+			resolve: `gatsby-plugin-facebook-pixel`,
 			options: {
-				pixelId: "227610218315785",
+				pixelId: '227610218315785',
 			},
 		},
 		{
