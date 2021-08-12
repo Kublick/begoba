@@ -15,6 +15,14 @@ const Gracias = () => {
 			}
 		`,
 	);
+
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'CompleteRegistration');
+		}
+	}
+
 	return (
 		<div>
 			<div className="flex justify-center transform scale-75">{mainLogo}</div>
