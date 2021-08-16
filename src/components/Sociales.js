@@ -41,7 +41,7 @@ const Sociales = (props) => {
 						/>
 						<div className="flex justify-end">
 							<button
-								className="w-full mt-8 lg:w-64 btn-main"
+								className="w-full mt-8 btn-main"
 								onClick={props.handleBackClick}
 							>
 								Registrate Ahora
