@@ -119,30 +119,19 @@ const S2 = () => {
 						Testimonios
 					</h1>
 					<ReactPlayer
-						url="https://youtu.be/iGA3w0YVac8"
+						url="https://youtu.be/z9CsFqeleUo"
 						width={320}
 						height={320}
 					/>
 
 					<ReactPlayer
-						url="https://youtu.be/c1XGvy-ynZs"
+						url="https://youtu.be/4G_j_Qk7Gvc"
 						width={320}
 						height={320}
 					/>
 
 					<ReactPlayer
-						url="https://youtu.be/NmL3jxP9BB0"
-						width={320}
-						height={320}
-					/>
-					<ReactPlayer
-						url="https://youtu.be/6_MBqp7E3Zw"
-						width={320}
-						height={320}
-					/>
-
-					<ReactPlayer
-						url="https://youtu.be/gpXgrVIJrms"
+						url="https://youtu.be/wXHrOaaJZoM"
 						width={320}
 						height={320}
 					/>

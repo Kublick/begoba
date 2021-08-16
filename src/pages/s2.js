@@ -11,7 +11,7 @@ const S2 = () => {
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
 			// window.fbq("track", "PageView");
-			window.fbq('track', 'AddTiWhislist');
+			window.fbq('track', 'AddToWhislist');
 		}
 	}
 	return (
