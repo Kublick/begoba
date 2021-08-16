@@ -6,6 +6,7 @@ import {
 	fbsecondary,
 	ytwhite,
 	inswhite,
+	checkmark,
 } from '../components/helpers/logos';
 import PropTypes from 'prop-types';
 
@@ -23,7 +24,7 @@ const Footer = (props) => {
 						gatsbyImageData(quality: 90, width: 964, layout: CONSTRAINED)
 					}
 				}
-			}
+			} #E7407B
 		`,
 	);
 
@@ -31,17 +32,35 @@ const Footer = (props) => {
 		<>
 			<div className="px-5 pt-10 md:px-20 md:pt-20 bg-primary-light">
 				<h1 className="title">Este entrenamiento es para ti, si eres:</h1>
-				<div className="grid my-10 md:grid-cols-2">
-					<div className="grid items-center grid-cols-2 gap-4 mb-4 md:w-3/4">
-						<p className="footer-btn-secondary justify-self-end">Psicologo</p>
-						<p className="footer-btn-primary">Nutriologo</p>
-						<p className="footer-btn-primary justify-self-end">Cosmetóloga</p>
-						<p className="footer-btn-secondary">Terapeuta</p>
-						<p className="text-center footer-btn-secondary justify-self-end">
-							Profesional de
-							<br /> la Salud
-						</p>
-						<p className="footer-btn-primary">Coach</p>
+				<div className="grid items-center my-10 md:grid-cols-2">
+					<div className="flex flex-col gap-2 mb-4 md:w-3/4">
+						<div className="flex items-center gap-2">
+							{checkmark}
+							<p className="">Psicologo</p>
+						</div>
+						<div className="flex items-center gap-2">
+							{checkmark}
+							<p className="">Nutriologo</p>
+						</div>
+						<div className="flex items-center gap-2">
+							{checkmark}
+							<p className="">Cosmetóloga</p>
+						</div>
+						<div className="flex items-center gap-2">
+							{checkmark}
+
+							<p className="">Terapeuta</p>
+						</div>
+						<div className="flex items-center gap-2">
+							{checkmark}
+
+							<p className="">Profesional de la Salud</p>
+						</div>
+						<div className="flex items-center gap-2">
+							{checkmark}
+
+							<p className="">Coach</p>
+						</div>
 					</div>
 					<div>
 						<GatsbyImage
@@ -72,7 +91,7 @@ const Footer = (props) => {
 						Mexicali Baja California, México <br /> Whatsapp: + 52 (686)
 						234-9366
 					</p>
-					<div className="flex gap-4 mb-2 md:mb-0">
+					<div className="flex items-center gap-4 mb-2 md:mb-0">
 						<button
 							className="white-btn"
 							onClick={() =>

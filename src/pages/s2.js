@@ -8,6 +8,12 @@ import CommentsFacebook from '../components/CommentsFacebook';
 import ReactPlayer from 'react-player';
 
 const S2 = () => {
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'AddTiWhislist');
+		}
+	}
 	return (
 		<>
 			<header>

@@ -41,7 +41,7 @@ const Sociales = (props) => {
 						/>
 						<div className="flex justify-end">
 							<button
-								className="w-full mt-8 lg:w-64 btn-main"
+								className="w-full mt-8 btn-main"
 								onClick={props.handleBackClick}
 							>
 								Registrate Ahora
@@ -49,36 +49,31 @@ const Sociales = (props) => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-4 px-5 md:gap-6">
-					<div className="flex items-center gap-6">
-						<span className="logo-fb">{fbmango} </span>
-						<p className="text-sm font-semibold">
-							Pertencer a la comunidad del grupo exclusivo en Facebook
-						</p>
-					</div>
-					<div className="flex flex-row-reverse items-center gap-4">
-						{movie}
-						<p className="font-semibold">Transmisión en vivo</p>
-					</div>
+				<div className="grid items-center grid-cols-4 gap-y-4 md:gap-y-0">
+					<span className="logo-fb">{fbmango} </span>
 
-					<div className="flex items-center gap-4">
-						<span className="logo-ws">{notebook} </span>
-
-						<p className="font-semibold">Cuaderno de trabajo del taller</p>
-					</div>
-					<div className="flex flex-row-reverse items-center gap-4">
-						<span className="logo-ws">{wsmango} </span>
-						<p className="font-semibold">
-							Serás parte de la comunidad dentro del grupo de Whatsapp para
-							notificaciones
-						</p>
-					</div>
-					<div className="flex items-center gap-4">
-						<span className="logo-live">{live}</span>
-						<p className="font-semibold">
-							Participación en vivo en la clase especial número 5
-						</p>
-					</div>
+					<p className="col-span-3 text-sm font-semibold">
+						Pertencer a la comunidad del grupo exclusivo en Facebook
+					</p>
+					<span className="flex items-center gap-2">{movie}</span>
+					<p className="col-span-3 font-semibold">Transmisión en vivo</p>
+					<span className="logo-ws">{notebook} </span>
+					<p className="col-span-3 font-semibold ">
+						Cuaderno de trabajo del taller
+					</p>
+					<span className="logo-ws">{wsmango} </span>
+					<p className="col-span-3 font-semibold">
+						Serás parte de la comunidad dentro del grupo de Whatsapp para
+						notificaciones
+					</p>
+					<span className="logo-live">{live}</span>
+					<p className="col-span-3 font-semibold">
+						Participación en vivo en la clase especial número 5
+					</p>
+					<p className="col-span-4 text-3xl text-center">
+						Total: $ <span className="line-through">97 usd</span>{' '}
+						<span className="font-bold text-secondary">GRATIS</span>{' '}
+					</p>
 				</div>
 			</div>
 		</div>

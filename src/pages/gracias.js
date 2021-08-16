@@ -15,6 +15,14 @@ const Gracias = () => {
 			}
 		`,
 	);
+
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'CompleteRegistration');
+		}
+	}
+
 	return (
 		<div>
 			<div className="flex justify-center transform scale-75">{mainLogo}</div>
@@ -58,7 +66,10 @@ const Gracias = () => {
 							registraste a esta <span>SEMANA </span>
 							del <span className="font-semibold">TALLER</span> y busca el
 							<span className="font-semibold"> CORREO</span> con el
-							<span className="font-semibold"> TÍTULO</span>:
+							<span className="font-semibold"> TÍTULO</span>:{' '}
+							<span className="font-semibold text-primary">
+								[IMPORTANTE] tu cupo esta confirmado{' '}
+							</span>
 						</p>
 
 						<p>

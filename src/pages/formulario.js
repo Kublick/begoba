@@ -2,6 +2,12 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const Registroformulario = () => {
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'Lead');
+		}
+	}
 	return (
 		<div>
 			<div className={`flex justify-center bg-secondary`}>
