@@ -28,7 +28,7 @@ const Anfrition = () => {
 					<h2 className="py-2 text-3xl font-bold text-center md:py-4 md:text-4xl text-secondary">
 						Berenice Bastidas
 					</h2>
-					<p className="text-lg text-center lg:w-3/4 md:text-left">
+					<p className="text-lg text-center md:text-left">
 						Psicóloga de profesión desde hace 15 años y en los últimos años me
 						he dedicado ayudar a Psicólogos, Nutriologos y profesionales de la
 						salud a que multipliquen sus ingresos incrementando su número de

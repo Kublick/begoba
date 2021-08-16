@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const Hero = (props) => {
 	return (
-		<section className="grid bg-gray-100 md:py-8 md:grid-cols-2">
+		<section className="grid pb-6 bg-gray-100 md:py-8 md:grid-cols-2">
 			<div className="flex flex-col items-center justify-center">
 				<span className="transform scale-75 md:scale-100 md:mb-4">
 					{mainLogo}

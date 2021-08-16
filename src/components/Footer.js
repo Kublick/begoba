@@ -30,7 +30,7 @@ const Footer = (props) => {
 
 	return (
 		<>
-			<div className="px-5 pt-10 md:px-20 md:pt-20 bg-primary-light">
+			<div className="px-5 py-10 md:px-20 md:py-20 bg-primary-light">
 				<h1 className="title">Este entrenamiento es para ti, si eres:</h1>
 				<div className="grid items-center my-10 md:grid-cols-2">
 					<div className="flex flex-col gap-2 mb-4 md:w-3/4">
@@ -70,12 +70,12 @@ const Footer = (props) => {
 						/>
 					</div>
 				</div>
-				<div className="flex justify-center pb-8">
+				<div className="flex justify-center">
 					<button
 						className="w-full py-1 text-white border-2 lg:w-64 md:px-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark"
 						onClick={props.handleBackClick}
 					>
-						Registate Ahora
+						Registrate Ahora
 					</button>
 				</div>
 				<div></div>
