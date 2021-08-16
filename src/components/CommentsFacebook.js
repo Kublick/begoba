@@ -12,10 +12,12 @@ const CommentsFacebook = () => {
 		<div className="w-full">
 			<div id="fb-root"></div>
 			<div
+				data-order-by="reverse_time"
 				className="fb-comments"
 				data-href="https://www.begoba.com/interno"
 				data-numposts="15"
 				data-width="100%"
+				loading="lazy"
 			></div>
 		</div>
 	);
