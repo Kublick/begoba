@@ -66,7 +66,10 @@ const Gracias = () => {
 							registraste a esta <span>SEMANA </span>
 							del <span className="font-semibold">TALLER</span> y busca el
 							<span className="font-semibold"> CORREO</span> con el
-							<span className="font-semibold"> TÍTULO</span>:
+							<span className="font-semibold"> TÍTULO</span>:{' '}
+							<span className="font-semibold text-primary">
+								[IMPORTANTE] tu cupo esta confirmado{' '}
+							</span>
 						</p>
 
 						<p>

@@ -8,6 +8,12 @@ import CommentsFacebook from '../components/CommentsFacebook';
 import ReactPlayer from 'react-player';
 
 const S3 = () => {
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'AddTiWhislist');
+		}
+	}
 	return (
 		<>
 			<header>
@@ -73,6 +79,16 @@ const S3 = () => {
 							<p className="self-center font-semibold ">
 								<span className="font-bold text-secondary">CLASE:</span> 3 DE 4
 							</p>
+						</div>
+						<div className="flex justify-center mt-8">
+							<button
+								className="px-8 btn-main"
+								onClick={() =>
+									window.open('https://es.surveymonkey.com/r/GXLDPHN')
+								}
+							>
+								LLenar el Formulario
+							</button>
 						</div>
 					</div>
 
