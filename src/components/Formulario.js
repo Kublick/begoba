@@ -1,5 +1,5 @@
-import React from "react";
-import { navigate } from "gatsby";
+import React from 'react';
+import { navigate } from 'gatsby';
 
 export default class IndexPage extends React.Component {
 	state = {
@@ -14,12 +14,13 @@ export default class IndexPage extends React.Component {
 
 	_handleSubmit = (e) => {
 		e.preventDefault();
+		console.log('sent');
 		const data = new FormData(e.target);
 
-		fetch("https://psicologaberenicebastidas.activehosted.com/proc.php", {
-			method: "POST",
+		fetch('https://psicologaberenicebastidas.activehosted.com/proc.php', {
+			method: 'POST',
 			body: data,
-			mode: "no-cors",
+			mode: 'no-cors',
 		})
 			.then((response) => {
 				this.setState({ submit: true });
@@ -30,55 +31,57 @@ export default class IndexPage extends React.Component {
 				}, 2000);
 
 				if (this.state.submit === true) {
-					navigate("/enviadoPDF");
+					navigate('/gracias');
 				}
 			})
 			.catch((err) => {
-				console.log("err", err);
+				console.log('err', err);
 				alert(err);
 			});
 	};
 
 	render() {
 		return (
-			<div>
-				<div>
-					<form onSubmit={this._handleSubmit} className="mx-4">
-						<input type="hidden" name="u" value="27" />
-						<input type="hidden" name="f" value="27" />
-						<input type="hidden" name="s" />
-						<input type="hidden" name="c" value="0" />
-						<input type="hidden" name="m" value="0" />
-						<input type="hidden" name="act" value="sub" />
-						<input type="hidden" name="v" value="2" />
+			<>
+				<div className="container flex justify-center md:mt-10">
+					<div className="flex flex-col items-center gap-2 px-8 py-4 shadow-md min-w-3/4 rounded-xl justify-content center bg-secondary">
+						<p className="font-semibold text-white font-3xl">
+							Registrate <span className="font-bold">GRATIS</span>
+						</p>
+						<p className="font-semibold text-white font-3xl">
+							Descubre como ofrecer <br /> y vender tu consulta online
+						</p>
 
-						<label htmlFor="nombre" className="block font-bold">
-							Nombre
-						</label>
-						<input
-							type="text"
-							onChange={this._handleChange}
-							className="block mb-4 lg:w-64"
-							name="fullname"
-						/>
-						<label htmlFor="email" className="block font-bold">
-							Email
-						</label>
-						<input
-							type="email"
-							onChange={this._handleChange}
-							className="block mb-4 lg:w-64"
-							name="email"
-						/>
+						<form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
+							<input type="hidden" name="u" value="29" />
+							<input type="hidden" name="f" value="29" />
+							<input type="hidden" name="s" />
+							<input type="hidden" name="c" value="0" />
+							<input type="hidden" name="m" value="0" />
+							<input type="hidden" name="act" value="sub" />
+							<input type="hidden" name="v" value="2" />
 
-						<input
-							type="submit"
-							className="px-4 py-2 text-white bg-black rounded-lg outline-none hover:bg-gray-500"
-							value="Enviar"
-						/>
-					</form>
+							<input
+								type="text"
+								onChange={this._handleChange}
+								className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
+								name="fullname"
+								placeholder="nombre"
+							/>
+
+							<input
+								type="email"
+								onChange={this._handleChange}
+								className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
+								name="email"
+								placeholder="email"
+							/>
+
+							<input type="submit" className="btn-main" value="Registrarme" />
+						</form>
+					</div>
 				</div>
-			</div>
+			</>
 		);
 	}
 }
