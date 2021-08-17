@@ -21,6 +21,7 @@ module.exports = {
 				},
 				mango: {
 					light: '#fff3ec',
+					btn: '#ff8f50',
 					DEFAULT: '#FF833D',
 				},
 				whats: {

@@ -87,7 +87,6 @@ const VideoVenta = () => {
 							Seleccionar
 						</button>
 					</div>
-					transform scale-125
 				</div>
 				<div className="flex flex-col items-center justify-center">
 					<p className="px-8 text-center md:px-0 md:w-1/2 md:text-2xl">
@@ -133,10 +132,36 @@ const VideoVenta = () => {
 					</h2>
 				</div>
 				<h3>Imagen</h3>
-				<div className="py-10 my-10 bg-mango-light">
+				<div className="px-10 py-10 my-10 bg-mango-light">
 					<div className="flex justify-center mb-10">{headerLogoBig}</div>
 					<div className="flex justify-center">
 						<div className="w-3/4 border-b-2 border-secondary"></div>
+					</div>
+					<div className="grid grid-cols-2 gap-6 my-10">
+						<div className="flex gap-2">
+							<p>imagen</p>
+							<p>
+								<span className="text-lg font-semibold text-primary">
+									PROGRAMA INTENSIVO DE 12 SEMANAS 100% ONLINE
+								</span>{' '}
+								que te muestra el camino probado por cientos de profesionales
+								para incrementar tu número de pacientes y lanzarte como
+								profesional independiente con un modelo de negocios rentable y
+								alineado a tu propósito de vida.
+							</p>
+						</div>
+						<div className="flex gap-2">
+							<p>imagen</p>
+							<p>
+								<span className="text-lg font-semibold text-primary">
+									12 MENTORIAS GRUPALES EN VIVO ONLINE
+								</span>{' '}
+								con Berenice Bastidas para obtener seguimiento, responder
+								preguntas, aclarar dudas, obtener feedback de tus avances y
+								ayudarte a lograr alcanzar tu meta. ¡Recuerda que tu ya eres
+								éxito, solo hagamos que se manifieste!
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

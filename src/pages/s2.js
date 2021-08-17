@@ -35,10 +35,24 @@ const S2 = () => {
 								{notebookWhite} Cuaderno de Trabajo
 							</button>
 
-							<button className="bg-green-600 btn-social">
+							<button
+								className="bg-green-600 btn-social"
+								onClick={() =>
+									window.open(
+										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+									)
+								}
+							>
 								{wswhite} Grupo en Whatsapp
 							</button>
-							<button className=" btn-social bg-primary">
+							<button
+								className=" btn-social bg-primary"
+								onClick={() =>
+									window.open(
+										'http://www.facebook.com/groups/2375070212786505/',
+									)
+								}
+							>
 								{fbwhite} No te lo pierdas
 							</button>
 						</div>
