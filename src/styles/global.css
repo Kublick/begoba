@@ -26,6 +26,10 @@ body {
 	@apply flex items-center w-full gap-2 px-4 py-2 text-sm font-semibold text-white rounded-lg md:w-52;
 }
 
+.btn-social-big {
+	@apply flex items-center w-full gap-2 px-8 py-4 text-sm font-semibold text-white rounded-lg md:w-1/2;
+}
+
 .logos {
 	height: 8rem;
 	width: 8rem;

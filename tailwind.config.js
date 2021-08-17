@@ -20,6 +20,7 @@ module.exports = {
 					dark: '#a22d56',
 				},
 				mango: {
+					light: '#fff3ec',
 					DEFAULT: '#FF833D',
 				},
 				whats: {
