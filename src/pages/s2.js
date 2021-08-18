@@ -30,7 +30,14 @@ const S2 = () => {
 							tus servicios profesionales en redes sociales?
 						</p>
 						<p className="font-semibold">!Nos vemos en los comentarios!</p>
-						<div className="flex flex-col items-center gap-4 mx-2">
+						<div
+							className="flex flex-col items-center gap-4 mx-2"
+							onClick={() =>
+								window.open(
+									'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-Taller.pdf',
+								)
+							}
+						>
 							<button className="bg-secondary btn-social">
 								{notebookWhite} Cuaderno de Trabajo
 							</button>

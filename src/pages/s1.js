@@ -56,7 +56,8 @@ const S1 = () => {
 						</div>
 
 						<div className="flex flex-col items-center gap-4 mx-2">
-							<button className="bg-secondary btn-social">
+							<button className="bg-secondary btn-social"
+							onClick={ () => window.open('https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-Taller.pdf') }>
 								{notebookWhite} Cuaderno de Trabajo
 							</button>
 
