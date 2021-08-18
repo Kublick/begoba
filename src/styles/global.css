@@ -27,11 +27,11 @@ body {
 }
 
 .btn-social {
-	@apply flex items-center w-full gap-2 px-4 py-2 text-sm font-semibold text-white rounded-lg md:w-52;
+	@apply flex items-center w-full gap-2 px-4 py-2 mx-2 text-sm font-semibold text-white rounded-lg lg:w-64 lg:py-4;
 }
 
 .btn-social-big {
-	@apply flex items-center w-full gap-2 px-8 py-4 text-sm font-semibold text-white rounded-lg md:w-1/2;
+	@apply flex items-center w-full gap-2 px-8 py-4 text-sm font-semibold text-white rounded-lg;
 }
 
 .logos {
