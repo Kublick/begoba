@@ -49,19 +49,40 @@ const S3 = () => {
 									Taller.
 								</p>
 								<p className="text-white">
-									También puedes accederal grupo de facebook y whatsapp
+									También puedes acceder al grupo de facebook y whatsapp
 								</p>
 							</div>
 						</div>
 						<div className="flex flex-col items-center gap-4 mx-2">
-							<button className="bg-secondary btn-social">
+							<button
+								className="bg-secondary btn-social"
+								onClick={() =>
+									window.open(
+										'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-Taller.pdf',
+									)
+								}
+							>
 								{notebookWhite} Cuaderno de Trabajo
 							</button>
 
-							<button className="bg-green-600 btn-social">
+							<button
+								className="bg-green-600 btn-social"
+								onClick={() =>
+									window.open(
+										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+									)
+								}
+							>
 								{wswhite} Grupo en Whatsapp
 							</button>
-							<button className=" btn-social bg-primary">
+							<button
+								className=" btn-social bg-primary"
+								onClick={() =>
+									window.open(
+										'http://www.facebook.com/groups/2375070212786505/',
+									)
+								}
+							>
 								{fbwhite} No te lo pierdas
 							</button>
 						</div>
@@ -82,7 +103,7 @@ const S3 = () => {
 						</div>
 						<div className="flex justify-center mt-8">
 							<button
-								className="px-8 btn-main"
+								className="px-8 btn-main-mango"
 								onClick={() =>
 									window.open('https://es.surveymonkey.com/r/GXLDPHN')
 								}

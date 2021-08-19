@@ -24,7 +24,7 @@ const Footer = (props) => {
 						gatsbyImageData(quality: 90, width: 964, layout: CONSTRAINED)
 					}
 				}
-			} #E7407B
+			}
 		`,
 	);
 
