@@ -49,7 +49,7 @@ const S3 = () => {
 									Taller.
 								</p>
 								<p className="text-white">
-									También puedes accederal grupo de facebook y whatsapp
+									También puedes acceder al grupo de facebook y whatsapp
 								</p>
 							</div>
 						</div>
