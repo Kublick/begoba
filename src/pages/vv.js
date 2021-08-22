@@ -277,7 +277,7 @@ const VideoVenta = () => {
 						</div>
 					</div>
 				</div>
-				<div className="py-10">
+				<div className="">
 					<div className="flex flex-col items-center justify-center">
 						<h2 className="w-3/4 my-10 text-2xl text-center md:text-3xl lg:text-5xl">
 							SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
@@ -416,8 +416,10 @@ const VideoVenta = () => {
 					</div>
 					<div className="flex flex-col items-center">
 						<h2 className="w-3/4 px-4 text-xl font-semibold text-center md:text-3xl md:w-1/2">
-							Entrenamiento <span>INCREMENTA TU CONSULTA</span> cierra las
-							inscripciones en:
+							Entrenamiento{' '}
+							<span className="font-semibold text-primary">INCREMENTA</span>{' '}
+							<span className="font-semibold text-secondary">TU CONSULTA</span>{' '}
+							cierra las inscripciones en:
 						</h2>
 						<div className="py-5">
 							<Counter date={'01 October 2021 23:59:00'} />
