@@ -91,14 +91,12 @@ const Venta = () => {
 					mensaje directamente aquí en el botón de WhatsApp aclaramos todas tus
 					dudas.
 				</p>
-				<button className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg">
-					<span
-						className="transform scale-150"
-						onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
-					>
-						{wswhite}
-					</span>{' '}
-					Comunidad en Whatsapp
+				<button
+					className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
+					onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
+				>
+					<span className="transform scale-150">{wswhite}</span> Quiero saber
+					más información
 				</button>
 			</div>
 			<div className="flex flex-col items-center py-10 bg-primary">
@@ -108,7 +106,7 @@ const Venta = () => {
 					</h2>
 				</div>
 				<h2 className="mb-10 text-4xl text-white font-cursive">
-					Video Promocional
+					Video Testimonial
 				</h2>
 				<div>
 					<ReactPlayer
@@ -388,16 +386,12 @@ const Venta = () => {
 						tus dudas.
 					</p>
 
-					<button className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg">
-						<span
-							className="transform scale-150"
-							onClick={() =>
-								window.open('https://wa.me/message/LD54V7JCH3TXD1')
-							}
-						>
-							{wswhite}
-						</span>{' '}
-						Comunidad en Whatsapp
+					<button
+						className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
+						onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
+					>
+						<span className="transform scale-150">{wswhite}</span> Quiero saber
+						más información
 					</button>
 				</div>
 			</div>
