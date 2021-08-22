@@ -54,20 +54,14 @@ const VideoVenta = () => {
 						</h1>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-4 py-4">
-					<p className="text-center md:text-2xl">
-						Entrenamiento{' '}
-						<span className="font-bold"> INCREMENTA TU CONSULTA</span> cierra
-						las inscripciones en:
-					</p>
-				</div>
+				<div className="flex flex-col items-center justify-center gap-4 py-4"></div>
 				<div className="flex justify-center py-4 mt-10 mb-5 bg-secondary ">
 					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-1/2 lg:text-5xl">
 						ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
 					</h1>
 				</div>
-				<div className="flex flex-col justify-center py-10 md:flex-row md:gap-20">
-					<div className="flex flex-col w-1/4 p-4 bg-white border-2 border-red-600 border-dashed">
+				<div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
+					<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4 ">
 						<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
 							PAGO ÚNICO
 						</h2>
@@ -85,7 +79,7 @@ const VideoVenta = () => {
 							Seleccionar
 						</button>
 					</div>
-					<div className="flex flex-col w-1/4 p-4 bg-white border-2 border-red-600 border-dashed">
+					<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4 ">
 						<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
 							PLAN FLEXIBLE
 						</h2>
@@ -357,12 +351,12 @@ const VideoVenta = () => {
 						<h2 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-3/4 lg:text-4xl">
 							¿Lista para crear la vida que sueñas?
 						</h2>
-						<h2 className="py-4 text-xl font-semibold">
+						<h2 className="py-4 text-xl font-semibold text-center">
 							ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
 						</h2>
 					</div>
-					<div className="flex flex-col justify-center py-10 md:flex-row md:gap-20">
-						<div className="flex flex-col w-1/4 p-4 bg-white border-2 border-red-600 border-dashed">
+					<div className="flex flex-col items-center justify-center gap-10 py-10 md:flex-row md:gap-20">
+						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4">
 							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
 								PAGO ÚNICO
 							</h2>
@@ -380,7 +374,7 @@ const VideoVenta = () => {
 								Seleccionar
 							</button>
 						</div>
-						<div className="flex flex-col w-1/4 p-4 bg-white border-2 border-red-600 border-dashed">
+						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4">
 							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
 								PLAN FLEXIBLE
 							</h2>
