@@ -103,7 +103,7 @@ const S3 = () => {
 						</div>
 						<div className="flex justify-center mt-8">
 							<button
-								className="px-8 btn-main-mango"
+								className="px-8 font-semibold text-white btn-main-mango"
 								onClick={() =>
 									window.open('https://es.surveymonkey.com/r/GXLDPHN')
 								}
