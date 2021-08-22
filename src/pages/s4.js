@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { fbwhite, wswhite, notebookWhite } from '../components/helpers/logos';
 import SesionHeader from '../components/SesionHeader';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
-import CommentsFacebook from '../components/CommentsFacebook';
-import ReactPlayer from 'react-player';
+import Venta from '../components/Venta';
 
-const S2 = () => {
+const S4 = () => {
+	const [show, setShow] = useState(false);
+
+	setTimeout(() => {
+		setShow(true);
+	}, 5000);
+
 	return (
 		<>
 			<header>
@@ -109,36 +114,9 @@ const S2 = () => {
 					</div>
 				</div>
 			</main>
-			<div className="grid gap-6 pt-8 mx-2 md:grid-cols-2 bg-gray-50">
-				<div>
-					<CommentsFacebook />
-				</div>
-
-				<div className="flex flex-col items-center p-4">
-					<h1 className="mb-4 text-2xl font-bold text-secondary">
-						Testimonios
-					</h1>
-					<ReactPlayer
-						url="https://youtu.be/z9CsFqeleUo"
-						width={320}
-						height={320}
-					/>
-
-					<ReactPlayer
-						url="https://youtu.be/4G_j_Qk7Gvc"
-						width={320}
-						height={320}
-					/>
-
-					<ReactPlayer
-						url="https://youtu.be/wXHrOaaJZoM"
-						width={320}
-						height={320}
-					/>
-				</div>
-			</div>
+			<div className="my-10">{show ? <Venta /> : null}</div>
 		</>
 	);
 };
 
-export default S2;
+export default S4;
