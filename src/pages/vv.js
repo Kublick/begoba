@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import Counter from '../components/Counter';
 import {
@@ -14,8 +14,11 @@ import {
 } from '../components/helpers/logos';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
+import { useWindowSize } from '../components/helpers/useWindowSize';
 
 const VideoVenta = () => {
+	const [windowSize, setWindowSize] = useState('640');
+
 	const pagoFlexible = () => {
 		window.open('https://pay.hotmart.com/W42168207B?off=5kj23v80');
 	};
@@ -23,6 +26,15 @@ const VideoVenta = () => {
 	const pagoUnico = () => {
 		window.open('https://pay.hotmart.com/W42168207B?off=vjph7fq8');
 	};
+
+	const size = useWindowSize();
+	useEffect(() => {
+		if (size.width < 720) {
+			setWindowSize(320);
+		} else if (size.width > 721) {
+			setWindowSize(640);
+		}
+	}, [size]);
 
 	return (
 		<>
@@ -49,56 +61,58 @@ const VideoVenta = () => {
 							mientras al mismo tiempo estamos creando nuestra libertad
 							profesional, logrando vivir de nuestro propósito de vida.
 						</p>
-						<h1 className="py-4 text-xl font-bold text-secondary md:text-3xl">
+						<h1 className="text-xl font-bold text-center text-secondary md:text-3xl">
 							¡Tu ya eres un éxito! Solo hagamos que se manifieste
 						</h1>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-4 py-4"></div>
-				<div className="flex justify-center py-4 mt-10 mb-5 bg-secondary ">
+
+				<div className="flex justify-center py-4 bg-secondary ">
 					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-1/2 lg:text-5xl">
 						ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
 					</h1>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
-					<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4 ">
-						<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
-							PAGO ÚNICO
-						</h2>
-						<p className="py-4 text-lg text-center md:text-xl">
-							Ahorra $86 dólares
-						</p>
-						<p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
-						<h2 className="text-2xl font-bold text-center md:text-3xl">
-							$497 dólares
-						</h2>
-						<button
-							className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
-							onClick={pagoUnico}
-						>
-							Seleccionar
-						</button>
-					</div>
-					<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4 ">
-						<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
-							PLAN FLEXIBLE
-						</h2>
-						<p className="py-4 text-lg text-center md:text-xl">
-							Paga a tu ritmo
-						</p>
-						<p className="py-4 text-lg text-center md:text-xl">
-							6 pagos mensuales de
-						</p>
-						<h2 className="text-2xl font-bold text-center md:text-3xl">
-							$97 dólares
-						</h2>
+				<div className="md:mx-10">
+					<div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
+						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed lg:max-w-md md:w-1/2">
+							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
+								PAGO ÚNICO
+							</h2>
+							<p className="py-4 text-lg text-center md:text-xl">
+								Ahorra $86 dólares
+							</p>
+							<p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
+							<h2 className="text-2xl font-bold text-center md:text-3xl">
+								$497 dólares
+							</h2>
+							<button
+								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+								onClick={pagoUnico}
+							>
+								Seleccionar
+							</button>
+						</div>
+						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed lg:max-w-md md:w-1/2">
+							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
+								PLAN FLEXIBLE
+							</h2>
+							<p className="py-4 text-lg text-center md:text-xl">
+								Paga a tu ritmo
+							</p>
+							<p className="py-4 text-lg text-center md:text-xl">
+								6 pagos mensuales de
+							</p>
+							<h2 className="text-2xl font-bold text-center md:text-3xl">
+								$97 dólares
+							</h2>
 
-						<button
-							className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
-							onClick={pagoFlexible}
-						>
-							Seleccionar
-						</button>
+							<button
+								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+								onClick={pagoFlexible}
+							>
+								Seleccionar
+							</button>
+						</div>
 					</div>
 				</div>
 				<div className="flex flex-col items-center justify-center">
@@ -126,14 +140,14 @@ const VideoVenta = () => {
 							entrenamiento
 						</h2>
 					</div>
-					<h2 className="text-4xl text-white font-cursive">
+					<h2 className="mb-10 text-4xl text-white font-cursive">
 						Video Promocional
 					</h2>
-					<div className="my-10">
+					<div>
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
-							width={640}
-							height={640}
+							url={'https://youtu.be/z9CsFqeleUo'}
+							width={windowSize}
+							height={windowSize}
 						/>
 					</div>
 				</div>
@@ -265,15 +279,15 @@ const VideoVenta = () => {
 				</div>
 				<div className="py-10">
 					<div className="flex flex-col items-center justify-center">
-						<h2 className="my-10 text-2xl text-center md:text-5xl ">
+						<h2 className="w-3/4 my-10 text-2xl text-center md:text-3xl lg:text-5xl">
 							SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
 						</h2>
-						<h2 className="flex p-4 text-3xl font-bold text-white rounded-lg bg-primary">
+						<h2 className="flex p-4 text-2xl font-bold text-white rounded-lg bg-primary">
 							Bonos de Regalo
 						</h2>
-						<div className="flex flex-col w-1/2 gap-4 py-10">
+						<div className="flex flex-col w-3/4 gap-4 py-10 md:w-1/2 md:mx-0">
 							<div className="flex items-center gap-2">
-								<div className="">{regalo}</div>
+								<div className="hidden sm:inline-block">{regalo}</div>
 								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 1: TALLER METODOS DE PAGO ONLINE
@@ -292,7 +306,7 @@ const VideoVenta = () => {
 								</div>
 							</div>
 							<div className="flex items-center gap-2">
-								<div className="">{regalo}</div>
+								<div className="hidden sm:inline-block">{regalo}</div>
 								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 2: TALLER HABLA FRENTE A LA CAMARA CON SEGURIDAD
@@ -311,7 +325,7 @@ const VideoVenta = () => {
 								</div>
 							</div>
 							<div className="flex items-center gap-2">
-								<div className="">{regalo}</div>
+								<div className="hidden sm:inline-block">{regalo}</div>
 								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 3: TALLER DE UNO MUCHOS
@@ -355,55 +369,60 @@ const VideoVenta = () => {
 							ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
 						</h2>
 					</div>
-					<div className="flex flex-col items-center justify-center gap-10 py-10 md:flex-row md:gap-20">
-						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4">
-							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
-								PAGO ÚNICO
-							</h2>
-							<p className="py-4 text-lg text-center md:text-xl">
-								Ahorra $86 dólares
-							</p>
-							<p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
-							<h2 className="text-2xl font-bold text-center md:text-3xl">
-								$497 dólares
-							</h2>
-							<button
-								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
-								onClick={pagoUnico}
-							>
-								Seleccionar
-							</button>
-						</div>
-						<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/4">
-							<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
-								PLAN FLEXIBLE
-							</h2>
-							<p className="py-4 text-lg text-center md:text-xl">
-								Paga a tu ritmo
-							</p>
-							<p className="py-4 text-lg text-center md:text-xl">
-								6 pagos mensuales de
-							</p>
-							<h2 className="text-2xl font-bold text-center md:text-3xl">
-								$97 dólares
-							</h2>
-							<button
-								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
-								onClick={pagoFlexible}
-							>
-								Seleccionar
-							</button>
+					<div className="md:mx-10">
+						<div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
+							<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+								<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
+									PAGO ÚNICO
+								</h2>
+								<p className="py-4 text-lg text-center md:text-xl">
+									Ahorra $86 dólares
+								</p>
+								<p className="py-4 text-lg text-center md:text-xl">
+									Pago Único
+								</p>
+								<h2 className="text-2xl font-bold text-center md:text-3xl">
+									$497 dólares
+								</h2>
+								<button
+									className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+									onClick={pagoUnico}
+								>
+									Seleccionar
+								</button>
+							</div>
+							<div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+								<h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
+									PLAN FLEXIBLE
+								</h2>
+								<p className="py-4 text-lg text-center md:text-xl">
+									Paga a tu ritmo
+								</p>
+								<p className="py-4 text-lg text-center md:text-xl">
+									6 pagos mensuales de
+								</p>
+								<h2 className="text-2xl font-bold text-center md:text-3xl">
+									$97 dólares
+								</h2>
+
+								<button
+									className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+									onClick={pagoFlexible}
+								>
+									Seleccionar
+								</button>
+							</div>
 						</div>
 					</div>
-					<div className="flex flex-col items-center justify-center">
-						<h2 className="text-xl font-semibold text-center md:text-3xl md:w-1/2">
+					<div className="flex flex-col items-center">
+						<h2 className="w-3/4 px-4 text-xl font-semibold text-center md:text-3xl md:w-1/2">
 							Entrenamiento <span>INCREMENTA TU CONSULTA</span> cierra las
 							inscripciones en:
 						</h2>
 						<div className="py-5">
 							<Counter date={'01 October 2021 23:59:00'} />
 						</div>
-						<p className="px-8 text-center md:px-0 md:w-3/4 md:text-2xl">
+						<p className="w-3/4 px-8 text-center md:px-0 md:w-3/4 md:text-2xl">
 							Si tienes alguna pregunta referente al entrenamiento puedes enviar
 							un mensaje directamente aquí en el botón de WhatsApp aclaramos
 							todas tus dudas.
@@ -432,7 +451,7 @@ const VideoVenta = () => {
 					<h2 className="my-4 text-3xl text-mango font-cursive">
 						¿Serás la próxima?
 					</h2>
-					<div className="grid grid-cols-2 gap-x-10">
+					<div className="grid md:grid-cols-2 gap-x-10">
 						<div className="my-10">
 							<ReactPlayer
 								url="https://youtu.be/z9CsFqeleUo"
@@ -464,7 +483,7 @@ const VideoVenta = () => {
 					</div>
 				</div>
 				<div className="flex flex-col">
-					<div className="grid grid-cols-2 justify-items-center gap-x-10">
+					<div className="grid md:grid-cols-2 justify-items-center gap-x-10">
 						<div className="my-10">
 							<ReactPlayer
 								url="https://youtu.be/z9CsFqeleUo"
@@ -490,13 +509,13 @@ const VideoVenta = () => {
 							/>
 						</div>
 					</div>
-					<div className="grid lg:grid-cols-3">
+					<div className="grid gap-2 lg:grid-cols-3">
 						<div className="flex items-center justify-center">
 							{incrementaLogo}
 						</div>
 
 						<div>
-							<p className="footer-text">
+							<p className="mx-2 text-center footer-text">
 								Legal Terms - Acerca de las politicas de privacidad y uso de
 								cookies Incrementa tu consulta Derechos reservados 2021
 								https://incrementatuconsulta.com Psicologa Berenice Bastidas
