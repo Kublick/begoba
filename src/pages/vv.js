@@ -4,7 +4,6 @@ import Counter from '../components/Counter';
 import {
 	headerLogoBig,
 	mainLogo,
-	whitelogoBig,
 	wswhite,
 	bullet,
 	regalo,
@@ -14,19 +13,31 @@ import {
 	incrementaLogo,
 } from '../components/helpers/logos';
 import Videoplayer from '../components/Videoplayer';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const VideoVenta = () => {
+	const pagoFlexible = () => {
+		window.open('https://pay.hotmart.com/W42168207B?off=5kj23v80');
+	};
+
+	const pagoUnico = () => {
+		window.open('https://pay.hotmart.com/W42168207B?off=vjph7fq8');
+	};
+
 	return (
 		<>
 			<div className="py-10 bg-gray-100">
 				<div className="flex justify-center my-4">{mainLogo}</div>
-				<div className="flex justify-center py-4 bg-primary">
-					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-1/2 lg:text-5xl">
+				<div className="flex items-center justify-center py-4 bg-primary">
+					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-3/4 lg:text-5xl">
 						¡TU PRÓXIMO PACIENTE A UN CLICK DE DISTANCIA!
 					</h1>
 				</div>
-				<div className="grid grid-cols-3 gap-4 py-10">
-					<div className="pl-8 md:text-lg">
+				<div className="flex flex-col gap-4 py-10">
+					<div className="col-span-2 px-10">
+						<Videoplayer url={'https://youtu.be/V71rXExM7ug'} />
+					</div>
+					<div className="flex flex-col items-center gap-4 px-10 md:text-lg ">
 						<p>
 							Mira la grabación de la clase 4 para conocer paso a paso la
 							estrategia DEPE la cual es tu puente para catapultar tu consulta y
@@ -39,12 +50,8 @@ const VideoVenta = () => {
 							profesional, logrando vivir de nuestro propósito de vida.
 						</p>
 						<h1 className="py-4 text-xl font-bold text-secondary md:text-3xl">
-							¡Tu ya eres un éxito!
+							¡Tu ya eres un éxito! Solo hagamos que se manifieste
 						</h1>
-						<p>Solo hagamos que se manifieste</p>
-					</div>
-					<div className="col-span-2 px-10">
-						<Videoplayer url={'https://youtu.be/V71rXExM7ug'} />
 					</div>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-4 py-4">
@@ -53,7 +60,6 @@ const VideoVenta = () => {
 						<span className="font-bold"> INCREMENTA TU CONSULTA</span> cierra
 						las inscripciones en:
 					</p>
-					<Counter date={'01 October 2021 23:59:00'} />
 				</div>
 				<div className="flex justify-center py-4 mt-10 mb-5 bg-secondary ">
 					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-1/2 lg:text-5xl">
@@ -72,7 +78,10 @@ const VideoVenta = () => {
 						<h2 className="text-2xl font-bold text-center md:text-3xl">
 							$497 dólares
 						</h2>
-						<button className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark">
+						<button
+							className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+							onClick={pagoUnico}
+						>
 							Seleccionar
 						</button>
 					</div>
@@ -89,7 +98,11 @@ const VideoVenta = () => {
 						<h2 className="text-2xl font-bold text-center md:text-3xl">
 							$97 dólares
 						</h2>
-						<button className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark">
+
+						<button
+							className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+							onClick={pagoFlexible}
+						>
 							Seleccionar
 						</button>
 					</div>
@@ -113,7 +126,6 @@ const VideoVenta = () => {
 					</button>
 				</div>
 				<div className="flex flex-col items-center py-10 bg-primary">
-					<div className="my-4 ">{whitelogoBig}</div>
 					<div className="w-1/2">
 						<h2 className="my-10 text-2xl text-center text-white md:text-5xl">
 							Triplicó su retorno de inversión antes de concluir el
@@ -137,7 +149,13 @@ const VideoVenta = () => {
 						entrenamiento online incrementa tu consulta
 					</h2>
 				</div>
-				<h3>Imagen</h3>
+				<div className="flex justify-center">
+					<StaticImage
+						src="../images/03beneficios.png"
+						className=""
+						alt="beneficios"
+					/>
+				</div>
 				<div className="px-10 py-10 my-10 bg-mango-light">
 					<div className="flex justify-center mb-10">{headerLogoBig}</div>
 					<div className="flex justify-center">
@@ -262,7 +280,7 @@ const VideoVenta = () => {
 						<div className="flex flex-col w-1/2 gap-4 py-10">
 							<div className="flex items-center gap-2">
 								<div className="">{regalo}</div>
-								<p>
+								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 1: TALLER METODOS DE PAGO ONLINE
 									</p>
@@ -277,11 +295,11 @@ const VideoVenta = () => {
 											$197 dólares{' '}
 										</span>
 									</p>
-								</p>
+								</div>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="">{regalo}</div>
-								<p>
+								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 2: TALLER HABLA FRENTE A LA CAMARA CON SEGURIDAD
 									</p>
@@ -296,11 +314,11 @@ const VideoVenta = () => {
 											$247 dólares{' '}
 										</span>
 									</p>
-								</p>
+								</div>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="">{regalo}</div>
-								<p>
+								<div>
 									<p className="text-lg font-semibold text-secondary">
 										BONO 3: TALLER DE UNO MUCHOS
 									</p>
@@ -316,7 +334,7 @@ const VideoVenta = () => {
 											$147 dólares{' '}
 										</span>
 									</p>
-								</p>
+								</div>
 							</div>
 							<p>
 								Tendrás con el entrenamiento y los bonos accesos a mas de{' '}
@@ -355,7 +373,10 @@ const VideoVenta = () => {
 							<h2 className="text-2xl font-bold text-center md:text-3xl">
 								$497 dólares
 							</h2>
-							<button className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark">
+							<button
+								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+								onClick={pagoUnico}
+							>
 								Seleccionar
 							</button>
 						</div>
@@ -372,17 +393,28 @@ const VideoVenta = () => {
 							<h2 className="text-2xl font-bold text-center md:text-3xl">
 								$97 dólares
 							</h2>
-							<button className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark">
+							<button
+								className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
+								onClick={pagoFlexible}
+							>
 								Seleccionar
 							</button>
 						</div>
 					</div>
 					<div className="flex flex-col items-center justify-center">
+						<h2 className="text-xl font-semibold text-center md:text-3xl md:w-1/2">
+							Entrenamiento <span>INCREMENTA TU CONSULTA</span> cierra las
+							inscripciones en:
+						</h2>
+						<div className="py-5">
+							<Counter date={'01 October 2021 23:59:00'} />
+						</div>
 						<p className="px-8 text-center md:px-0 md:w-3/4 md:text-2xl">
 							Si tienes alguna pregunta referente al entrenamiento puedes enviar
 							un mensaje directamente aquí en el botón de WhatsApp aclaramos
 							todas tus dudas.
 						</p>
+
 						<button className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg">
 							<span
 								className="transform scale-150"
@@ -455,7 +487,15 @@ const VideoVenta = () => {
 							/>
 						</div>
 					</div>
-					<div>imagen</div>
+					<div>
+						<div className="flex justify-center">
+							<StaticImage
+								src="../images/03beneficios.png"
+								className=""
+								alt="beneficios"
+							/>
+						</div>
+					</div>
 					<div className="grid lg:grid-cols-3">
 						<div className="flex items-center justify-center">
 							{incrementaLogo}
