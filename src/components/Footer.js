@@ -120,7 +120,7 @@ const Footer = (props) => {
 						</button>
 					</div>
 				</div>
-				<p className="text-mini">
+				<p className="text-white text-mini">
 					Este sitio no forma parte del sitio de Facebook o Facebook Inc.
 					Además, este sitio NO está respaldado por Facebook de ninguna manera.
 					FACEBOOK es una marca registrada de FACEBOOK, Inc. Cuando se registre

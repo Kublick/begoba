@@ -110,7 +110,7 @@ const S1 = () => {
 							<Link to="/s2">
 								<StaticImage
 									src="../images/Miniaturas 640px-02.png"
-									className="rounded-md shadow-lg"
+									className=""
 									alt="foto sesion 2"
 								/>
 							</Link>
