@@ -1,13 +1,34 @@
-import React from 'react';
-import { fbwhite, wswhite, notebookWhite } from '../components/helpers/logos';
+import React, { useState, useRef } from 'react';
 import SesionHeader from '../components/SesionHeader';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
-import CommentsFacebook from '../components/CommentsFacebook';
-import ReactPlayer from 'react-player';
+import Venta from '../components/Venta';
 
-const S2 = () => {
+const S4 = () => {
+	const [show, setShow] = useState(false);
+	const [point, setPoint] = useState(false);
+	const ventaRef = useRef();
+
+	let date = 'August 22 2021 11:41';
+
+	function timing() {
+		setInterval(() => {
+			let tempdate = date;
+			let currentDate = Date.now();
+
+			if (new Date(currentDate) > new Date(tempdate)) {
+				setShow(true);
+			}
+			setPoint(true);
+		}, 10000);
+	}
+	timing();
+
+	if (point === true) {
+		ventaRef.current.scrollIntoView({ behavior: 'smooth' });
+	}
+
 	return (
 		<>
 			<header>
@@ -23,17 +44,15 @@ const S2 = () => {
 							¿Cual es el mayor desafío que tuviste al querer ofrecer o vender
 							tus servicios profesionales en redes sociales?
 						</p>
-						<p className="font-semibold">!Nos vemos en los comentarios!</p>
-						<div className="flex flex-col items-center gap-4 mx-2">
-							<button className="bg-secondary btn-social">
-								{notebookWhite} Cuaderno de Trabajo
-							</button>
 
-							<button className="bg-green-600 btn-social">
-								{wswhite} Grupo en Whatsapp
-							</button>
-							<button className=" btn-social bg-primary">
-								{fbwhite} No te lo pierdas
+						<div className="flex justify-center mt-8">
+							<button
+								className="px-8 font-semibold text-white btn-main-mango"
+								onClick={() =>
+									window.open('https://es.surveymonkey.com/r/9DNKNP6')
+								}
+							>
+								LLenar el Formulario
 							</button>
 						</div>
 					</div>
@@ -109,36 +128,11 @@ const S2 = () => {
 					</div>
 				</div>
 			</main>
-			<div className="grid gap-6 pt-8 mx-2 md:grid-cols-2 bg-gray-50">
-				<div>
-					<CommentsFacebook />
-				</div>
-
-				<div className="flex flex-col items-center p-4">
-					<h1 className="mb-4 text-2xl font-bold text-secondary">
-						Testimonios
-					</h1>
-					<ReactPlayer
-						url="https://youtu.be/z9CsFqeleUo"
-						width={320}
-						height={320}
-					/>
-
-					<ReactPlayer
-						url="https://youtu.be/4G_j_Qk7Gvc"
-						width={320}
-						height={320}
-					/>
-
-					<ReactPlayer
-						url="https://youtu.be/wXHrOaaJZoM"
-						width={320}
-						height={320}
-					/>
-				</div>
+			<div className="my-10" ref={ventaRef}>
+				{show ? <Venta /> : null}
 			</div>
 		</>
 	);
 };
 
-export default S2;
+export default S4;
