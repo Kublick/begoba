@@ -37,6 +37,46 @@ const Venta = () => {
 
 	return (
 		<>
+			<div className="flex flex-col items-center gap-4 mb-10">
+				<h1 className="text-xl font-semibold md:text-3xl text-primary">
+					Recuerda los bonos de accion rapida expiran en 24 horas
+				</h1>
+				<div className="flex items-center justify-center w-3/4 gap-2">
+					<div className="hidden sm:inline-block">{regalo}</div>
+					<div>
+						<p className="text-lg">
+							El primer bono de acción rápida es{' '}
+							<span className="font-bold">
+								ACCESO A 5 SESIONES INDIVIDUALES DE MENTORIA
+							</span>{' '}
+							uno a uno con Psicóloga Berenice Bastidas durante el entrenamiento
+							donde podrás recibir de primera mano ayuda de mi parte enfocada
+							únicamente en tu proyecto profesional.
+						</p>
+						<p>
+							Valorado en{' '}
+							<span className="font-semibold text-primary">$500 dólares</span>{' '}
+						</p>
+					</div>
+				</div>
+				<div className="flex items-center justify-center w-3/4 gap-2">
+					<div className="hidden sm:inline-block">{regalo}</div>
+					<div>
+						<p className="text-lg">
+							El segundo bono de acción rápida es{' '}
+							<span className="font-bold">MANUAL HERRAMIENTAS DIGITALES</span>{' '}
+							para que no tengas que pasar horas buscando herramientas buenas,
+							este manual en lista las mejores herramientas digitales y
+							plataformas con las que podrás trabajar y muchas de ellas en su
+							versión gratuita.
+						</p>
+						<p>
+							Valorado en{' '}
+							<span className="font-semibold text-primary">$47 dólares</span>
+						</p>
+					</div>
+				</div>
+			</div>
 			<div className="flex justify-center py-4 bg-secondary ">
 				<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-1/2 lg:text-5xl">
 					ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
@@ -141,24 +181,25 @@ const Venta = () => {
 							<span className="text-lg font-semibold text-primary">
 								PROGRAMA INTENSIVO DE 12 SEMANAS 100% ONLINE
 							</span>{' '}
-							que te muestra el camino probado por cientos de profesionales para
-							incrementar tu número de pacientes y lanzarte como profesional
-							independiente con un modelo de negocios rentable y alineado a tu
-							propósito de vida. profesional independiente con un modelo de
-							negocios rentable y alineado a tu propósito de vida.
+							como te he mencionado el Entrenamiento INCREMENTA TU CONSULTA no
+							es solo un curisto online, es{' '}
+							<span className="font-semibold">
+								TODO UN ENTRENAMIENTO CON UN PROGRAMA BIEN ESTRUCTURADO
+							</span>{' '}
+							que te muestra el camino paso a paso y click por click
 						</p>
 					</div>
 					<div className="flex gap-2">
 						<div className="w-6">{bullet}</div>
 						<p>
 							<span className="text-lg font-semibold text-primary">
-								PERTENECER DE POR VIDA A LA COMUNIDAD EXITOSAS Y EXITOSOS VIP
+								PERTENECER DE POR VIDA A LA COMUNIDAD INTERNACIONAL DE EXITOSAS
+								Y EXITOSOS VIP
 							</span>{' '}
-							para que compartas tus avances con tus compañeros, y sientas el
-							empuje de ser parte de una tribu donde conocerás a otros
-							profesionales que también pasaron por lo mismo que tu estas
-							viviendo y ahora están teniendo resultados diferentes gracias a
-							que decidieron tomar acción.
+							y mira que de todo lo que tiene el entrenamiento INCREMNETA TU
+							CONSULTA el pertencer a la cominidad es algo invaluable por que
+							dentro de ella podras ir compartiendo los avances que vayas
+							logrando con tus compañeros.
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -177,10 +218,13 @@ const Venta = () => {
 						<div className="w-6">{bullet}</div>
 						<p>
 							<span className="text-lg font-semibold text-primary">
-								5 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD
+								6 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD
 							</span>{' '}
 							donde siguiendo la estrategia DEPE avanzarás paso a paso de forma
-							ordenada y enfocada. ¡Logrando al ﬁn vivir de tu profesión!
+							ordenada, enfocada pero sobre todo a tu ritmo por que tu eliges
+							tus propios horario para ver las lecciones que ya temenos pre
+							grabadas y lo puedes hacer desde tu computadora o desde tu
+							celular.
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -212,10 +256,10 @@ const Venta = () => {
 							</span>{' '}
 							para que nada quede en teoría, cada lección te lleva a la acción
 							con ejercicios detallados, de esta manera a medida que avanzas en
-							el programa, también avanzas en tu negocio.
+							el programa, también avanzas en tu negocio
 						</p>
 					</div>
-					<div className="flex gap-2">
+					{/* <div className="flex gap-2">
 						<div className="w-6">{bullet}</div>
 						<p>
 							<span className="text-lg font-semibold text-primary">
@@ -237,7 +281,7 @@ const Venta = () => {
 							plataformas con las que podrás trabajar y muchas d e ellas en su
 							version gratuita.
 						</p>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div className="">
@@ -309,7 +353,7 @@ const Venta = () => {
 						<p>
 							Tendrás con el entrenamiento y los bonos accesos a mas de{' '}
 							<span className="font-semibold line-through text-secondary">
-								$997 dólares
+								$2100 dólares
 							</span>{' '}
 							en contenido y recursos... por solo 6 pagos de{' '}
 							<span className="font-semibold text-secondary">$97 dólares</span>{' '}
@@ -408,21 +452,21 @@ const Venta = () => {
 				<div className="grid md:grid-cols-2 gap-x-10">
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/NmL3jxP9BB0"
 							width={320}
 							height={320}
 						/>
 					</div>
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}
 							height={320}
 						/>
 					</div>
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/E_Vtjlfbke4"
 							width={320}
 							height={320}
 						/>
