@@ -1,16 +1,37 @@
-// See https://tailwindcss.com/docs/configuration for details
 module.exports = {
-	variants: {
-		extend: {
-			animation: ["hover"],
+	mode: 'jit',
+	purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+	darkMode: false,
+	theme: {
+		fontFamily: {
+			display: ['Montserrat', 'sans-serif'],
+			body: ['Montserrat', 'sans-serif'],
 		},
-		theme: {
+		extend: {
 			colors: {
-				"fb-blue": "#4267B2",
+				primary: {
+					light: '#DBE2F3',
+					DEFAULT: '#21409A',
+					dark: '#13255C',
+				},
+				secondary: {
+					light: '#F6AFC8',
+					DEFAULT: '#E7407B',
+					dark: '#a22d56',
+				},
+				mango: {
+					light: '#fff3ec',
+					btn: '#ff8f50',
+					DEFAULT: '#FF833D',
+				},
+				whats: {
+					DEFAULT: '#25d366',
+				},
 			},
 		},
 	},
-	purge: ["./src/**/*.js"],
-	// https://github.com/tailwindlabs/tailwindcss-forms
-	plugins: [require("@tailwindcss/forms")],
+	variants: {
+		extend: {},
+	},
+	plugins: [],
 };

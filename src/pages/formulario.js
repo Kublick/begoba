@@ -1,55 +1,41 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const formulario = () => {
-	const data = useStaticQuery(
-		graphql`
-			query {
-				mobile: file(relativePath: { eq: "mobileFormulario.png" }) {
-					childImageSharp {
-						fixed(quality: 90, width: 720) {
-							...GatsbyImageSharpFixed_withWebp
-						}
-					}
-				}
-				desktop: file(relativePath: { eq: "formulario.png" }) {
-					childImageSharp {
-						fixed(quality: 90, width: 720) {
-							...GatsbyImageSharpFixed_withWebp
-						}
-					}
-				}
-			}
-		`
-	);
-
-	const sources = [
-		data.mobile.childImageSharp.fixed,
-		{
-			...data.desktop.childImageSharp.fixed,
-			media: `(min-width: 768px)`,
-		},
-	];
-
-	//	const imageData = data.desktop.childImageSharp.fixed;
+const Registroformulario = () => {
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'Lead');
+		}
+	}
 	return (
-		<>
-			<div className="flex flex-col justify-center h-screen align-middle bg-gray-100">
-				<Img
-					fixed={sources}
-					objectFit="cover"
-					className="mx-auto sm:bg__encuesta"
-				/>
+		<div>
+			<div className={`flex justify-center bg-secondary`}>
+				<div className="flex justify-center">
+					<div className="w-48 px-6 pb-6 bg-white rounded-b-lg shadow-xl lg:w-64 h-3/4">
+						<div className="">
+							<StaticImage
+								src="../images/Incremnta_lateral.png"
+								className="mt-4"
+								alt="Logo incrementa tu consulta"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="flex flex-col items-center h-screen gap-6 bg-gray-50">
+				<h1 className="mt-6 text-2xl">Llena el formulario aqui:</h1>
 				<button
-					className="p-4 m-8 mx-auto mt-12 text-white bg-green-600 outline-none sm:text-xl lg:text-3xl lg:w-1/3 rounded-2xl animate-bounce"
-					onClick={() => window.open("https://es.surveymonkey.com/r/3V88KV5")}
+
+					className="px-8 py-4 font-bold text-white bg-primary rounded-xl"
+					onClick={() => window.open('https://es.surveymonkey.com/r/9DYKLVB')}
+
 				>
-					Llena tu formulario de aplicación
+					Quiero Llenar el Formulario
 				</button>
 			</div>
-		</>
+		</div>
 	);
 };
 
-export default formulario;
+export default Registroformulario;
