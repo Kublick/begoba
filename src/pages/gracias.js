@@ -56,7 +56,14 @@ const Gracias = () => {
 						</p>
 
 						<div className="flex justify-center gap-4 align-middle">
-							<button className="shadow-lg btn-green logo-container">
+							<button
+								className="shadow-lg btn-green logo-container"
+								onClick={() => {
+									window.open(
+										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+									);
+								}}
+							>
 								Unirme AL GRUPO
 							</button>
 						</div>
