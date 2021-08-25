@@ -18,7 +18,7 @@ const VideoVenta = () => {
 				</div>
 				<div className="flex flex-col gap-4 py-10">
 					<div className="col-span-2 px-10">
-						<Videoplayer url={'https://youtu.be/V71rXExM7ug'} />
+						<Videoplayer url={'https://youtu.be/KvPdTqDN5h4'} />
 					</div>
 					<div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
 						<h1 className="text-xl font-bold text-center md:text-3xl">

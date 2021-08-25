@@ -187,8 +187,13 @@ const Venta = () => {
 								TODO UN ENTRENAMIENTO CON UN PROGRAMA BIEN ESTRUCTURADO
 							</span>{' '}
 							que te muestra el camino paso a paso y click por click
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">$997 dólares</span>
+							</span>
 						</p>
 					</div>
+
 					<div className="flex gap-2">
 						<div className="w-6">{bullet}</div>
 						<p>
@@ -200,6 +205,10 @@ const Venta = () => {
 							CONSULTA el pertencer a la cominidad es algo invaluable por que
 							dentro de ella podras ir compartiendo los avances que vayas
 							logrando con tus compañeros.
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">Invaluable</span>
+							</span>
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -212,6 +221,10 @@ const Venta = () => {
 							preguntas, aclarar dudas, obtener feedback de tus avances y
 							ayudarte a lograr alcanzar tu meta. ¡Recuerda que tu ya eres
 							éxito, solo hagamos que se manifieste!
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">$597 dólares</span>
+							</span>
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -236,6 +249,10 @@ const Venta = () => {
 							para que sepas exactamente en dónde debes de enfocarte cada
 							semana, para así lograr avanzar a pasos seguros y que así ya nada
 							te detenga triunfar.
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">$47 dólares</span>
+							</span>
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -246,6 +263,10 @@ const Venta = () => {
 							</span>{' '}
 							para que así puedas ver y repetir las lecciones luego de concluir
 							el programa las veces que tu preﬁeras.
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">$497 dólares</span>
+							</span>
 						</p>
 					</div>
 					<div className="flex gap-2">
@@ -353,7 +374,7 @@ const Venta = () => {
 						<p>
 							Tendrás con el entrenamiento y los bonos accesos a mas de{' '}
 							<span className="font-semibold line-through text-secondary">
-								$2100 dólares
+								$2700 dólares
 							</span>{' '}
 							en contenido y recursos... por solo 6 pagos de{' '}
 							<span className="font-semibold text-secondary">$97 dólares</span>{' '}
