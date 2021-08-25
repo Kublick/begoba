@@ -473,13 +473,6 @@ const Venta = () => {
 				<div className="grid md:grid-cols-2 gap-x-10">
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/NmL3jxP9BB0"
-							width={320}
-							height={320}
-						/>
-					</div>
-					<div className="my-10">
-						<ReactPlayer
 							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}
 							height={320}
@@ -487,14 +480,21 @@ const Venta = () => {
 					</div>
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/E_Vtjlfbke4"
+							url="https://youtu.be/NmL3jxP9BB0"
 							width={320}
 							height={320}
 						/>
 					</div>
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/4G_j_Qk7Gvc"
+							width={320}
+							height={320}
+						/>
+					</div>
+					<div className="my-10">
+						<ReactPlayer
+							url="https://youtu.be/wXHrOaaJZoM"
 							width={320}
 							height={320}
 						/>
@@ -505,7 +505,7 @@ const Venta = () => {
 				<div className="grid md:grid-cols-2 justify-items-center gap-x-10">
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/E_Vtjlfbke4"
 							width={320}
 							height={320}
 						/>
@@ -513,7 +513,7 @@ const Venta = () => {
 
 					<div className="my-10">
 						<ReactPlayer
-							url="https://youtu.be/z9CsFqeleUo"
+							url="https://youtu.be/TFc8I4yWV6o"
 							width={320}
 							height={320}
 						/>
