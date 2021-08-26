@@ -22,7 +22,7 @@ const VideoVenta = () => {
 					</div>
 					<div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
 						<h1 className="text-xl font-bold text-center md:text-3xl">
-							¡Tu ya eres un éxito! Solo hagamos que se manifieste
+							¡Tu ya eres éxito! Solo hagamos que se manifieste
 						</h1>
 					</div>
 				</div>

@@ -32,7 +32,7 @@ const S4 = () => {
 	return (
 		<>
 			<header>
-				<SesionHeader color="bg-primary" date="21 September 2021 15:30" />
+				<SesionHeader color="bg-primary" date="23 September 2021 15:30" />
 			</header>
 			<main>
 				<div className="grid lg:grid-cols-4">
