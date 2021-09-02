@@ -17,7 +17,7 @@ const S3 = () => {
 	return (
 		<>
 			<header>
-				<SesionHeader color="bg-mango" date="20 September 2021 15:30" />
+				<SesionHeader color="bg-mango" date="22 September 2021 15:30" />
 			</header>
 			<main>
 				<div className="grid lg:grid-cols-4">

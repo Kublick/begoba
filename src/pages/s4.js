@@ -32,17 +32,20 @@ const S4 = () => {
 	return (
 		<>
 			<header>
-				<SesionHeader color="bg-primary" date="21 September 2021 15:30" />
+				<SesionHeader color="bg-primary" date="23 September 2021 15:30" />
 			</header>
 			<main>
 				<div className="grid lg:grid-cols-4">
 					<div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-						<h1 className="text-lg font-semibold text-primary">
-							Cuéntanos en que podamos ayudarte:
+						<h1 className="text-lg font-semibold text-center text-primary">
+							¡ATENCIÓN!
 						</h1>
 						<p>
-							¿Cual es el mayor desafío que tuviste al querer ofrecer o vender
-							tus servicios profesionales en redes sociales?
+							Dado que los cupos son limitados y que el proceso de inscripción
+							solo estará abierto unos pocos días hemos habilitado una lista
+							prioritaria, ahí puedes dejarnos tus datos rellenando el
+							formulario y de esta forma sabremos qué quieres tomar acción
+							cuanto antes para no quedarte afuera de esta promoción.
 						</p>
 
 						<div className="flex justify-center mt-8">
