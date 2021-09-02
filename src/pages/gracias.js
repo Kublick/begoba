@@ -60,7 +60,7 @@ const Gracias = () => {
 								className="shadow-lg btn-green logo-container"
 								onClick={() => {
 									window.open(
-										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+										'https://chat.whatsapp.com/DefYwqOSc6BGSZ85vWKwKv',
 									);
 								}}
 							>

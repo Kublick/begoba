@@ -29,7 +29,7 @@ const Sociales = (props) => {
 	);
 
 	return (
-		<div className="p-5 mt-10 md:px-20 lg:p-20 bg-primary-light">
+		<div className="p-5 mt-10 md:px-20 lg:pb-20 bg-primary-light">
 			<h1 className="mb-10 md:my-20 title">Que incluye</h1>
 			<div className="grid gap-8 lg:grid-cols-2">
 				<div className="flex flex-col">
