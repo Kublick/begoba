@@ -94,7 +94,7 @@ const S3 = () => {
 								Como vender tu consulta online con la estrategia D.E.P.E.
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/rpQD0JK7Ul0'} />
+								<Videoplayer url={'https://youtu.be/JwUckZB_4oM'} />
 							</div>
 
 							<p className="self-center font-semibold ">

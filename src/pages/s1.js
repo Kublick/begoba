@@ -96,7 +96,7 @@ const S1 = () => {
 								Tu oportunidad de tener pacientes desde las redes sociales
 							</h1>
 							<div>
-								<Videoplayer url={'http://youtu.be/M4V8T0hl7cA'} />
+								<Videoplayer url={'https://youtu.be/UQZjPojebGg'} />
 							</div>
 
 							<p className="self-center font-semibold ">

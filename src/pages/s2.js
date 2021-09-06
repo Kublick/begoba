@@ -72,7 +72,7 @@ const S2 = () => {
 								novato
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/5rMeCGzaJUE'} />
+								<Videoplayer url={'https://youtu.be/2Viv-ICoKew'} />
 							</div>
 
 							<p className="self-center font-semibold ">
