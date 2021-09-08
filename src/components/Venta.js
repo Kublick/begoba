@@ -390,8 +390,8 @@ const Venta = () => {
 							</div>
 						</div>
 						<p>
-							POST v1/newsletter/subscribe Parametros: email Sin duda es
-							muchísimo valor el que tendrás con el entrenamiento completo{' '}
+							Sin duda es muchísimo valor el que tendrás con el entrenamiento
+							completo{' '}
 							<span className="font-semibold text-primary">
 								INCREMENTA TU CONSULTA
 							</span>{' '}

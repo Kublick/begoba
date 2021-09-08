@@ -32,6 +32,13 @@ const Sesiones = () => {
 
 	return (
 		<div className="mx-10">
+			<div className="flex justify-center px-2 mt-10 lg:px-20 text-primary">
+				<p className="text-xl text-center lg:text-2xl text-primary">
+					4 clases en vivo y una mentoria grupal al final con más de 8 horas de
+					contenido para guiarte desde “no sé como conseguir pacientes en redes
+					sociale” hasta “ya sé cómo conseguir mi primer paciente”.
+				</p>
+			</div>
 			<h1 className="mt-12 text-3xl font-bold text-center md:text-4xl text-primary">
 				Que vas a descubrir en este taller:
 			</h1>

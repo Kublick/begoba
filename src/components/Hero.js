@@ -3,6 +3,7 @@ import React from 'react';
 import { mainLogo } from './helpers/logos';
 import Formulario from './Formulario';
 import PropTypes from 'prop-types';
+import Countdown from 'react-countdown';
 
 const Hero = (props) => {
 	return (
@@ -33,17 +34,25 @@ const Hero = (props) => {
 				</div>
 			</div>
 			<div className="text-center align-middle">
-				<p className="text-gray-500 text-md md:text-xl">
-					En solo 5 dias descubrirás la estrategia PROBADA
+				<p
+					className="px-2 my-2 text-md md:text-xl text-primary"
+					ref={props.formRef}
+				>
+					<span className="font-semibold ">
+						Descubre la estrategia comprobada
+					</span>{' '}
+					para conseguir pacientes en redes sociales, aunque no tengas
+					experiencia previa ni conocimientos o estudios de marketing.
 				</p>
-				<h2 className="text-2xl font-bold md:py-4 md:text-4xl text-primary">
-					Para conseguir pacientes en redes sociales
-				</h2>
 
-				<p ref={props.formRef} className="text-gray-500 md:text-xl">
-					Tu próximo paciente a un click de distancia
-				</p>
 				<Formulario />
+				<div className="mt-8 text-2xl">
+					<p>La oportunidad de registro expira en:</p>
+					<Countdown date={Date.now() + 4000000} />
+				</div>
+				<p className="py-2 font-semibold font-3xl text-primary">
+					Descubre como ofrecer <br /> y vender tu consulta online
+				</p>
 			</div>
 		</section>
 	);
