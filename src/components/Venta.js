@@ -203,7 +203,7 @@ const Venta = () => {
 							avances y ayudarte a lograr alcanzar tu meta.
 							<span>
 								<br /> Valorado en{' '}
-								<span className="font-semibold text-primary">$997 dólares</span>
+								<span className="font-semibold text-primary">$597 dólares</span>
 							</span>
 						</p>
 					</div>
@@ -390,8 +390,8 @@ const Venta = () => {
 							</div>
 						</div>
 						<p>
-							Sin duda es muchísimo valor el que tendrás con el entrenamiento
-							completo{' '}
+							POST v1/newsletter/subscribe Parametros: email Sin duda es
+							muchísimo valor el que tendrás con el entrenamiento completo{' '}
 							<span className="font-semibold text-primary">
 								INCREMENTA TU CONSULTA
 							</span>{' '}
