@@ -46,7 +46,7 @@ const S2 = () => {
 								className="bg-green-600 btn-social"
 								onClick={() =>
 									window.open(
-										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+										'https://chat.whatsapp.com/BAilmyYjQH12LdYjLq6XWU',
 									)
 								}
 							>
@@ -55,9 +55,7 @@ const S2 = () => {
 							<button
 								className=" btn-social bg-primary"
 								onClick={() =>
-									window.open(
-										'http://www.facebook.com/groups/2375070212786505/',
-									)
+									window.open('http://www.facebook.com/groups/561601284963553/')
 								}
 							>
 								{fbwhite} No te lo pierdas
@@ -72,7 +70,10 @@ const S2 = () => {
 								novato
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/2Viv-ICoKew'} />
+								<Videoplayer
+									url={'https://youtu.be/2Viv-ICoKew'}
+									controls={true}
+								/>
 							</div>
 
 							<p className="self-center font-semibold ">
@@ -141,7 +142,7 @@ const S2 = () => {
 					<CommentsFacebook />
 				</div>
 
-				<div className="flex flex-col items-center p-4">
+				<div className="flex flex-col items-center gap-4 p-4">
 					<h1 className="mb-4 text-2xl font-bold text-secondary">
 						Testimonios
 					</h1>
@@ -149,29 +150,34 @@ const S2 = () => {
 						url="https://youtu.be/iGA3w0YVac8"
 						width={320}
 						height={320}
+						controls={true}
 					/>
 
 					<ReactPlayer
 						url="https://youtu.be/c1XGvy-ynZs"
 						width={320}
 						height={320}
+						controls={true}
 					/>
 
 					<ReactPlayer
 						url="https://youtu.be/NmL3jxP9BB0"
 						width={320}
 						height={320}
+						controls={true}
 					/>
 					<ReactPlayer
 						url="https://youtu.be/6_MBqp7E3Zw"
 						width={320}
 						height={320}
+						controls={true}
 					/>
 
 					<ReactPlayer
 						url="https://youtu.be/gpXgrVIJrms"
 						width={320}
 						height={320}
+						controls={true}
 					/>
 				</div>
 			</div>

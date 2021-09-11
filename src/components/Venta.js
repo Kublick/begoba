@@ -126,19 +126,27 @@ const Venta = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="flex flex-col items-center justify-center">
+				<StaticImage
+					src="../images/garantia.png"
+					className="transform scale-75"
+					alt="sello garantia"
+				/>
 				<p className="px-8 text-center md:px-0 md:w-3/4 md:text-2xl">
 					Si tienes alguna pregunta referente al entrenamiento puedes enviar un
 					mensaje directamente aquí en el botón de WhatsApp aclaramos todas tus
 					dudas.
 				</p>
-				<button
-					className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
-					onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
-				>
-					<span className="transform scale-150">{wswhite}</span> Quiero saber
-					más información
-				</button>
+				<div className="gap-8 mb-8 md:flex md:items-center">
+					<button
+						className="flex items-center h-12 gap-4 px-8 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
+						onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
+					>
+						<span className="transform scale-150">{wswhite}</span> Quiero saber
+						más información
+					</button>
+				</div>
 			</div>
 			<div className="flex flex-col items-center py-10 bg-primary">
 				<div className="w-1/2">
@@ -154,6 +162,7 @@ const Venta = () => {
 						url={'https://youtu.be/z9CsFqeleUo'}
 						width={windowSize}
 						height={windowSize}
+						controls={true}
 					/>
 				</div>
 			</div>
@@ -473,6 +482,15 @@ const Venta = () => {
 						</div>
 					</div>
 				</div>
+
+				<div className="flex justify-center">
+					<StaticImage
+						src="../images/garantia.png"
+						className="transform scale-75"
+						alt="sello garantia"
+					/>
+				</div>
+
 				<div className="flex flex-col items-center">
 					<h2 className="w-3/4 px-4 text-xl font-semibold text-center md:text-3xl md:w-1/2">
 						Entrenamiento{' '}
@@ -514,6 +532,7 @@ const Venta = () => {
 							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -521,6 +540,7 @@ const Venta = () => {
 							url="https://youtu.be/NmL3jxP9BB0"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -528,6 +548,7 @@ const Venta = () => {
 							url="https://youtu.be/4G_j_Qk7Gvc"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -535,6 +556,7 @@ const Venta = () => {
 							url="https://youtu.be/wXHrOaaJZoM"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 				</div>
@@ -546,6 +568,7 @@ const Venta = () => {
 							url="https://youtu.be/E_Vtjlfbke4"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 
@@ -554,6 +577,7 @@ const Venta = () => {
 							url="https://youtu.be/TFc8I4yWV6o"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 				</div>

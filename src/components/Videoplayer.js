@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player/lazy';
 import PropTypes from 'prop-types';
 
-const Videoplayer = ({ url }) => {
+const Videoplayer = ({ url, controls }) => {
 	//{ videoUrl, urlRedirect, buttonText, date }
 	// const [button, setButton] = useState(false);
 
@@ -36,6 +36,7 @@ const Videoplayer = ({ url }) => {
 					className="react-player"
 					height="100%"
 					width="100%"
+					controls={controls}
 					// onStart={() => communityButton()}
 				/>
 			</div>
@@ -58,4 +59,5 @@ export default Videoplayer;
 
 Videoplayer.propTypes = {
 	url: PropTypes.string,
+	controls: PropTypes.string,
 };

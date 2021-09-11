@@ -67,7 +67,10 @@ const S4 = () => {
 								consulta
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/O1KFwtqUNjM'} />
+								<Videoplayer
+									url={'https://youtu.be/O1KFwtqUNjM'}
+									controls={false}
+								/>
 							</div>
 
 							<p className="self-center font-semibold ">
