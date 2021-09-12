@@ -10,7 +10,7 @@ const S4 = () => {
 	const [point, setPoint] = useState(false);
 	const ventaRef = useRef();
 
-	let date = 'August 22 2021 11:41';
+	let date = 'September 23 2021 16:30';
 
 	function timing() {
 		setInterval(() => {
@@ -67,7 +67,10 @@ const S4 = () => {
 								consulta
 							</h1>
 							<div>
-								<Videoplayer url={'https://youtu.be/V71rXExM7ug'} />
+								<Videoplayer
+									url={'https://youtu.be/O1KFwtqUNjM'}
+									controls={false}
+								/>
 							</div>
 
 							<p className="self-center font-semibold ">

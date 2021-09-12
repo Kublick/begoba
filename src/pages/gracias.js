@@ -18,7 +18,6 @@ const Gracias = () => {
 
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
-			// window.fbq("track", "PageView");
 			window.fbq('track', 'CompleteRegistration');
 		}
 	}
@@ -60,7 +59,7 @@ const Gracias = () => {
 								className="shadow-lg btn-green logo-container"
 								onClick={() => {
 									window.open(
-										'https://chat.whatsapp.com/K6cv1vPGrSjJKZ8Xg6uPue',
+										'https://chat.whatsapp.com/K8Zk5ccESohIDK3GY0jOht',
 									);
 								}}
 							>

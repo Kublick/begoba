@@ -39,18 +39,18 @@ const Venta = () => {
 		<>
 			<div className="flex flex-col items-center gap-4 mb-10">
 				<h1 className="text-xl font-semibold md:text-3xl text-primary">
-					Recuerda los bonos de accion rapida expiran en 24 horas
+					Bonos de Acción Rápida (bonos BAR solo disponibles las primeras 24
+					horas)
 				</h1>
 				<div className="flex items-center justify-center w-3/4 gap-2">
 					<div className="hidden sm:inline-block">{regalo}</div>
 					<div>
 						<p className="text-lg">
-							El primer bono de acción rápida es{' '}
 							<span className="font-bold">
-								ACCESO A 5 SESIONES INDIVIDUALES DE MENTORIA
+								BONO DE ACCION RAPIDA: 5 SESIONES INDIVIDUALES DE MENTORIA
 							</span>{' '}
-							uno a uno con Psicóloga Berenice Bastidas durante el entrenamiento
-							donde podrás recibir de primera mano ayuda de mi parte enfocada
+							uno a uno con la psicóloga Berenice Bastidas durante el
+							entrenamiento, donde podrás recibir de primera mano ayuda enfocada
 							únicamente en tu proyecto profesional.
 						</p>
 						<p>
@@ -63,8 +63,9 @@ const Venta = () => {
 					<div className="hidden sm:inline-block">{regalo}</div>
 					<div>
 						<p className="text-lg">
-							El segundo bono de acción rápida es{' '}
-							<span className="font-bold">MANUAL HERRAMIENTAS DIGITALES</span>{' '}
+							<span className="font-bold">
+								BONO DE ACCION RAPIDA: MANUAL HERRAMIENTAS DIGITALES
+							</span>{' '}
 							para que no tengas que pasar horas buscando herramientas buenas,
 							este manual en lista las mejores herramientas digitales y
 							plataformas con las que podrás trabajar y muchas de ellas en su
@@ -89,7 +90,7 @@ const Venta = () => {
 							PAGO ÚNICO
 						</h2>
 						<p className="py-4 text-lg text-center md:text-xl">
-							Ahorra $86 dólares
+							Ahorra $85 dólares
 						</p>
 						<p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
 						<h2 className="text-2xl font-bold text-center md:text-3xl">
@@ -125,19 +126,27 @@ const Venta = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className="flex flex-col items-center justify-center">
+				<StaticImage
+					src="../images/garantia.png"
+					className="transform scale-75"
+					alt="sello garantia"
+				/>
 				<p className="px-8 text-center md:px-0 md:w-3/4 md:text-2xl">
 					Si tienes alguna pregunta referente al entrenamiento puedes enviar un
 					mensaje directamente aquí en el botón de WhatsApp aclaramos todas tus
 					dudas.
 				</p>
-				<button
-					className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
-					onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
-				>
-					<span className="transform scale-150">{wswhite}</span> Quiero saber
-					más información
-				</button>
+				<div className="gap-8 mb-8 md:flex md:items-center">
+					<button
+						className="flex items-center h-12 gap-4 px-8 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
+						onClick={() => window.open('https://wa.me/message/LD54V7JCH3TXD1')}
+					>
+						<span className="transform scale-150">{wswhite}</span> Quiero saber
+						más información
+					</button>
+				</div>
 			</div>
 			<div className="flex flex-col items-center py-10 bg-primary">
 				<div className="w-1/2">
@@ -153,6 +162,7 @@ const Venta = () => {
 						url={'https://youtu.be/z9CsFqeleUo'}
 						width={windowSize}
 						height={windowSize}
+						controls={true}
 					/>
 				</div>
 			</div>
@@ -181,12 +191,9 @@ const Venta = () => {
 							<span className="text-lg font-semibold text-primary">
 								PROGRAMA INTENSIVO DE 12 SEMANAS 100% ONLINE
 							</span>{' '}
-							como te he mencionado el Entrenamiento INCREMENTA TU CONSULTA no
-							es solo un curisto online, es{' '}
-							<span className="font-semibold">
-								TODO UN ENTRENAMIENTO CON UN PROGRAMA BIEN ESTRUCTURADO
-							</span>{' '}
-							que te muestra el camino paso a paso y click por click
+							donde aprenderás como lograr que los pacientes lleguen a ti con la
+							estrategia D.E.P.E. y logres incrementar tu numero de pacientes y
+							multiplicar tus ingresos.{' '}
 							<span>
 								<br /> Valorado en{' '}
 								<span className="font-semibold text-primary">$997 dólares</span>
@@ -198,29 +205,11 @@ const Venta = () => {
 						<div className="w-6">{bullet}</div>
 						<p>
 							<span className="text-lg font-semibold text-primary">
-								PERTENECER DE POR VIDA A LA COMUNIDAD INTERNACIONAL DE EXITOSAS
-								Y EXITOSOS VIP
-							</span>{' '}
-							y mira que de todo lo que tiene el entrenamiento INCREMNETA TU
-							CONSULTA el pertencer a la cominidad es algo invaluable por que
-							dentro de ella podras ir compartiendo los avances que vayas
-							logrando con tus compañeros.
-							<span>
-								<br /> Valorado en{' '}
-								<span className="font-semibold text-primary">Invaluable</span>
-							</span>
-						</p>
-					</div>
-					<div className="flex gap-2">
-						<div className="w-6">{bullet}</div>
-						<p>
-							<span className="text-lg font-semibold text-primary">
 								12 MENTORIAS GRUPALES EN VIVO ONLINE
 							</span>{' '}
-							con Berenice Bastidas para obtener seguimiento, responder
-							preguntas, aclarar dudas, obtener feedback de tus avances y
-							ayudarte a lograr alcanzar tu meta. ¡Recuerda que tu ya eres
-							éxito, solo hagamos que se manifieste!
+							con la psicóloga Berenice Bastidas para obtener seguimiento,
+							responder preguntas, aclarar dudas, obtener feedback de tus
+							avances y ayudarte a lograr alcanzar tu meta.
 							<span>
 								<br /> Valorado en{' '}
 								<span className="font-semibold text-primary">$597 dólares</span>
@@ -233,10 +222,10 @@ const Venta = () => {
 							<span className="text-lg font-semibold text-primary">
 								6 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD
 							</span>{' '}
-							donde siguiendo la estrategia DEPE avanzarás paso a paso de forma
-							ordenada, enfocada pero sobre todo a tu ritmo por que tu eliges
-							tus propios horario para ver las lecciones que ya temenos pre
-							grabadas y lo puedes hacer desde tu computadora o desde tu
+							donde siguiendo la estrategia D.E.P.E. avanzarás paso a paso de
+							forma ordenada, enfocada, pero sobre todo a tu ritmo por que tu
+							eliges tus propios horarios para ver las lecciones que ya témenos
+							pregrabadas y lo puedes hacer desde tu computadora o desde tu
 							celular.
 						</p>
 					</div>
@@ -248,7 +237,7 @@ const Venta = () => {
 							</span>{' '}
 							para que sepas exactamente en dónde debes de enfocarte cada
 							semana, para así lograr avanzar a pasos seguros y que así ya nada
-							te detenga triunfar.
+							te detenga triunfar
 							<span>
 								<br /> Valorado en{' '}
 								<span className="font-semibold text-primary">$47 dólares</span>
@@ -275,34 +264,30 @@ const Venta = () => {
 							<span className="text-lg font-semibold text-primary">
 								METAS SEMANALES DE TRABAJO
 							</span>{' '}
-							para que nada quede en teoría, cada lección te lleva a la acción
-							con ejercicios detallados, de esta manera a medida que avanzas en
-							el programa, también avanzas en tu negocio
-						</p>
-					</div>
-					{/* <div className="flex gap-2">
-						<div className="w-6">{bullet}</div>
-						<p>
-							<span className="text-lg font-semibold text-primary">
-								ACCESO A 3 SESIONES INDIVIDUALES DE MENTORIA
-							</span>{' '}
-							uno a uno con la psicologa Berenice Bastidas durante el
-							entrenamiento donde podrás recibir de primera mano información
-							enfocada únicamente en tu proyecto profesional.
+							que aceleraran tus resultados para que nada quede en teoría, cada
+							lección te lleva a la acción con ejercicios detallados, de esta
+							manera a medida que avanzas en el programa, también avanzas en tu
+							negocio.
 						</p>
 					</div>
 					<div className="flex gap-2">
 						<div className="w-6">{bullet}</div>
 						<p>
 							<span className="text-lg font-semibold text-primary">
-								MANUAL HERRAMIENTAS DIGITALES
+								PERTENECER DE POR VIDA A LA COMUNIDAD INTERNACIONAL DE EXITOSAS
+								Y EXITOSOS VIP
 							</span>{' '}
-							para que no tengas que pasar horas buscando herramientas buenas,
-							este manual en lista las mejores herramientas digitales y
-							plataformas con las que podrás trabajar y muchas d e ellas en su
-							version gratuita.
+							alumnos profesionales del entregamiento incrementa tu consulta, el
+							pertenecer a la comunidad es algo invaluable por que dentro de
+							ella podrás ir compartiendo los avances que vayas logrando con tus
+							compañeros, y empiezas a sentir el empuje de ser parte de una
+							tribu que creme no te va a dejar sola.
+							<span>
+								<br /> Valorado en{' '}
+								<span className="font-semibold text-primary">Invaluable</span>
+							</span>
 						</p>
-					</div> */}
+					</div>
 				</div>
 			</div>
 			<div className="">
@@ -318,7 +303,48 @@ const Venta = () => {
 							<div className="hidden sm:inline-block">{regalo}</div>
 							<div>
 								<p className="text-lg font-semibold text-secondary">
-									BONO 1: TALLER METODOS DE PAGO ONLINE
+									BONO 1: CREA Y VENDE TU PROPIO CURSO ONLINE
+								</p>
+								<p>
+									con este bono y sin la necesidad de ser un experto aprenderás
+									a crear desde cero tu curso online y empezar a ganar de
+									inmediato dinero con el por que además te voy a enseñar a
+									venderlo.
+								</p>
+								<p>
+									Valorado en
+									<span className="font-semibold text-primary">
+										{' '}
+										$600 dólares{' '}
+									</span>
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center gap-2">
+							<div className="hidden sm:inline-block">{regalo}</div>
+							<div>
+								<p className="text-lg font-semibold text-secondary">
+									BONO 2: TU E-BOOK
+								</p>
+								<p>
+									este bono te servirá para aprender a crear y diseñar tu propio
+									libro digital el cual te generará dinero de forma automática y
+									recurrente.
+								</p>
+								<p>
+									Valorado en
+									<span className="font-semibold text-primary">
+										{' '}
+										$97 dólares{' '}
+									</span>
+								</p>
+							</div>
+						</div>
+						<div className="flex items-center gap-2">
+							<div className="hidden sm:inline-block">{regalo}</div>
+							<div>
+								<p className="text-lg font-semibold text-secondary">
+									BONO 3: METODOS DE PAGO ONLINE
 								</p>
 								<p>
 									Aprenderás la metodología para recibir pagos por tus servicios
@@ -328,7 +354,7 @@ const Venta = () => {
 									Valorado en
 									<span className="font-semibold text-primary">
 										{' '}
-										$197 dólares{' '}
+										$147 dólares{' '}
 									</span>
 								</p>
 							</div>
@@ -337,10 +363,10 @@ const Venta = () => {
 							<div className="hidden sm:inline-block">{regalo}</div>
 							<div>
 								<p className="text-lg font-semibold text-secondary">
-									BONO 2: TALLER HABLA FRENTE A LA CAMARA CON SEGURIDAD
+									BONO 4: HABLA FRENTE A LA CAMARA CON SEGURIDAD
 								</p>
 								<p>
-									Perderás el miedo y la vergüenza de hablar en redes sociales.
+									perderás el miedo y la vergüenza de hablar en redes sociales.
 								</p>
 								<p>
 									Valorado en
@@ -355,12 +381,13 @@ const Venta = () => {
 							<div className="hidden sm:inline-block">{regalo}</div>
 							<div>
 								<p className="text-lg font-semibold text-secondary">
-									BONO 3: TALLER DE UNO MUCHOS
+									BONO 5: TALLER DE UNO MUCHOS
 								</p>
 								<p>
-									Conocerás la forma de vender de uno a muchos mediante los
-									webinars, esta estrategia te sirve para poder captar la mayor
-									cantidad de clientes en el menor tiempo posible.
+									conocerás la forma de vender de uno a muchos, esta estrategia
+									te sirve para poder captar la mayor cantidad de clientes en el
+									menor tiempo posible, te será muy útil cuando vendas cursos
+									online.
 								</p>
 								<p>
 									Valorado en
@@ -372,21 +399,41 @@ const Venta = () => {
 							</div>
 						</div>
 						<p>
-							Tendrás con el entrenamiento y los bonos accesos a mas de{' '}
-							<span className="font-semibold line-through text-secondary">
-								$2700 dólares
+							Sin duda es muchísimo valor el que tendrás con el entrenamiento
+							completo{' '}
+							<span className="font-semibold text-primary">
+								INCREMENTA TU CONSULTA
 							</span>{' '}
-							en contenido y recursos... por solo 6 pagos de{' '}
+							y además con los bonos de regalo tienes acceso a mas de{' '}
+							<span className="font-semibold text-secondary">$3,426</span>{' '}
+							dólares en contenido de valor y recursos. Si pagaras todo esto por
+							separado te saldría en eso... Pero hoy tengo una invitación, es
+							una oferta especial para ti, hoy tu puedes reservar tu inscripción
+							al entrenamiento con un primer pago de{' '}
 							<span className="font-semibold text-secondary">$97 dólares</span>{' '}
-							(o un solo pago de{' '}
-							<span className="font-semibold text-secondary">$497 dólares</span>
-							).
+							y luego{' '}
+							<span className="font-semibold text-primary">5 pagos</span> mas de{' '}
+							<span className="font-semibold text-secondary">$97 dólares…</span>{' '}
+							O si lo prefieres puedes ahorrarte{' '}
+							<span className="font-semibold text-primary">$85 dólares</span>{' '}
+							haciendo un pago único de{' '}
+							<span className="font-semibold text-secondary">$497 dólares</span>{' '}
+							el tipo de cambio y el IVA dependerá de cada país.
+						</p>
+						<p>
+							Además tienes{' '}
+							<span className="font-semibold text-primary">
+								15 días de GARANTIA
+							</span>{' '}
+							podrás empezar la formación conocer a todos tus compañeros empezar
+							a formarte y si no te gusta lo que vez, si sientes que no es lo
+							tuyo te devuelvo el 100% del importe pagado.
 						</p>
 					</div>
 				</div>
 				<div className="flex flex-col items-center py-4 mt-10 mb-5 bg-mango ">
 					<h2 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-3/4 lg:text-4xl">
-						¿Lista para crear la vida que sueñas?
+						¿Listo para crear la vida que sueñas?
 					</h2>
 					<h2 className="py-4 text-xl font-semibold text-center">
 						ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
@@ -399,7 +446,7 @@ const Venta = () => {
 								PAGO ÚNICO
 							</h2>
 							<p className="py-4 text-lg text-center md:text-xl">
-								Ahorra $86 dólares
+								Ahorra $85 dólares
 							</p>
 							<p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
 							<h2 className="text-2xl font-bold text-center md:text-3xl">
@@ -435,6 +482,15 @@ const Venta = () => {
 						</div>
 					</div>
 				</div>
+
+				<div className="flex justify-center">
+					<StaticImage
+						src="../images/garantia.png"
+						className="transform scale-75"
+						alt="sello garantia"
+					/>
+				</div>
+
 				<div className="flex flex-col items-center">
 					<h2 className="w-3/4 px-4 text-xl font-semibold text-center md:text-3xl md:w-1/2">
 						Entrenamiento{' '}
@@ -463,12 +519,12 @@ const Venta = () => {
 			<div className="flex flex-col items-center py-10 bg-primary">
 				<div className="flex justify-center px-10 ">
 					<h2 className="text-lg text-center text-white lg:px-0 lg:text-2xl">
-						Mira las historias inspiradoras, los casos de éxito de alumnas que
-						ya tomaron el entrenamiento incrementa tu consulta.
+						Mira las historias inspiradoras, los casos de éxito que ya tomaron
+						acción.
 					</h2>
 				</div>
 				<h2 className="my-4 text-3xl text-mango font-cursive">
-					¿Serás la próxima?
+					¿Serás el próximo?
 				</h2>
 				<div className="grid md:grid-cols-2 gap-x-10">
 					<div className="my-10">
@@ -476,6 +532,7 @@ const Venta = () => {
 							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -483,6 +540,7 @@ const Venta = () => {
 							url="https://youtu.be/NmL3jxP9BB0"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -490,6 +548,7 @@ const Venta = () => {
 							url="https://youtu.be/4G_j_Qk7Gvc"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 					<div className="my-10">
@@ -497,6 +556,7 @@ const Venta = () => {
 							url="https://youtu.be/wXHrOaaJZoM"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 				</div>
@@ -508,6 +568,7 @@ const Venta = () => {
 							url="https://youtu.be/E_Vtjlfbke4"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 
@@ -516,6 +577,7 @@ const Venta = () => {
 							url="https://youtu.be/TFc8I4yWV6o"
 							width={320}
 							height={320}
+							controls={true}
 						/>
 					</div>
 				</div>

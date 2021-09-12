@@ -18,7 +18,10 @@ const VideoVenta = () => {
 				</div>
 				<div className="flex flex-col gap-4 py-10">
 					<div className="col-span-2 px-10">
-						<Videoplayer url={'https://youtu.be/KvPdTqDN5h4'} />
+						<Videoplayer
+							url={'https://youtu.be/KvPdTqDN5h4'}
+							controls={false}
+						/>
 					</div>
 					<div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
 						<h1 className="text-xl font-bold text-center md:text-3xl">
