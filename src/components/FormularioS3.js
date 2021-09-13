@@ -2,6 +2,9 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { API, graphqlOperation } from 'aws-amplify';
+import { createFormulario } from '../graphql/mutations';
+import { navigate } from 'gatsby';
 
 const phoneRegExp =
 	/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -37,8 +40,9 @@ const FormularioS3 = () => {
 		resolver: yupResolver(schema),
 	});
 
-	const onSubmit = (data) => {
-		console.log(data);
+	const onSubmit = async (data) => {
+		await API.graphql(graphqlOperation(createFormulario, { input: data }));
+		navigate('/formfilled');
 	};
 
 	return (

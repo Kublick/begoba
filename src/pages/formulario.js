@@ -24,17 +24,17 @@ const Registroformulario = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col items-center h-screen gap-6 bg-gray-50">
+			<div className="flex flex-col items-center gap-6 bg-gray-50">
 				<h1 className="mt-6 text-2xl">Llena el formulario aqui:</h1>
-				<button
-
+				{/* <button
 					className="px-8 py-4 font-bold text-white bg-primary rounded-xl"
 					onClick={() => window.open('https://es.surveymonkey.com/r/9DYKLVB')}
-
 				>
 					Quiero Llenar el Formulario
-				</button>
-				<FormularioS3 />
+				</button> */}
+				<div className="mb-10">
+					<FormularioS3 />
+				</div>
 			</div>
 		</div>
 	);
