@@ -1,5 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
+import FormularioS3 from '../components/FormularioS3';
 
 const Registroformulario = () => {
 	if (typeof window !== 'undefined') {
@@ -33,6 +34,7 @@ const Registroformulario = () => {
 				>
 					Quiero Llenar el Formulario
 				</button>
+				<FormularioS3 />
 			</div>
 		</div>
 	);

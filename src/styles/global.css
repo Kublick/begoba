@@ -63,6 +63,18 @@ body {
 	@apply flex items-center justify-center w-6 h-6 bg-white rounded-full;
 }
 
+.form-label {
+	@apply text-xl text-primary;
+}
+
+.form-input {
+	@apply px-4 py-2 rounded-lg text-secondary;
+}
+
+.form-error {
+	@apply my-4 text-center text-red-600;
+}
+
 .footer-text {
 	font-size: 0.6rem;
 }
