@@ -19,7 +19,7 @@ const VideoVenta = () => {
 				<div className="flex flex-col gap-4 py-10">
 					<div className="col-span-2 px-10">
 						<Videoplayer
-							url={'https://youtu.be/KvPdTqDN5h4'}
+							url={'https://youtu.be/yIDbOJEKJRM'}
 							controls={false}
 						/>
 					</div>
