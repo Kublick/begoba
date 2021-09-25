@@ -1,21 +1,47 @@
 import React from 'react';
-
+import Countdown from 'react-countdown';
 import { headerLogo } from '../components/helpers/logos';
 import Venta from '../components/Venta';
 import Videoplayer from '../components/Videoplayer';
 
 const VideoVenta = () => {
+	const renderer = ({ days, hours, minutes, seconds }) => {
+		let queda = 'Quedan';
+		let dias = 'días';
+		if (days < 2) {
+			dias = 'dia';
+			queda = 'Queda';
+		}
+
+		return (
+			<div className="text-center">
+				{days < 1 ? (
+					<p>
+						Ultimo Dia hoy cerramos inscripciones
+						<br /> {hours} horas {minutes} minutos {seconds} segundos{' '}
+					</p>
+				) : (
+					<p className="text-xl lg:text-5xl">
+						{queda} {days} {dias} y se cierran inscripciones
+					</p>
+				)}
+			</div>
+		);
+	};
+
+	const eventDate = new Date('29 September 2021 01:00:00');
+
 	return (
 		<>
 			<div className="py-10 bg-gray-100">
 				<div className="flex justify-center my-4">
 					<span className="mb-4 transform scale-125">{headerLogo} </span>
 				</div>
-				<div className="flex items-center justify-center py-4 bg-primary">
-					<h1 className="px-4 text-2xl font-bold text-center text-white lg:px-0 md:w-3/4 lg:text-5xl">
-						¡TU PRÓXIMO PACIENTE A UN CLICK DE DISTANCIA!
-					</h1>
+
+				<div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
+					<Countdown date={eventDate} renderer={renderer} />
 				</div>
+
 				<div className="flex flex-col gap-4 py-10">
 					<div className="col-span-2 px-10">
 						<Videoplayer

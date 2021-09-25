@@ -5,10 +5,11 @@ import PropTypes from 'prop-types';
 const Counter = ({ date }) => {
 	let eventDate = date;
 
-	const renderer = ({ days, hours, minutes }) => {
+	const renderer = ({ days, hours, minutes, seconds }) => {
 		let timeDay = 'D';
 		let timeHour = 'H';
 		let timeMinutes = 'M';
+		let timeSeconds = 'S';
 
 		// if (days < 2) {
 		// 	timeDay = 'dia';
@@ -31,9 +32,14 @@ const Counter = ({ date }) => {
 					<p className="text-xl lg:text-3xl">{hours}</p>
 					<p>{timeHour}</p>
 				</div>
-				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4 rounded-r-md">
+				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4">
 					<p className="text-xl lg:text-3xl">{minutes}</p>
 					<p>{timeMinutes}</p>
+				</div>
+
+				<div className="flex flex-col items-center w-16 p-2 text-white bg-black lg:p-4 rounded-r-md">
+					<p className="text-xl lg:text-3xl">{seconds}</p>
+					<p>{timeSeconds}</p>
 				</div>
 			</div>
 		);
