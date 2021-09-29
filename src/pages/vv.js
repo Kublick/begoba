@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Countdown from 'react-countdown';
 import { headerLogo } from '../components/helpers/logos';
 import Venta from '../components/Venta';
 import Videoplayer from '../components/Videoplayer';
+import { navigate } from 'gatsby';
 
 const VideoVenta = () => {
+	let view = false;
+
+	useEffect(() => {
+		navigate('/');
+	}, []);
+
 	const renderer = ({ days, hours, minutes, seconds }) => {
 		let queda = 'Quedan';
 		let dias = 'días';
@@ -33,30 +40,34 @@ const VideoVenta = () => {
 
 	return (
 		<>
-			<div className="py-10 bg-gray-100">
-				<div className="flex justify-center my-4">
-					<span className="mb-4 transform scale-125">{headerLogo} </span>
-				</div>
+			{view ? (
+				<div>
+					<div className="py-10 bg-gray-100">
+						<div className="flex justify-center my-4">
+							<span className="mb-4 transform scale-125">{headerLogo} </span>
+						</div>
 
-				<div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
-					<Countdown date={eventDate} renderer={renderer} />
-				</div>
+						<div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
+							<Countdown date={eventDate} renderer={renderer} />
+						</div>
 
-				<div className="flex flex-col gap-4 py-10">
-					<div className="col-span-2 px-10">
-						<Videoplayer
-							url={'https://youtu.be/yIDbOJEKJRM'}
-							controls={false}
-						/>
-					</div>
-					<div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
-						<h1 className="text-xl font-bold text-center md:text-3xl">
-							¡Tu ya eres éxito! Solo hagamos que se manifieste
-						</h1>
+						<div className="flex flex-col gap-4 py-10">
+							<div className="col-span-2 px-10">
+								<Videoplayer
+									url={'https://youtu.be/yIDbOJEKJRM'}
+									controls={false}
+								/>
+							</div>
+							<div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
+								<h1 className="text-xl font-bold text-center md:text-3xl">
+									¡Tu ya eres éxito! Solo hagamos que se manifieste
+								</h1>
+							</div>
+						</div>
+						<Venta />
 					</div>
 				</div>
-				<Venta />
-			</div>
+			) : null}
 		</>
 	);
 };
