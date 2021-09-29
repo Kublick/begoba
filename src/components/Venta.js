@@ -527,7 +527,7 @@ const Venta = () => {
 					¿Serás el próximo?
 				</h2>
 				<div className="grid md:grid-cols-2 gap-x-10">
-					<div className="my-10">
+					<div className="flex justify-center">
 						<ReactPlayer
 							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}

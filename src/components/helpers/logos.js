@@ -637,7 +637,7 @@ export const Instalogo = (data) => {
 export const fbsecondary = (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className="w-4 h-4"
+		className="w-8 h-8"
 		viewBox="0 0 512 512"
 		fill="#E7407B"
 	>
@@ -651,7 +651,7 @@ export const fbsecondary = (
 export const ytwhite = (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className="w-4 h-4"
+		className="w-8 h-8"
 		viewBox="0 0 512 512"
 		fill="#E7407B"
 	>
@@ -663,7 +663,7 @@ export const ytwhite = (
 export const inswhite = (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		className="w-4 h-4"
+		className="w-8 h-8"
 		fill="#E7407B"
 		viewBox="0 0 512 512"
 	>

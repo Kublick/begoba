@@ -19,7 +19,7 @@ body {
 }
 
 .btn-main-mango {
-	@apply py-2 text-white border-4 bg-mango border-mango rounded-xl hover:bg-mango-btn hover:border-mango-btn;
+	@apply px-4 py-2 text-white border-4 bg-mango border-mango rounded-xl hover:bg-mango-btn hover:border-mango-btn;
 }
 
 .btn-green {
@@ -60,7 +60,7 @@ body {
 }
 
 .white-btn {
-	@apply flex items-center justify-center w-6 h-6 bg-white rounded-full;
+	@apply flex items-center justify-center w-12 h-12 bg-white rounded-full;
 }
 
 .footer-text {
