@@ -77,6 +77,22 @@ const Closed = () => {
 				<div className="grid md:grid-cols-2 justify-items-center gap-x-10">
 					<div className="my-10">
 						<ReactPlayer
+							url="https://youtu.be/BZCgpqnTqZw"
+							width={320}
+							height={320}
+							controls={true}
+						/>
+					</div>
+					<div className="my-10">
+						<ReactPlayer
+							url="https://youtu.be/eGORT3A48l0"
+							width={320}
+							height={320}
+							controls={true}
+						/>
+					</div>
+					<div className="my-10">
+						<ReactPlayer
 							url="https://youtu.be/c1XGvy-ynZs"
 							width={320}
 							height={320}
