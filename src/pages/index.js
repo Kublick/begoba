@@ -1,28 +1,28 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import SEO from '../components/seo';
-// import Hero from '../components/Hero';
-// import Sesiones from '../components/Sesiones';
-// import Sociales from '../components/Sociales';
-// import Anfrition from '../components/Anfrition';
-// import Footer from '../components/Footer';
+import Hero from '../components/Hero';
+import Sesiones from '../components/Sesiones';
+import Sociales from '../components/Sociales';
+import Anfrition from '../components/Anfrition';
+import Footer from '../components/Footer';
 import PropTypes from 'prop-types';
-import Closed from '../components/Closed';
+// import Closed from '../components/Closed';
 
 // import Countdown from "react-countdown";
 
 function IndexPage() {
-	// if (typeof window !== 'undefined') {
-	// 	if (window.fbq != null) {
-	// 		// window.fbq("track", "PageView");
-	// 		window.fbq('track', 'ViewContent');
-	// 	}
-	// }
+	if (typeof window !== 'undefined') {
+		if (window.fbq != null) {
+			// window.fbq("track", "PageView");
+			window.fbq('track', 'ViewContent');
+		}
+	}
 
-	// const formRef = useRef();
+	const formRef = useRef();
 
-	// function handleBackClick() {
-	// 	formRef.current.scrollIntoView({ behavior: 'smooth' });
-	// }
+	function handleBackClick() {
+		formRef.current.scrollIntoView({ behavior: 'smooth' });
+	}
 
 	return (
 		<>
@@ -39,9 +39,7 @@ function IndexPage() {
 				title="Incrementa tu numero de pacientes"
 			/>
 
-			<Closed />
-
-			{/* <section>
+			<section>
 				<Hero formRef={formRef} />
 			</section>
 			<div>
@@ -59,7 +57,7 @@ function IndexPage() {
 			</section>
 			<footer>
 				<Footer handleBackClick={handleBackClick} />
-			</footer> */}
+			</footer>
 		</>
 	);
 }
