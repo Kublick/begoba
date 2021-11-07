@@ -24,7 +24,7 @@ const S2 = () => {
 			{show ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-primary" date="21 September 2021 15:30" />
+						<SesionHeader color="bg-primary" date="18 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">

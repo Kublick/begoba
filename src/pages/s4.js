@@ -16,7 +16,7 @@ const S4 = () => {
 	const [point, setPoint] = useState(false);
 	const ventaRef = useRef();
 
-	let date = 'September 23 2021 17:08:10';
+	let date = 'January 20 2021 17:08:10';
 
 	function timing() {
 		setInterval(() => {

@@ -78,7 +78,7 @@ const Sesiones = () => {
 						</div>
 					</div>
 					<p className="sesiones-text">
-						Como vender tu consulta online con la estrategia DEPE
+						Como ofrecer o vender tu consulta online
 					</p>
 				</div>
 				<div>
@@ -90,7 +90,7 @@ const Sesiones = () => {
 						/>
 					</div>
 					<p className="sesiones-text">
-						Derriba tus miedos y da ese siguiente paso para vivir de tu consulta
+						La estrategia para hacer crecer tu lista de pacientes
 					</p>
 				</div>
 			</div>

@@ -95,7 +95,9 @@ const Footer = (props) => {
 						<button
 							className="white-btn"
 							onClick={() =>
-								window.open('http://www.facebook.com/groups/2375070212786505/')
+								window.open(
+									'http://www.facebook.com/Psic%C3%B3loga-Berenice-Bastidas-Incrementa-tu-consulta-365202393876165/',
+								)
 							}
 						>
 							{fbsecondary}
