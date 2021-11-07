@@ -4,7 +4,6 @@ import { headerLogo } from '../components/helpers/logos';
 const Regalo = () => {
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
-			// window.fbq("track", "PageView");
 			window.fbq('track', 'ViewContent');
 		}
 	}
