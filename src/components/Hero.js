@@ -3,7 +3,8 @@ import React from 'react';
 import { mainLogo } from './helpers/logos';
 import Formulario from './Formulario';
 import PropTypes from 'prop-types';
-import Countdown from 'react-countdown';
+// import Countdown from 'react-countdown';
+import Counter from './Counter';
 
 const Hero = (props) => {
 	return (
@@ -47,10 +48,12 @@ const Hero = (props) => {
 
 				<Formulario />
 				<div className="mt-8 text-2xl">
-					<p>La oportunidad de registro expira en:</p>
-					<Countdown date={Date.now() + 4000000} />
+					<p className="mb-4">La oportunidad de registro expira en:</p>
+					<div className="flex justify-center">
+						<Counter date={Date.now() + 4000000} />
+					</div>
 				</div>
-				<p className="py-2 font-semibold font-3xl text-primary">
+				<p className="py-4 font-semibold font-3xl text-primary">
 					Descubre como ofrecer <br /> y vender tu consulta online
 				</p>
 			</div>

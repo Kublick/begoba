@@ -14,7 +14,6 @@ export default class IndexPage extends React.Component {
 
 	_handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('sent');
 		const data = new FormData(e.target);
 
 		fetch('https://psicologaberenicebastidas.activehosted.com/proc.php', {
@@ -50,13 +49,18 @@ export default class IndexPage extends React.Component {
 						</p>
 
 						<form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
-							<input type="hidden" name="u" value="29" />
-							<input type="hidden" name="f" value="29" />
+							<input type="hidden" name="u" value="31" />
+							<input type="hidden" name="f" value="31" />
 							<input type="hidden" name="s" />
 							<input type="hidden" name="c" value="0" />
 							<input type="hidden" name="m" value="0" />
 							<input type="hidden" name="act" value="sub" />
 							<input type="hidden" name="v" value="2" />
+							<input
+								type="hidden"
+								name="or"
+								value="4ee6b45a84624ee02d43217b0311cd5a"
+							/>
 
 							<input
 								type="text"
