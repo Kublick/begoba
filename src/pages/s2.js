@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { fbwhite, wswhite, notebookWhite } from '../components/helpers/logos';
 import SesionHeader from '../components/SesionHeader';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import CommentsFacebook from '../components/CommentsFacebook';
 import ReactPlayer from 'react-player';
 
 const S2 = () => {
-	let show = false;
-	useEffect(() => {
-		navigate('/vv');
-	}, []);
+	let show = true;
+	// useEffect(() => {
+	// 	navigate('/vv');
+	// }, []);
 
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
