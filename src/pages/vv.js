@@ -1,16 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Countdown from 'react-countdown';
 import { headerLogo } from '../components/helpers/logos';
 import Venta from '../components/Venta';
 import Videoplayer from '../components/Videoplayer';
-import { navigate } from 'gatsby';
 
 const VideoVenta = () => {
-	let view = false;
-
-	useEffect(() => {
-		navigate('/');
-	}, []);
+	let view = true;
 
 	const renderer = ({ days, hours, minutes, seconds }) => {
 		let queda = 'Quedan';

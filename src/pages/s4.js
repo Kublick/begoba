@@ -16,7 +16,7 @@ const S4 = () => {
 	const [point, setPoint] = useState(false);
 	const ventaRef = useRef();
 
-	let date = 'January 20 2021 17:08:10';
+	let date = 'January 27 2021 17:08:10';
 
 	function timing() {
 		setInterval(() => {
@@ -40,7 +40,7 @@ const S4 = () => {
 			{view ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-primary" date="23 September 2021 15:30" />
+						<SesionHeader color="bg-primary" date="27 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">
@@ -77,7 +77,7 @@ const S4 = () => {
 									</h1>
 									<div>
 										<Videoplayer
-											url={'https://youtu.be/O1KFwtqUNjM'}
+											url={'https://youtu.be/q0LBG3uvFV4'}
 											controls={false}
 										/>
 									</div>
@@ -98,14 +98,6 @@ const S4 = () => {
 											alt="foto sesion 1"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s2">
@@ -115,14 +107,6 @@ const S4 = () => {
 											alt="foto sesion 3"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s3">
@@ -132,14 +116,6 @@ const S4 = () => {
 											alt="foto sesion 3"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 							</div>
 						</div>

@@ -24,7 +24,7 @@ const S2 = () => {
 			{show ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-primary" date="18 January 2022 15:30" />
+						<SesionHeader color="bg-primary" date="25 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">
@@ -80,7 +80,7 @@ const S2 = () => {
 									</h1>
 									<div>
 										<Videoplayer
-											url={'https://youtu.be/2Viv-ICoKew'}
+											url={'https://youtu.be/CSL-umpWgBA'}
 											controls={true}
 										/>
 									</div>
@@ -101,14 +101,6 @@ const S2 = () => {
 											alt="foto sesion 3"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											22
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											SEP
-										</p>
-									</div>
 								</div>
 								<div>
 									<Link to="/s4">
@@ -118,14 +110,6 @@ const S2 = () => {
 											alt="foto sesion 4"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											23
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											SEP
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s1">
@@ -135,14 +119,6 @@ const S2 = () => {
 											alt="foto sesion 1"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 							</div>
 						</div>

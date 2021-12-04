@@ -24,7 +24,7 @@ const S3 = () => {
 			{show ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-mango" date="19 January 2022 15:30" />
+						<SesionHeader color="bg-mango" date="26 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">
@@ -102,7 +102,7 @@ const S3 = () => {
 									</h1>
 									<div>
 										<Videoplayer
-											url={'https://youtu.be/JwUckZB_4oM'}
+											url={'https://youtu.be/juInlVmYvm0'}
 											controls={true}
 										/>
 									</div>
@@ -112,7 +112,7 @@ const S3 = () => {
 										DE 4
 									</p>
 								</div>
-								<div className="flex justify-center mt-8">
+								{/* <div className="flex justify-center mt-8">
 									<button
 										className="px-8 font-semibold text-white btn-main-mango"
 										onClick={() =>
@@ -121,7 +121,7 @@ const S3 = () => {
 									>
 										LLenar el Formulario
 									</button>
-								</div>
+								</div> */}
 							</div>
 
 							<div className="flex flex-col gap-4 p-4 md:gap-8 md:p-10">
@@ -133,14 +133,6 @@ const S3 = () => {
 											alt="foto sesion 4"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											23
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											SEP
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s1">
@@ -150,14 +142,6 @@ const S3 = () => {
 											alt="foto sesion 1"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s2">
@@ -167,14 +151,6 @@ const S3 = () => {
 											alt="foto sesion 3"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 							</div>
 						</div>
