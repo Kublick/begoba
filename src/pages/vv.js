@@ -5,7 +5,7 @@ import Venta from '../components/Venta';
 import Videoplayer from '../components/Videoplayer';
 
 const VideoVenta = () => {
-	let view = true;
+	let view = false;
 
 	const renderer = ({ days, hours, minutes, seconds }) => {
 		let queda = 'Quedan';
@@ -31,7 +31,7 @@ const VideoVenta = () => {
 		);
 	};
 
-	const eventDate = new Date('29 September 2021 01:00:00');
+	const eventDate = new Date('27 January 2022 15:30');
 
 	return (
 		<>

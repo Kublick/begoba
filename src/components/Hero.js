@@ -30,7 +30,7 @@ const Hero = (props) => {
 						</p>
 					</div>
 					<p className="px-4 py-1 m-2 text-lg text-white rounded-full bg-secondary">
-						Del 17 al 21 de Enero 2022
+						Del 24 al 27 de Enero 2022
 					</p>
 				</div>
 			</div>

@@ -65,7 +65,7 @@ const S3 = () => {
 										className="bg-secondary btn-social"
 										onClick={() =>
 											window.open(
-												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-Taller.pdf',
+												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf',
 											)
 										}
 									>
@@ -76,7 +76,7 @@ const S3 = () => {
 										className="bg-green-600 btn-social"
 										onClick={() =>
 											window.open(
-												'https://chat.whatsapp.com/BAilmyYjQH12LdYjLq6XWU',
+												'https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e',
 											)
 										}
 									>
