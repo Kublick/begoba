@@ -72,8 +72,7 @@ const S4 = () => {
 							<div className="order-first py-8 bg-gray-100 shadow-lg lg:col-span-2 lg:order-none">
 								<div className="flex flex-col gap-2 md:gap-6">
 									<h1 className="self-center text-2xl font-semibold text-center md:w-3/4 text-secondary">
-										Derriba tus miedos y da ese siguiente paso para vivir de tu
-										consulta
+										La estrategia para hacer crecer tu lista de pacientes
 									</h1>
 									<div>
 										<Videoplayer
