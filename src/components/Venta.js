@@ -377,27 +377,6 @@ const Venta = () => {
 								</p>
 							</div>
 						</div>
-						<div className="flex items-center gap-2">
-							<div className="hidden sm:inline-block">{regalo}</div>
-							<div>
-								<p className="text-lg font-semibold text-secondary">
-									BONO 5: TALLER DE UNO MUCHOS
-								</p>
-								<p>
-									conocerás la forma de vender de uno a muchos, esta estrategia
-									te sirve para poder captar la mayor cantidad de clientes en el
-									menor tiempo posible, te será muy útil cuando vendas cursos
-									online.
-								</p>
-								<p>
-									Valorado en
-									<span className="font-semibold text-primary">
-										{' '}
-										$147 dólares{' '}
-									</span>
-								</p>
-							</div>
-						</div>
 						<p>
 							Sin duda es muchísimo valor el que tendrás con el entrenamiento
 							completo{' '}
@@ -405,7 +384,7 @@ const Venta = () => {
 								INCREMENTA TU CONSULTA
 							</span>{' '}
 							y además con los bonos de regalo tienes acceso a mas de{' '}
-							<span className="font-semibold text-secondary">$3,426</span>{' '}
+							<span className="font-semibold text-secondary">$3,600</span>{' '}
 							dólares en contenido de valor y recursos. Si pagaras todo esto por
 							separado te saldría en eso... Pero hoy tengo una invitación, es
 							una oferta especial para ti, hoy tu puedes reservar tu inscripción

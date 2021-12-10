@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { fbwhite, wswhite, notebookWhite } from '../components/helpers/logos';
 import SesionHeader from '../components/SesionHeader';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 import CommentsFacebook from '../components/CommentsFacebook';
 import ReactPlayer from 'react-player';
 
 const S3 = () => {
-	let show = false;
-	useEffect(() => {
-		navigate('/vv');
-	}, []);
+	let show = true;
+	// useEffect(() => {
+	// 	navigate('/vv');
+	// }, []);
 
 	if (typeof window !== 'undefined') {
 		if (window.fbq != null) {
@@ -24,7 +24,7 @@ const S3 = () => {
 			{show ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-mango" date="19 January 2022 15:30" />
+						<SesionHeader color="bg-mango" date="26 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">
@@ -65,7 +65,7 @@ const S3 = () => {
 										className="bg-secondary btn-social"
 										onClick={() =>
 											window.open(
-												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-Taller.pdf',
+												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf',
 											)
 										}
 									>
@@ -76,7 +76,7 @@ const S3 = () => {
 										className="bg-green-600 btn-social"
 										onClick={() =>
 											window.open(
-												'https://chat.whatsapp.com/BAilmyYjQH12LdYjLq6XWU',
+												'https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e',
 											)
 										}
 									>
@@ -98,11 +98,11 @@ const S3 = () => {
 							<div className="order-first py-8 bg-gray-100 shadow-lg lg:col-span-2 lg:order-none">
 								<div className="flex flex-col gap-2 md:gap-6">
 									<h1 className="self-center text-2xl font-semibold text-center md:w-3/4 text-secondary">
-										Como vender tu consulta online con la estrategia D.E.P.E.
+										Como ofrecer o vender tu consulta online
 									</h1>
 									<div>
 										<Videoplayer
-											url={'https://youtu.be/JwUckZB_4oM'}
+											url={'https://youtu.be/juInlVmYvm0'}
 											controls={true}
 										/>
 									</div>
@@ -112,7 +112,7 @@ const S3 = () => {
 										DE 4
 									</p>
 								</div>
-								<div className="flex justify-center mt-8">
+								{/* <div className="flex justify-center mt-8">
 									<button
 										className="px-8 font-semibold text-white btn-main-mango"
 										onClick={() =>
@@ -121,7 +121,7 @@ const S3 = () => {
 									>
 										LLenar el Formulario
 									</button>
-								</div>
+								</div> */}
 							</div>
 
 							<div className="flex flex-col gap-4 p-4 md:gap-8 md:p-10">
@@ -133,14 +133,6 @@ const S3 = () => {
 											alt="foto sesion 4"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											23
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											SEP
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s1">
@@ -150,14 +142,6 @@ const S3 = () => {
 											alt="foto sesion 1"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 								<div className="">
 									<Link to="/s2">
@@ -167,14 +151,6 @@ const S3 = () => {
 											alt="foto sesion 3"
 										/>
 									</Link>
-									<div className="flex justify-end flex-grow-0">
-										<p className="px-1 text-xl font-bold text-white p bg-mango">
-											YA
-										</p>
-										<p className="px-1 text-xl font-bold text-white bg-secondary">
-											DISPONIBLE
-										</p>
-									</div>
 								</div>
 							</div>
 						</div>

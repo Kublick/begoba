@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
+import { navigate } from 'gatsby';
+import React from 'react';
+import { useEffect } from 'react';
 import Countdown from 'react-countdown';
 import { headerLogo } from '../components/helpers/logos';
 import Venta from '../components/Venta';
 import Videoplayer from '../components/Videoplayer';
-import { navigate } from 'gatsby';
 
 const VideoVenta = () => {
-	let view = false;
-
 	useEffect(() => {
 		navigate('/');
 	}, []);
+	let view = false;
 
 	const renderer = ({ days, hours, minutes, seconds }) => {
 		let queda = 'Quedan';
@@ -36,7 +36,7 @@ const VideoVenta = () => {
 		);
 	};
 
-	const eventDate = new Date('29 September 2021 01:00:00');
+	const eventDate = new Date('27 January 2022 15:30');
 
 	return (
 		<>

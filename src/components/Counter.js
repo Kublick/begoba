@@ -58,5 +58,5 @@ const Counter = ({ date }) => {
 export default Counter;
 
 Counter.propTypes = {
-	date: PropTypes.string,
+	date: PropTypes.number,
 };
