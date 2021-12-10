@@ -45,28 +45,8 @@ const S4 = () => {
 					<main>
 						<div className="grid lg:grid-cols-4">
 							<div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-								<h1 className="text-lg font-semibold text-center text-primary">
-									¡ATENCIÓN!
-								</h1>
-								<p>
-									Dado que los cupos son limitados y que el proceso de
-									inscripción solo estará abierto unos pocos días hemos
-									habilitado una lista prioritaria, ahí puedes dejarnos tus
-									datos rellenando el formulario y de esta forma sabremos qué
-									quieres tomar acción cuanto antes para no quedarte afuera de
-									esta promoción.
-								</p>
-
-								<div className="flex justify-center mt-8">
-									<button
-										className="px-8 font-semibold text-white btn-main-mango"
-										onClick={() =>
-											window.open('https://es.surveymonkey.com/r/9DNKNP6')
-										}
-									>
-										LLenar el Formulario
-									</button>
-								</div>
+								<h1 className="text-lg font-semibold text-center text-primary"></h1>
+								<p></p>
 							</div>
 
 							<div className="order-first py-8 bg-gray-100 shadow-lg lg:col-span-2 lg:order-none">
