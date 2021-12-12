@@ -1,6 +1,5 @@
 import { navigate } from 'gatsby';
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Countdown from 'react-countdown';
 import { headerLogo } from '../components/helpers/logos';
 import Venta from '../components/Venta';
