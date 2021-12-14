@@ -4,7 +4,7 @@ import { mainLogo } from '../components/helpers/logos';
 const Regalo = () => {
 	const redirect = () => {
 		window.open(
-			'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf',
+			'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional.pdf',
 		);
 	};
 

@@ -25,7 +25,7 @@ const S1 = () => {
 			{show ? (
 				<div>
 					<header>
-						<SesionHeader color="bg-mango" date="24 January 2022 15:30" />
+						<SesionHeader color="bg-mango" date="26 January 2022 15:30" />
 					</header>
 					<main>
 						<div className="grid lg:grid-cols-4">
@@ -67,7 +67,7 @@ const S1 = () => {
 										className="bg-secondary btn-social"
 										onClick={() =>
 											window.open(
-												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf',
+												'https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional.pdf',
 											)
 										}
 									>
