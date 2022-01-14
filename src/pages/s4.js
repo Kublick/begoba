@@ -1,16 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import SesionHeader from '../components/SesionHeader';
 import Videoplayer from '../components/Videoplayer';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import Venta from '../components/Venta';
 
 const S4 = () => {
 	let view = true;
 
-	// useEffect(() => {
-	// 	navigate('/');
-	// }, []);
+	useEffect(() => {
+		navigate('/s1');
+	}, []);
 
 	const [show, setShow] = useState(false);
 	const [point, setPoint] = useState(false);
