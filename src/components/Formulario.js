@@ -4,6 +4,9 @@ import { navigate } from 'gatsby';
 export default class IndexPage extends React.Component {
 	state = {
 		submit: false,
+		error: '',
+		fullname: '',
+		email: '',
 	};
 
 	_handleChange = (e) => {
@@ -14,7 +17,21 @@ export default class IndexPage extends React.Component {
 
 	_handleSubmit = (e) => {
 		e.preventDefault();
+		console.log(this.state);
+		if (this.state.fullname === '' || this.state.email === '') {
+			this.setState({
+				error: 'Por favor llene todos los campos',
+			});
+			return;
+		}
+
+		this.setState({
+			error: '',
+		});
+
 		const data = new FormData(e.target);
+
+		console.log(data);
 
 		fetch('https://psicologaberenicebastidas.activehosted.com/proc.php', {
 			method: 'POST',
@@ -81,6 +98,9 @@ export default class IndexPage extends React.Component {
 							<input type="submit" className="btn-main" value="Registrarme" />
 						</form>
 					</div>
+				</div>
+				<div className="my-4 text-xl font-bold text-red-600">
+					{this.state.error}
 				</div>
 			</>
 		);
