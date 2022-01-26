@@ -24,24 +24,24 @@ const Gracias = () => {
 
   return (
     <div>
-      <div className="flex justify-center transform scale-75">{mainLogo}</div>
-      <div className="p-8 bg-primary-light lg:px-20">
-        <h1 className="text-2xl text-center lg:text-4xl">
+      <div className="flex scale-75 transform justify-center">{mainLogo}</div>
+      <div className="bg-primary-light p-8 lg:px-20">
+        <h1 className="text-center text-2xl lg:text-4xl">
           Para finalmente <span className="font-semibold">COMPLETAR</span> tu{" "}
           <span className="font-semibold">REGISTRO</span> faltan
           <span className="font-semibold"> DOS PASOS</span> muy pequeños e
           IMPORTANTES
         </h1>
-        <div className="grid my-6 md:grid-cols-2">
+        <div className="my-6 grid md:grid-cols-2">
           <div className="box">
             <div className="flex justify-center">
               <GatsbyImage
                 image={data.desktop.childImageSharp.gatsbyImageData}
-                className="m-4 transform scale-75 circle"
+                className="circle m-4 scale-75 transform"
                 alt="Imagen Berenice"
               />
             </div>
-            <p className="pb-8 text-lg font-bold text-center md:text-2xl text-primary">
+            <p className="pb-8 text-center text-lg font-bold text-primary md:text-2xl">
               ¡Nos vemos en el taller!
             </p>
           </div>
@@ -56,10 +56,10 @@ const Gracias = () => {
 
             <div className="flex justify-center gap-4 align-middle">
               <button
-                className="shadow-lg btn-green logo-container"
+                className="btn-green logo-container shadow-lg"
                 onClick={() => {
                   window.open(
-                    "https://chat.whatsapp.com/L4FY1N8RISxCeN4wP0oZ4I"
+                    "https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e"
                   );
                 }}
               >
@@ -93,7 +93,7 @@ const Gracias = () => {
             </p>
           </div>
         </div>
-        <p className="text-2xl text-center text-secondary font-cursive">
+        <p className="font-cursive text-center text-2xl text-secondary">
           Gracias por Registrarte
         </p>
       </div>
