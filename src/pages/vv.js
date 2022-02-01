@@ -11,6 +11,13 @@ const VideoVenta = () => {
   // }, []);
   let view = true;
 
+  if (typeof window !== "undefined") {
+    if (window.fbq != null) {
+      // window.fbq("track", "PageView");
+      window.fbq("track", "AddPaymentInfo");
+    }
+  }
+
   const renderer = ({ days, hours, minutes, seconds }) => {
     let queda = "Quedan";
     let dias = "días";
@@ -54,7 +61,6 @@ const VideoVenta = () => {
               <div className="col-span-2 px-10">
                 <Videoplayer
                   url={"https://youtu.be/q0LBG3uvFV4?start=5m34s"}
-                  controls={false}
                   playing={true}
                 />
               </div>
