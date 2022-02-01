@@ -1,69 +1,79 @@
-import React, { useRef } from 'react';
-import SEO from '../components/seo';
-import Hero from '../components/Hero';
-import Sesiones from '../components/Sesiones';
-import Sociales from '../components/Sociales';
-import Anfrition from '../components/Anfrition';
-import Footer from '../components/Footer';
-import PropTypes from 'prop-types';
+import React, { useRef } from "react";
+import SEO from "../components/seo";
+import Hero from "../components/Hero";
+import Sesiones from "../components/Sesiones";
+import Sociales from "../components/Sociales";
+import Anfrition from "../components/Anfrition";
+import Footer from "../components/Footer";
+import PropTypes from "prop-types";
+import { navigate } from "gatsby";
 // import Closed from '../components/Closed';
 
 // import Countdown from "react-countdown";
 
 function IndexPage() {
-	if (typeof window !== 'undefined') {
-		if (window.fbq != null) {
-			// window.fbq("track", "PageView");
-			window.fbq('track', 'ViewContent');
-		}
-	}
+  if (typeof window !== "undefined") {
+    if (window.fbq != null) {
+      // window.fbq("track", "PageView");
+      window.fbq("track", "ViewContent");
+    }
+  }
 
-	const formRef = useRef();
+  const formRef = useRef();
 
-	function handleBackClick() {
-		formRef.current.scrollIntoView({ behavior: 'smooth' });
-	}
+  function handleBackClick() {
+    formRef.current.scrollIntoView({ behavior: "smooth" });
+  }
 
-	return (
-		<>
-			<SEO
-				keywords={[
-					`psicologo`,
-					`curso`,
-					`pacientes`,
-					`formacion`,
-					`nutriologos`,
-					`medicos`,
-					`fisioterapeutas`,
-				]}
-				title="Incrementa tu numero de pacientes"
-			/>
+  const show = false;
 
-			<section>
-				<Hero formRef={formRef} />
-			</section>
-			<div>
-				<section>
-					<Sesiones />
-				</section>
-			</div>
+  React.useEffect(() => {
+    navigate("/vv");
+  }, []);
 
-			<section>
-				<Sociales handleBackClick={handleBackClick} />
-			</section>
+  return (
+    <>
+      <SEO
+        keywords={[
+          `psicologo`,
+          `curso`,
+          `pacientes`,
+          `formacion`,
+          `nutriologos`,
+          `medicos`,
+          `fisioterapeutas`,
+        ]}
+        title="Incrementa tu numero de pacientes"
+      />
+      {show ? (
+        <>
+          <section>
+            <Hero formRef={formRef} />
+          </section>
+          <div>
+            <section>
+              <Sesiones />
+            </section>
+          </div>
 
-			<section>
-				<Anfrition />
-			</section>
-			<footer>
-				<Footer handleBackClick={handleBackClick} />
-			</footer>
-		</>
-	);
+          <section>
+            <Sociales handleBackClick={handleBackClick} />
+          </section>
+
+          <section>
+            <Anfrition />
+          </section>
+          <footer>
+            <Footer handleBackClick={handleBackClick} />
+          </footer>
+        </>
+      ) : null}
+    </>
+  );
 }
 
 export default IndexPage;
 
 IndexPage.propTypes = {
-	ref: PropTypes.oneOfType([PropTypes.func]),
+  ref: PropTypes.oneOfType([PropTypes.func]),
 };
