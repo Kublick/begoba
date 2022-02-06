@@ -6,30 +6,26 @@ import Sociales from "../components/Sociales";
 import Anfrition from "../components/Anfrition";
 import Footer from "../components/Footer";
 import PropTypes from "prop-types";
-import { navigate } from "gatsby";
-// import Closed from '../components/Closed';
-
+// import { navigate } from "gatsby";
+import Closed from "../components/Closed";
 // import Countdown from "react-countdown";
 
 function IndexPage() {
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
-      // window.fbq("track", "PageView");
       window.fbq("track", "ViewContent");
     }
   }
-
   const formRef = useRef();
-
   function handleBackClick() {
     formRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   const show = false;
 
-  React.useEffect(() => {
-    navigate("/vv");
-  }, []);
+  // React.useEffect(() => {
+  //   navigate("/vv");
+  // }, []);
 
   return (
     <>
@@ -67,7 +63,9 @@ function IndexPage() {
             <Footer handleBackClick={handleBackClick} />
           </footer>
         </>
-      ) : null}
+      ) : (
+        <Closed />
+      )}
     </>
   );
 }

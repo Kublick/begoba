@@ -6,10 +6,10 @@ import { Link, navigate } from "gatsby";
 import Venta from "../components/Venta";
 
 const S4 = () => {
-  let view = true;
+  let view = false;
 
   React.useEffect(() => {
-    navigate("/vv");
+    navigate("/");
   }, []);
 
   const [show, setShow] = useState(false);

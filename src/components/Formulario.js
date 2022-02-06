@@ -1,108 +1,108 @@
-import React from 'react';
-import { navigate } from 'gatsby';
+import React from "react";
+import { navigate } from "gatsby";
 
 export default class IndexPage extends React.Component {
-	state = {
-		submit: false,
-		error: '',
-		fullname: '',
-		email: '',
-	};
+  state = {
+    submit: false,
+    error: "",
+    fullname: "",
+    email: "",
+  };
 
-	_handleChange = (e) => {
-		this.setState({
-			[`${e.target.name}`]: e.target.value,
-		});
-	};
+  _handleChange = (e) => {
+    this.setState({
+      [`${e.target.name}`]: e.target.value,
+    });
+  };
 
-	_handleSubmit = (e) => {
-		e.preventDefault();
-		console.log(this.state);
-		if (this.state.fullname === '' || this.state.email === '') {
-			this.setState({
-				error: 'Por favor llene todos los campos',
-			});
-			return;
-		}
+  _handleSubmit = (e) => {
+    e.preventDefault();
 
-		this.setState({
-			error: '',
-		});
+    if (this.state.fullname === "" || this.state.email === "") {
+      this.setState({
+        error: "Por favor llene todos los campos",
+      });
+      return;
+    }
 
-		const data = new FormData(e.target);
+    this.setState({
+      error: "",
+    });
 
-		console.log(data);
+    const data = new FormData(e.target);
 
-		fetch('https://psicologaberenicebastidas.activehosted.com/proc.php', {
-			method: 'POST',
-			body: data,
-			mode: 'no-cors',
-		})
-			.then((response) => {
-				this.setState({ submit: true });
-				console.log(response);
+    console.log(data);
 
-				setTimeout(() => {
-					this.setState({ submit: false });
-				}, 2000);
+    fetch("https://psicologaberenicebastidas.activehosted.com/proc.php", {
+      method: "POST",
+      body: data,
+      mode: "no-cors",
+    })
+      .then((response) => {
+        this.setState({ submit: true });
+        console.log(response);
 
-				if (this.state.submit === true) {
-					navigate('/gracias');
-				}
-			})
-			.catch((err) => {
-				console.log('err', err);
-				alert(err);
-			});
-	};
+        setTimeout(() => {
+          this.setState({ submit: false });
+        }, 2000);
 
-	render() {
-		return (
-			<>
-				<div className="container flex justify-center ">
-					<div className="flex flex-col items-center gap-2 px-8 py-4 shadow-md min-w-3/4 rounded-xl justify-content center bg-secondary">
-						<p className="font-semibold text-white font-3xl">
-							Registrate <span className="font-bold">GRATIS</span>
-						</p>
+        if (this.state.submit === true) {
+          navigate("/gracias");
+        }
+      })
+      .catch((err) => {
+        console.log("err", err);
+        alert(err);
+      });
+  };
 
-						<form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
-							<input type="hidden" name="u" value="31" />
-							<input type="hidden" name="f" value="31" />
-							<input type="hidden" name="s" />
-							<input type="hidden" name="c" value="0" />
-							<input type="hidden" name="m" value="0" />
-							<input type="hidden" name="act" value="sub" />
-							<input type="hidden" name="v" value="2" />
-							<input
-								type="hidden"
-								name="or"
-								value="4ee6b45a84624ee02d43217b0311cd5a"
-							/>
+  render() {
+    return (
+      <>
+        <div className="container flex justify-center ">
+          <div className="min-w-3/4 justify-content center flex flex-col items-center gap-2 rounded-xl bg-secondary px-8 py-4 shadow-md">
+            <p className="font-3xl font-semibold text-white">
+              Registrate <span className="font-bold">GRATIS</span>
+            </p>
 
-							<input
-								type="text"
-								onChange={this._handleChange}
-								className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
-								name="fullname"
-								placeholder="nombre"
-							/>
+            <form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
+              <input type="hidden" name="u" value="31" />
+              <input type="hidden" name="f" value="31" />
+              <input type="hidden" name="s" />
+              <input type="hidden" name="c" value="0" />
+              <input type="hidden" name="m" value="0" />
+              <input type="hidden" name="act" value="sub" />
+              <input type="hidden" name="v" value="2" />
+              <input
+                type="hidden"
+                name="or"
+                value="4ee6b45a84624ee02d43217b0311cd5a"
+              />
 
-							<input
-								type="email"
-								onChange={this._handleChange}
-								className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
-								name="email"
-								placeholder="email"
-							/>
+              <input
+                type="text"
+                onChange={this._handleChange}
+                className="font-sm w-auto rounded-md px-4 py-1 shadow-sm"
+                name="fullname"
+                placeholder="nombre"
+              />
 
-							<input type="submit" className="btn-main" value="Registrarme" />
-						</form>
-					</div>
-				</div>
-				<div className="my-4 text-xl font-bold text-red-600">
-					{this.state.error}
-				</div>
-			</>
-		);
-	}
+              <input
+                type="email"
+                onChange={this._handleChange}
+                className="font-sm w-auto rounded-md px-4 py-1 shadow-sm"
+                name="email"
+                placeholder="email"
+              />
+
+              <input type="submit" className="btn-main" value="Registrarme" />
+            </form>
+          </div>
+        </div>
+        <div className="my-4 text-xl font-bold text-red-600">
+          {this.state.error}
+        </div>
+      </>
+    );
+  }
 }

@@ -56,11 +56,9 @@ const Gracias = () => {
 
             <div className="flex justify-center gap-4 align-middle">
               <button
-                className="btn-green logo-container shadow-lg"
+                className="btn-telegram logo-container shadow-lg"
                 onClick={() => {
-                  window.open(
-                    "https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e"
-                  );
+                  window.open("https://t.me/+axdk9ItfKLgzMTZh");
                 }}
               >
                 Unirme AL GRUPO

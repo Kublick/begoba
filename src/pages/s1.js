@@ -10,7 +10,7 @@ import ReactPlayer from "react-player";
 const S1 = () => {
   let show = false;
   useEffect(() => {
-    navigate("/s4");
+    navigate("/");
   }, []);
 
   if (typeof window !== "undefined") {
