@@ -49,7 +49,7 @@ const Gracias = () => {
             <p>
               <span className="font-semibold">UNIRTE</span> al{" "}
               <span className="font-semibold">GRUPO PRIVADO</span> en{" "}
-              <span className="font-semibold">WHATSAPP</span> para recibir todas
+              <span className="font-semibold">TELEGRAM</span> para recibir todas
               las <span className="font-semibold">NOTIFICACIONES</span> de esta
               semana del <span>TALLER</span> sólo da click aquí mismo.
             </p>
