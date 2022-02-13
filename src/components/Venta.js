@@ -37,12 +37,12 @@ const Venta = () => {
 
   return (
     <>
-      <div className="mb-10 flex flex-col items-center gap-4">
-        <h1 className="text-xl font-semibold text-primary md:text-3xl">
-          Bonos de Acción Rápida (bonos BAR solo disponibles las primeras 24
-          horas)
+      <div className="flex flex-col items-center gap-4 mb-10">
+        <h1 className="text-xl font-semibold text-center text-primary md:text-3xl">
+          Bonos de Acción Rápida (bonos BAR solo disponibles{" "}
+          <span className="font-bold">HOY</span> )
         </h1>
-        <div className="flex w-3/4 items-center justify-center gap-2">
+        <div className="flex items-center justify-center w-3/4 gap-2">
           <div className="hidden sm:inline-block">{regalo}</div>
           <div>
             <p className="text-lg">
@@ -59,7 +59,7 @@ const Venta = () => {
             </p>
           </div>
         </div>
-        <div className="flex w-3/4 items-center justify-center gap-2">
+        <div className="flex items-center justify-center w-3/4 gap-2">
           <div className="hidden sm:inline-block">{regalo}</div>
           <div>
             <p className="text-lg">
@@ -78,47 +78,47 @@ const Venta = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center bg-secondary py-4 ">
-        <h1 className="px-4 text-center text-2xl font-bold text-white md:w-1/2 lg:px-0 lg:text-5xl">
+      <div className="flex justify-center py-4 bg-secondary ">
+        <h1 className="px-4 text-2xl font-bold text-center text-white md:w-1/2 lg:px-0 lg:text-5xl">
           ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
         </h1>
       </div>
       <div className="md:mx-10">
         <div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
-          <div className="flex w-3/4 flex-col border-2 border-dashed border-red-600 bg-white p-4 md:w-1/2 lg:max-w-md">
-            <h2 className="bg-mango p-4 text-center text-xl font-bold text-white md:text-2xl">
+          <div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+            <h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
               PAGO ÚNICO
             </h2>
-            <p className="py-4 text-center text-lg md:text-xl">
+            <p className="py-4 text-lg text-center md:text-xl">
               Ahorra $85 dólares
             </p>
-            <p className="py-4 text-center text-lg md:text-xl">Pago Único</p>
-            <h2 className="text-center text-2xl font-bold md:text-3xl">
+            <p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
+            <h2 className="text-2xl font-bold text-center md:text-3xl">
               $497 dólares
             </h2>
             <button
-              className="my-4 rounded-lg bg-primary p-4 text-xl font-bold uppercase text-white hover:bg-primary-dark"
+              className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
               onClick={pagoUnico}
             >
               Seleccionar
             </button>
           </div>
-          <div className="flex w-3/4 flex-col border-2 border-dashed border-red-600 bg-white p-4 md:w-1/2 lg:max-w-md">
-            <h2 className="bg-mango p-4 text-center text-xl font-bold text-white md:text-2xl">
+          <div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+            <h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
               PLAN FLEXIBLE
             </h2>
-            <p className="py-4 text-center text-lg md:text-xl">
+            <p className="py-4 text-lg text-center md:text-xl">
               Paga a tu ritmo
             </p>
-            <p className="py-4 text-center text-lg md:text-xl">
+            <p className="py-4 text-lg text-center md:text-xl">
               6 pagos mensuales de
             </p>
-            <h2 className="text-center text-2xl font-bold md:text-3xl">
+            <h2 className="text-2xl font-bold text-center md:text-3xl">
               $97 dólares
             </h2>
 
             <button
-              className="my-4 rounded-lg bg-primary p-4 text-xl font-bold uppercase text-white hover:bg-primary-dark"
+              className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
               onClick={pagoFlexible}
             >
               Seleccionar
@@ -130,7 +130,7 @@ const Venta = () => {
       <div className="flex flex-col items-center justify-center">
         <StaticImage
           src="../images/garantia.png"
-          className="scale-75 transform"
+          className="transform scale-75"
           alt="sello garantia"
         />
         <p className="px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
@@ -138,23 +138,23 @@ const Venta = () => {
           mensaje directamente aquí en el botón de WhatsApp aclaramos todas tus
           dudas.
         </p>
-        <div className="mb-8 gap-8 md:flex md:items-center">
+        <div className="gap-8 mb-8 md:flex md:items-center">
           <button
-            className="my-10 flex h-12 items-center gap-4 rounded-lg bg-green-600 px-8 text-xl font-semibold text-white"
+            className="flex items-center h-12 gap-4 px-8 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
             onClick={() => window.open("https://wa.me/message/LD54V7JCH3TXD1")}
           >
-            <span className="scale-150 transform">{wswhite}</span> Quiero saber
+            <span className="transform scale-150">{wswhite}</span> Quiero saber
             más información
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center bg-primary py-10">
+      <div className="flex flex-col items-center py-10 bg-primary">
         <div className="w-1/2">
-          <h2 className="my-10 text-center text-2xl text-white md:text-5xl">
+          <h2 className="my-10 text-2xl text-center text-white md:text-5xl">
             Triplicó su retorno de inversión antes de concluir el entrenamiento
           </h2>
         </div>
-        <h2 className="font-cursive mb-10 text-4xl text-white">
+        <h2 className="mb-10 text-4xl text-white font-cursive">
           Video Testimonial
         </h2>
         <div>
@@ -167,7 +167,7 @@ const Venta = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <h2 className="my-10 text-center text-2xl md:w-1/2 md:text-5xl">
+        <h2 className="my-10 text-2xl text-center md:w-1/2 md:text-5xl">
           Todo esto es lo que recibes al momento de inscribirte al entrenamiento
           online incrementa tu consulta
         </h2>
@@ -179,12 +179,12 @@ const Venta = () => {
           alt="beneficios"
         />
       </div>
-      <div className="my-10 bg-mango-light px-10 py-10">
-        <div className="mb-10 flex justify-center">{headerLogoBig}</div>
+      <div className="px-10 py-10 my-10 bg-mango-light">
+        <div className="flex justify-center mb-10">{headerLogoBig}</div>
         <div className="flex justify-center">
           <div className="w-3/4 border-b-2 border-secondary"></div>
         </div>
-        <div className="my-10 grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 my-10 md:grid-cols-2">
           <div className="flex gap-2">
             <div className="w-6">{bullet}</div>
             <p>
@@ -292,13 +292,13 @@ const Venta = () => {
       </div>
       <div className="">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="my-10 w-3/4 text-center text-2xl md:text-3xl lg:text-5xl">
+          <h2 className="w-3/4 my-10 text-2xl text-center md:text-3xl lg:text-5xl">
             SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
           </h2>
-          <h2 className="flex rounded-lg bg-primary p-4 text-2xl font-bold text-white">
+          <h2 className="flex p-4 text-2xl font-bold text-white rounded-lg bg-primary">
             Bonos de Regalo
           </h2>
-          <div className="flex w-3/4 flex-col gap-4 py-10 md:mx-0 md:w-1/2">
+          <div className="flex flex-col w-3/4 gap-4 py-10 md:mx-0 md:w-1/2">
             <div className="flex items-center gap-2">
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
@@ -410,50 +410,50 @@ const Venta = () => {
             </p>
           </div>
         </div>
-        <div className="mt-10 mb-5 flex flex-col items-center bg-mango py-4 ">
-          <h2 className="px-4 text-center text-2xl font-bold text-white md:w-3/4 lg:px-0 lg:text-4xl">
+        <div className="flex flex-col items-center py-4 mt-10 mb-5 bg-mango ">
+          <h2 className="px-4 text-2xl font-bold text-center text-white md:w-3/4 lg:px-0 lg:text-4xl">
             ¿Listo para crear la vida que sueñas?
           </h2>
-          <h2 className="py-4 text-center text-xl font-semibold">
+          <h2 className="py-4 text-xl font-semibold text-center">
             ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
           </h2>
         </div>
         <div className="md:mx-10">
           <div className="flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:gap-20">
-            <div className="flex w-3/4 flex-col border-2 border-dashed border-red-600 bg-white p-4 md:w-1/2 lg:max-w-md">
-              <h2 className="bg-mango p-4 text-center text-xl font-bold text-white md:text-2xl">
+            <div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+              <h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
                 PAGO ÚNICO
               </h2>
-              <p className="py-4 text-center text-lg md:text-xl">
+              <p className="py-4 text-lg text-center md:text-xl">
                 Ahorra $85 dólares
               </p>
-              <p className="py-4 text-center text-lg md:text-xl">Pago Único</p>
-              <h2 className="text-center text-2xl font-bold md:text-3xl">
+              <p className="py-4 text-lg text-center md:text-xl">Pago Único</p>
+              <h2 className="text-2xl font-bold text-center md:text-3xl">
                 $497 dólares
               </h2>
               <button
-                className="my-4 rounded-lg bg-primary p-4 text-xl font-bold uppercase text-white hover:bg-primary-dark"
+                className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
                 onClick={pagoUnico}
               >
                 Seleccionar
               </button>
             </div>
-            <div className="flex w-3/4 flex-col border-2 border-dashed border-red-600 bg-white p-4 md:w-1/2 lg:max-w-md">
-              <h2 className="bg-mango p-4 text-center text-xl font-bold text-white md:text-2xl">
+            <div className="flex flex-col w-3/4 p-4 bg-white border-2 border-red-600 border-dashed md:w-1/2 lg:max-w-md">
+              <h2 className="p-4 text-xl font-bold text-center text-white bg-mango md:text-2xl">
                 PLAN FLEXIBLE
               </h2>
-              <p className="py-4 text-center text-lg md:text-xl">
+              <p className="py-4 text-lg text-center md:text-xl">
                 Paga a tu ritmo
               </p>
-              <p className="py-4 text-center text-lg md:text-xl">
+              <p className="py-4 text-lg text-center md:text-xl">
                 6 pagos mensuales de
               </p>
-              <h2 className="text-center text-2xl font-bold md:text-3xl">
+              <h2 className="text-2xl font-bold text-center md:text-3xl">
                 $97 dólares
               </h2>
 
               <button
-                className="my-4 rounded-lg bg-primary p-4 text-xl font-bold uppercase text-white hover:bg-primary-dark"
+                className="p-4 my-4 text-xl font-bold text-white uppercase rounded-lg bg-primary hover:bg-primary-dark"
                 onClick={pagoFlexible}
               >
                 Seleccionar
@@ -465,20 +465,20 @@ const Venta = () => {
         <div className="flex justify-center">
           <StaticImage
             src="../images/garantia.png"
-            className="scale-75 transform"
+            className="transform scale-75"
             alt="sello garantia"
           />
         </div>
 
         <div className="flex flex-col items-center">
-          <h2 className="w-3/4 px-4 text-center text-xl font-semibold md:w-1/2 md:text-3xl">
+          <h2 className="w-3/4 px-4 text-xl font-semibold text-center md:w-1/2 md:text-3xl">
             Entrenamiento{" "}
             <span className="font-semibold text-primary">INCREMENTA</span>{" "}
             <span className="font-semibold text-secondary">TU CONSULTA</span>{" "}
             cierra las inscripciones en:
           </h2>
           <div className="py-5">
-            <Counter date={"5 February 2022 00:00"} />
+            <Counter date={"15 February 2022 9:00"} />
           </div>
           <p className="w-3/4 px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
             Si tienes alguna pregunta referente al entrenamiento puedes enviar
@@ -487,22 +487,22 @@ const Venta = () => {
           </p>
 
           <button
-            className="my-10 flex items-center gap-4 rounded-lg bg-green-600 px-8 py-4 text-xl font-semibold text-white"
+            className="flex items-center gap-4 px-8 py-4 my-10 text-xl font-semibold text-white bg-green-600 rounded-lg"
             onClick={() => window.open("https://wa.me/message/LD54V7JCH3TXD1")}
           >
-            <span className="scale-150 transform">{wswhite}</span> Quiero saber
+            <span className="transform scale-150">{wswhite}</span> Quiero saber
             más información
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center bg-primary py-10">
+      <div className="flex flex-col items-center py-10 bg-primary">
         <div className="flex justify-center px-10 ">
-          <h2 className="text-center text-lg text-white lg:px-0 lg:text-2xl">
+          <h2 className="text-lg text-center text-white lg:px-0 lg:text-2xl">
             Mira las historias inspiradoras, los casos de éxito que ya tomaron
             acción.
           </h2>
         </div>
-        <h2 className="font-cursive my-4 text-3xl text-mango">
+        <h2 className="my-4 text-3xl font-cursive text-mango">
           ¿Serás el próximo?
         </h2>
         <div className="grid gap-x-10 md:grid-cols-2">
@@ -575,7 +575,7 @@ const Venta = () => {
           </div>
 
           <div>
-            <p className="footer-text mx-2 text-center">
+            <p className="mx-2 text-center footer-text">
               Legal Terms - Acerca de las politicas de privacidad y uso de
               cookies Incrementa tu consulta Derechos reservados 2021
               https://incrementatuconsulta.com Psicologa Berenice Bastidas
@@ -589,7 +589,7 @@ const Venta = () => {
           </div>
         </div>
         <div className="px-10 py-4">
-          <p className="text-mini text-black">
+          <p className="text-black text-mini">
             Este sitio no forma parte del sitio de Facebook o Facebook Inc.
             Además, este sitio NO está respaldado por Facebook de ninguna
             manera. FACEBOOK es una marca registrada de FACEBOOK, Inc. Cuando se

@@ -3,12 +3,13 @@ import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
+import Videoplayer from "../components/Videoplayer";
 
 const VideoVenta = () => {
-  // React.useEffect(() => {
-  //   navigate("/");
-  // }, []);
-  let view = true;
+  React.useEffect(() => {
+    navigate("/");
+  }, []);
+  let view = false;
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -17,26 +18,31 @@ const VideoVenta = () => {
     }
   }
 
-  const renderer = ({ hours, minutes, seconds }) => {
+  const renderer = ({ days, hours, minutes, seconds }) => {
+    let queda = "Quedan";
+    let dias = "días";
+    if (days < 2) {
+      dias = "dia";
+      queda = "Queda";
+    }
+
     return (
       <div className="text-center">
-        <p className="text-xl lg:text-5xl">
-          falta solo{" "}
-          <span className="font-extrabold">
-            {hours} : {minutes} : {seconds}
-          </span>{" "}
-          y se cierran inscripciones
-        </p>
+        {days < 1 ? (
+          <p>
+            Ultimo Dia hoy cerramos inscripciones
+            <br /> {hours} horas {minutes} minutos {seconds} segundos{" "}
+          </p>
+        ) : (
+          <p className="text-xl lg:text-5xl">
+            {queda} {days} {dias} y se cierran inscripciones
+          </p>
+        )}
       </div>
     );
   };
 
-  const eventDate = new Date("15 February 2022 09:00");
-
-  if (Date.now() > eventDate.getTime()) {
-    view = false;
-    navigate("/");
-  }
+  const eventDate = new Date("5 February 2022 00:00");
 
   return (
     <>
@@ -48,16 +54,16 @@ const VideoVenta = () => {
             </div>
 
             <div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
-              <Countdown date={eventDate} renderer={renderer} zeroPadTime={2} />
+              <Countdown date={eventDate} renderer={renderer} />
             </div>
 
             <div className="flex flex-col gap-4 py-10">
-              {/* <div className="col-span-2 px-10">
+              <div className="col-span-2 px-10">
                 <Videoplayer
                   url={"https://youtu.be/q0LBG3uvFV4?start=5m34s"}
                   playing={true}
                 />
-              </div> */}
+              </div>
               <div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
                 <h1 className="text-xl font-bold text-center md:text-3xl">
                   ¡Tu ya eres éxito! Solo hagamos que se manifieste

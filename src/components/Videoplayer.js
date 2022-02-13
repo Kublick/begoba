@@ -1,47 +1,47 @@
-import React from 'react';
-import ReactPlayer from 'react-player/lazy';
-import PropTypes from 'prop-types';
+import React from "react";
+import ReactPlayer from "react-player/lazy";
+import PropTypes from "prop-types";
 
 const Videoplayer = ({ url, controls }) => {
-	//{ videoUrl, urlRedirect, buttonText, date }
-	// const [button, setButton] = useState(false);
+  //{ videoUrl, urlRedirect, buttonText, date }
+  // const [button, setButton] = useState(false);
 
-	// const communityButton = () => {
-	// 	setTimeout(() => {
-	// 		setButton(true);
-	// 	}, 1200000);
-	// };
+  // const communityButton = () => {
+  // 	setTimeout(() => {
+  // 		setButton(true);
+  // 	}, 1200000);
+  // };
 
-	// function timing() {
-	// 	setInterval(() => {
-	// 		let tempdate = date + 4000;
-	// 		let currentDate = Date.now();
+  // function timing() {
+  // 	setInterval(() => {
+  // 		let tempdate = date + 4000;
+  // 		let currentDate = Date.now();
 
-	// 		if (currentDate > new Date(tempdate)) {
-	// 			setButton(true);
-	// 		}
-	// 	}, 1000);
-	// }
-	// timing();
+  // 		if (currentDate > new Date(tempdate)) {
+  // 			setButton(true);
+  // 		}
+  // 	}, 1000);
+  // }
+  // timing();
 
-	// const redirect = () => {
-	// 	window.open(urlRedirect);
-	// };
+  // const redirect = () => {
+  // 	window.open(urlRedirect);
+  // };
 
-	return (
-		<>
-			<div className="player-wrapper">
-				<ReactPlayer
-					url={url}
-					className="react-player"
-					height="100%"
-					width="100%"
-					controls={controls}
-					// onStart={() => communityButton()}
-				/>
-			</div>
+  return (
+    <>
+      <div className="player-wrapper">
+        <ReactPlayer
+          url={url}
+          className="react-player"
+          height="100%"
+          width="100%"
+          controls={controls}
+          // onStart={() => communityButton()}
+        />
+      </div>
 
-			{/* <div className="btn-container">
+      {/* <div className="btn-container">
 				{button ? (
 					<button
 						className="communityButton communityButton--animated"
@@ -51,13 +51,13 @@ const Videoplayer = ({ url, controls }) => {
 					</button>
 				) : null}
 			</div> */}
-		</>
-	);
+    </>
+  );
 };
 
 export default Videoplayer;
 
 Videoplayer.propTypes = {
-	url: PropTypes.string,
-	controls: PropTypes.string,
+  url: PropTypes.string,
+  controls: PropTypes.boolean,
 };
