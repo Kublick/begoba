@@ -24,7 +24,7 @@ const Closed = () => {
               <StaticImage
                 src="../images/Incremnta_lateral.png"
                 className="mt-4"
-                alt="foto sesion 2"
+                alt="logo lateral"
               />
             </div>
           </div>

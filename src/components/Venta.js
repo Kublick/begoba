@@ -478,7 +478,7 @@ const Venta = () => {
             cierra las inscripciones en:
           </h2>
           <div className="py-5">
-            <Counter date={"15 February 2022 9:00"} />
+            <Counter date={"20 March 2022 00:00"} />
           </div>
           <p className="w-3/4 px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
             Si tienes alguna pregunta referente al entrenamiento puedes enviar

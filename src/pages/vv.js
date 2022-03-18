@@ -17,13 +17,13 @@ const VideoVenta = () => {
     }
   }
 
-  const renderer = ({ hours, minutes, seconds }) => {
+  const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="text-center">
         <p className="text-xl lg:text-5xl">
           falta solo{" "}
           <span className="font-extrabold">
-            {hours} : {minutes} : {seconds}
+            {days} : {hours} : {minutes} : {seconds}
           </span>{" "}
           y se cierran inscripciones
         </p>
@@ -31,7 +31,7 @@ const VideoVenta = () => {
     );
   };
 
-  const eventDate = new Date("15 February 2022 09:00");
+  const eventDate = new Date("20 March 2022 00:00");
 
   if (Date.now() > eventDate.getTime()) {
     view = false;
