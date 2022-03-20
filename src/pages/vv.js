@@ -1,11 +1,11 @@
-// import { navigate } from "gatsby";
+import { navigate } from "gatsby";
 import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
 
 const VideoVenta = () => {
-  let view = true;
+  let view = false;
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -13,6 +13,10 @@ const VideoVenta = () => {
       window.fbq("track", "AddPaymentInfo");
     }
   }
+
+  React.useEffect(() => {
+    navigate("/");
+  }, []);
 
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
