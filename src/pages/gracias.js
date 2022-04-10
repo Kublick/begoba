@@ -22,26 +22,37 @@ const Gracias = () => {
     }
   }
 
+  // useEffect(() => {
+  //   const get = async () => {
+  //     const response = await fetch(
+  //       "https://urdk7so2ctqau3n7mr6at7q5fq0cmjgb.lambda-url.us-west-1.on.aws/ "
+  //     );
+  //     const data = await response.json();
+  //     console.log(data);
+  //   };
+  //   get();
+  // }, []);
+
   return (
     <div>
-      <div className="flex scale-75 transform justify-center">{mainLogo}</div>
-      <div className="bg-primary-light p-8 lg:px-20">
-        <h1 className="text-center text-2xl lg:text-4xl">
+      <div className="flex justify-center transform scale-75">{mainLogo}</div>
+      <div className="p-8 bg-primary-light lg:px-20">
+        <h1 className="text-2xl text-center lg:text-4xl">
           Para finalmente <span className="font-semibold">COMPLETAR</span> tu{" "}
           <span className="font-semibold">REGISTRO</span> faltan
           <span className="font-semibold"> DOS PASOS</span> muy pequeños e
           IMPORTANTES
         </h1>
-        <div className="my-6 grid md:grid-cols-2">
+        <div className="grid my-6 md:grid-cols-2">
           <div className="box">
             <div className="flex justify-center">
               <GatsbyImage
                 image={data.desktop.childImageSharp.gatsbyImageData}
-                className="circle m-4 scale-75 transform"
+                className="m-4 transform scale-75 circle"
                 alt="Imagen Berenice"
               />
             </div>
-            <p className="pb-8 text-center text-lg font-bold text-primary md:text-2xl">
+            <p className="pb-8 text-lg font-bold text-center text-primary md:text-2xl">
               ¡Nos vemos en el taller!
             </p>
           </div>
@@ -56,7 +67,7 @@ const Gracias = () => {
 
             <div className="flex justify-center gap-4 align-middle">
               <button
-                className="btn-telegram logo-container shadow-lg"
+                className="shadow-lg btn-telegram logo-container"
                 onClick={() => {
                   window.open("https://t.me/+axdk9ItfKLgzMTZh");
                 }}
@@ -91,7 +102,7 @@ const Gracias = () => {
             </p>
           </div>
         </div>
-        <p className="font-cursive text-center text-2xl text-secondary">
+        <p className="text-2xl text-center font-cursive text-secondary">
           Gracias por Registrarte
         </p>
       </div>

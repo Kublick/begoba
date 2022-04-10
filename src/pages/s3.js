@@ -3,15 +3,15 @@ import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
 
 const S3 = () => {
-  let show = false;
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  let show = true;
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -19,22 +19,27 @@ const S3 = () => {
       window.fbq("track", "AddToWhislist");
     }
   }
+
+  const videoUrl = "https://youtu.be/r-3TcXuqk0A";
+  const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
+  const eventDate = "27 May 2022 15:30";
+
   return (
     <>
       {show ? (
         <div>
           <header>
-            <SesionHeader color="bg-mango" date="28 January 2022 15:30" />
+            <SesionHeader color="bg-mango" date={eventDate} />
           </header>
           <main>
             <div className="grid lg:grid-cols-4">
-              <div className="order-last flex flex-col gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-                <div className="rounded-lg bg-primary p-8 shadow-lg">
+              <div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+                <div className="p-8 rounded-lg shadow-lg bg-primary">
                   <div className="flex items-center ">
                     <h2 className="text-3xl font-bold text-white">TIP</h2>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="ml-2 h-6 w-6 font-bold"
+                      className="w-6 h-6 ml-2 font-bold"
                       viewBox="0 0 24 24"
                       stroke="#fff"
                     >
@@ -60,7 +65,7 @@ const S3 = () => {
                     </p>
                   </div>
                 </div>
-                <div className="mx-2 flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-4 mx-2">
                   <button
                     className="btn-social bg-secondary"
                     onClick={() =>
@@ -73,38 +78,27 @@ const S3 = () => {
                   </button>
 
                   <button
-                    className="btn-social bg-green-600"
-                    onClick={() =>
-                      window.open(
-                        "https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e"
-                      )
-                    }
+                    className="bg-green-600 btn-social"
+                    onClick={() => window.open(whatsappUrl)}
                   >
                     {wswhite} Grupo en Whatsapp
                   </button>
                   <button
                     className=" btn-social bg-primary"
-                    onClick={() =>
-                      window.open(
-                        "http://www.facebook.com/groups/561601284963553/"
-                      )
-                    }
+                    onClick={() => window.open(videoUrl)}
                   >
                     {fbwhite} No te lo pierdas
                   </button>
                 </div>
               </div>
 
-              <div className="order-first bg-gray-100 py-8 shadow-lg lg:order-none lg:col-span-2">
+              <div className="order-first py-8 bg-gray-100 shadow-lg lg:order-none lg:col-span-2">
                 <div className="flex flex-col gap-2 md:gap-6">
-                  <h1 className="self-center text-center text-2xl font-semibold text-secondary md:w-3/4">
+                  <h1 className="self-center text-2xl font-semibold text-center text-secondary md:w-3/4">
                     Como ofrecer o vender tu consulta online
                   </h1>
                   <div>
-                    <Videoplayer
-                      url={"https://youtu.be/juInlVmYvm0"}
-                      controls={true}
-                    />
+                    <Videoplayer url={videoUrl} />
                   </div>
 
                   <p className="self-center font-semibold ">
@@ -155,7 +149,7 @@ const S3 = () => {
               </div>
             </div>
           </main>
-          <div className="mx-2 grid gap-6 bg-gray-50 pt-8 md:grid-cols-2">
+          <div className="grid gap-6 pt-8 mx-2 bg-gray-50 md:grid-cols-2">
             <div>
               <CommentsFacebook />
             </div>

@@ -40,6 +40,7 @@ export default class IndexPage extends React.Component {
     })
       .then((response) => {
         this.setState({ submit: true });
+        response = "ok";
         console.log(response);
 
         setTimeout(() => {
@@ -60,14 +61,14 @@ export default class IndexPage extends React.Component {
     return (
       <>
         <div className="container flex justify-center ">
-          <div className="min-w-3/4 justify-content center flex flex-col items-center gap-2 rounded-xl bg-secondary px-8 py-4 shadow-md">
-            <p className="font-3xl font-semibold text-white">
+          <div className="flex flex-col items-center gap-2 px-8 py-4 shadow-md min-w-3/4 justify-content center rounded-xl bg-secondary">
+            <p className="font-semibold text-white font-3xl">
               Registrate <span className="font-bold">GRATIS</span>
             </p>
 
             <form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
-              <input type="hidden" name="u" value="31" />
-              <input type="hidden" name="f" value="31" />
+              <input type="hidden" name="u" value="35" />
+              <input type="hidden" name="f" value="35" />
               <input type="hidden" name="s" />
               <input type="hidden" name="c" value="0" />
               <input type="hidden" name="m" value="0" />
@@ -76,13 +77,13 @@ export default class IndexPage extends React.Component {
               <input
                 type="hidden"
                 name="or"
-                value="4ee6b45a84624ee02d43217b0311cd5a"
+                value="6d188b09309ebb5b3d878ff976695951"
               />
 
               <input
                 type="text"
                 onChange={this._handleChange}
-                className="font-sm w-auto rounded-md px-4 py-1 shadow-sm"
+                className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
                 name="fullname"
                 placeholder="nombre"
               />
@@ -90,7 +91,7 @@ export default class IndexPage extends React.Component {
               <input
                 type="email"
                 onChange={this._handleChange}
-                className="font-sm w-auto rounded-md px-4 py-1 shadow-sm"
+                className="w-auto px-4 py-1 rounded-md shadow-sm font-sm"
                 name="email"
                 placeholder="email"
               />

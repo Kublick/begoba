@@ -2,21 +2,17 @@ import React, { useState, useRef } from "react";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import Venta from "../components/Venta";
 
 const S4 = () => {
-  let view = false;
-
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  let view = true;
 
   const [show, setShow] = useState(false);
   const [point, setPoint] = useState(false);
   const ventaRef = useRef();
 
-  let date = "January 31 2022 16:30:00";
+  let date = "April 30 2022 17:30:00";
 
   function timing() {
     setInterval(() => {
@@ -31,34 +27,36 @@ const S4 = () => {
   }
   timing();
 
-  if (point === true) {
-    ventaRef.current.scrollIntoView({ behavior: "smooth" });
+  if (view === true) {
+    if (point === true) {
+      ventaRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   }
+
+  const eventDate = "30 April 2022 16:30:00";
+  const videoUrl = "https://youtu.be/T7mFlCoj8XM";
 
   return (
     <>
       {view ? (
         <div>
           <header>
-            <SesionHeader color="bg-primary" date="31 January 2022 15:30" />
+            <SesionHeader color="bg-primary" date={eventDate} />
           </header>
           <main>
             <div className="grid lg:grid-cols-4">
-              <div className="order-last flex flex-col gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-                <h1 className="text-center text-lg font-semibold text-primary"></h1>
+              <div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+                <h1 className="text-lg font-semibold text-center text-primary"></h1>
                 <p></p>
               </div>
 
-              <div className="order-first bg-gray-100 py-8 shadow-lg lg:order-none lg:col-span-2">
+              <div className="order-first py-8 bg-gray-100 shadow-lg lg:order-none lg:col-span-2">
                 <div className="flex flex-col gap-2 md:gap-6">
-                  <h1 className="self-center text-center text-2xl font-semibold text-secondary md:w-3/4">
+                  <h1 className="self-center text-2xl font-semibold text-center text-secondary md:w-3/4">
                     La estrategia para hacer crecer tu lista de pacientes
                   </h1>
                   <div>
-                    <Videoplayer
-                      url={"https://youtu.be/q0LBG3uvFV4"}
-                      controls={false}
-                    />
+                    <Videoplayer url={videoUrl} controls={false} />
                   </div>
 
                   <p className="self-center font-semibold ">

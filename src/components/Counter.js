@@ -12,11 +12,11 @@ const Counter = ({ date }) => {
     let timeSeconds = "S";
 
     if (days < 2) {
-      timeDay = "dia";
+      timeDay = "D";
     }
 
     if (hours < 2) {
-      timeHour = "hora";
+      timeHour = "H";
     }
 
     if (timeMinutes >= 2) {

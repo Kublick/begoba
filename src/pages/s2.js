@@ -3,15 +3,15 @@ import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
 
 const S2 = () => {
-  let show = false;
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  let show = true;
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
@@ -19,16 +19,20 @@ const S2 = () => {
       window.fbq("track", "AddToWhislist");
     }
   }
+
+  const videoUrl = "https://youtu.be/cre-RGf8CtY";
+  const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
+  const eventDate = "26 May 2022 15:30";
   return (
     <>
       {show ? (
         <div>
           <header>
-            <SesionHeader color="bg-primary" date="27 January 2022 15:30" />
+            <SesionHeader color="bg-primary" date={eventDate} />
           </header>
           <main>
             <div className="grid lg:grid-cols-4">
-              <div className="order-last flex flex-col gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+              <div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
                 <h1 className="text-lg font-semibold text-primary">
                   Cuéntanos en que podamos ayudarte:
                 </h1>
@@ -38,7 +42,7 @@ const S2 = () => {
                 </p>
                 <p className="font-semibold">!Nos vemos en los comentarios!</p>
                 <div
-                  className="mx-2 flex flex-col items-center gap-4"
+                  className="flex flex-col items-center gap-4 mx-2"
                   onClick={() =>
                     window.open(
                       "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf"
@@ -50,12 +54,8 @@ const S2 = () => {
                   </button>
 
                   <button
-                    className="btn-social bg-green-600"
-                    onClick={() =>
-                      window.open(
-                        "https://chat.whatsapp.com/FdtfVCWhCQS31cUFLmQS6e"
-                      )
-                    }
+                    className="bg-green-600 btn-social"
+                    onClick={() => window.open(whatsappUrl)}
                   >
                     {wswhite} Grupo en Whatsapp
                   </button>
@@ -72,17 +72,14 @@ const S2 = () => {
                 </div>
               </div>
 
-              <div className="order-first bg-gray-100 py-8 shadow-lg lg:order-none lg:col-span-2">
+              <div className="order-first py-8 bg-gray-100 shadow-lg lg:order-none lg:col-span-2">
                 <div className="flex flex-col gap-2 md:gap-6">
-                  <h1 className="self-center text-center text-2xl font-semibold text-secondary md:w-3/4">
+                  <h1 className="self-center text-2xl font-semibold text-center text-secondary md:w-3/4">
                     Las top 7 formas de tener dinero online y los 5 errores de
                     novato
                   </h1>
                   <div>
-                    <Videoplayer
-                      url={"https://youtu.be/CSL-umpWgBA"}
-                      controls={true}
-                    />
+                    <Videoplayer url={videoUrl} />
                   </div>
 
                   <p className="self-center font-semibold ">
@@ -123,7 +120,7 @@ const S2 = () => {
               </div>
             </div>
           </main>
-          <div className="mx-2 grid gap-6 bg-gray-50 pt-8 md:grid-cols-2">
+          <div className="grid gap-6 pt-8 mx-2 bg-gray-50 md:grid-cols-2">
             <div>
               <CommentsFacebook />
             </div>

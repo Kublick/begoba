@@ -5,9 +5,9 @@ import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
 
 const VideoVenta = () => {
-  // React.useEffect(() => {
-  //   navigate("/");
-  // }, []);
+  React.useEffect(() => {
+    navigate("/");
+  }, []);
   let view = true;
 
   if (typeof window !== "undefined") {

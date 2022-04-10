@@ -21,7 +21,7 @@ function IndexPage() {
     formRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  const show = false;
+  const show = true;
 
   // React.useEffect(() => {
   //   navigate("/vv");
