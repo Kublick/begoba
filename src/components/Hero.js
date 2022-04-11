@@ -8,17 +8,17 @@ import Counter from "./Counter";
 
 const Hero = (props) => {
   return (
-    <section className="grid pb-6 bg-gray-100 md:py-8 md:grid-cols-2">
+    <section className="grid bg-gray-100 pb-6 md:grid-cols-2 md:py-8">
       <div className="flex flex-col items-center justify-center">
-        <span className="transform scale-75 md:scale-100 md:mb-4">
+        <span className="scale-75 transform md:mb-4 md:scale-100">
           {mainLogo}
         </span>
         <div className="flex flex-col items-center">
           <p className="text-xl md:text-2xl">te invita al</p>
-          <h1 className="text-2xl font-bold uppercase md:mb-4 md:text-3xl text-primary">
+          <h1 className="text-2xl font-bold uppercase text-primary md:mb-4 md:text-3xl">
             Taller Gratuito
           </h1>
-          <div className="flex gap-3 justify-items-center">
+          <div className="flex justify-items-center gap-3">
             <p className="text-center uppercase">
               <span className="text-2xl font-bold">vende</span> <br /> tu
               consulta
@@ -29,14 +29,14 @@ const Hero = (props) => {
               mereces
             </p>
           </div>
-          <p className="px-4 py-1 m-2 text-lg text-white rounded-full bg-secondary">
-            Del 25 al 30 de Mayo 2022
+          <p className="m-2 rounded-full bg-secondary px-4 py-1 text-lg text-white">
+            Del 25 al 31 de Mayo 2022
           </p>
         </div>
       </div>
       <div className="text-center align-middle">
         <p
-          className="px-2 my-2 text-md md:text-xl text-primary"
+          className="text-md my-2 px-2 text-primary md:text-xl"
           ref={props.formRef}
         >
           <span className="font-semibold ">
@@ -53,7 +53,7 @@ const Hero = (props) => {
             <Counter date={Date.now() + 4000000} />
           </div>
         </div>
-        <p className="py-4 font-semibold font-3xl text-primary">
+        <p className="font-3xl py-4 font-semibold text-primary">
           Descubre como ofrecer <br /> y vender tu consulta online
         </p>
       </div>
