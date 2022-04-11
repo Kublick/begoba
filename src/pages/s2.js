@@ -32,7 +32,7 @@ const S2 = () => {
           </header>
           <main>
             <div className="grid lg:grid-cols-4">
-              <div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+              <div className="order-last flex flex-col gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
                 <h1 className="text-lg font-semibold text-primary">
                   Cuéntanos en que podamos ayudarte:
                 </h1>
@@ -42,7 +42,7 @@ const S2 = () => {
                 </p>
                 <p className="font-semibold">!Nos vemos en los comentarios!</p>
                 <div
-                  className="flex flex-col items-center gap-4 mx-2"
+                  className="mx-2 flex flex-col items-center gap-4"
                   onClick={() =>
                     window.open(
                       "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf"
@@ -54,7 +54,7 @@ const S2 = () => {
                   </button>
 
                   <button
-                    className="bg-green-600 btn-social"
+                    className="btn-social bg-green-600"
                     onClick={() => window.open(whatsappUrl)}
                   >
                     {wswhite} Grupo en Whatsapp
@@ -72,9 +72,9 @@ const S2 = () => {
                 </div>
               </div>
 
-              <div className="order-first py-8 bg-gray-100 shadow-lg lg:order-none lg:col-span-2">
+              <div className="order-first bg-gray-100 py-8 shadow-lg lg:order-none lg:col-span-2">
                 <div className="flex flex-col gap-2 md:gap-6">
-                  <h1 className="self-center text-2xl font-semibold text-center text-secondary md:w-3/4">
+                  <h1 className="self-center text-center text-2xl font-semibold text-secondary md:w-3/4">
                     Las top 7 formas de tener dinero online y los 5 errores de
                     novato
                   </h1>
@@ -120,7 +120,7 @@ const S2 = () => {
               </div>
             </div>
           </main>
-          <div className="grid gap-6 pt-8 mx-2 bg-gray-50 md:grid-cols-2">
+          <div className="mx-2 grid gap-6 bg-gray-50 pt-8 md:grid-cols-2">
             <div>
               <CommentsFacebook />
             </div>
