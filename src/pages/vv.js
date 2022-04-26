@@ -1,13 +1,13 @@
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
 
 const VideoVenta = () => {
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
   let view = true;
 
   if (typeof window !== "undefined") {
@@ -16,10 +16,6 @@ const VideoVenta = () => {
       window.fbq("track", "AddPaymentInfo");
     }
   }
-
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
 
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
@@ -35,7 +31,7 @@ const VideoVenta = () => {
     );
   };
 
-  const eventDate = new Date("20 March 2022 00:00");
+  const eventDate = new Date("30 May 2022 00:00");
 
   // if (Date.now() > eventDate.getTime()) {
   //   view = false;
