@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { mainLogo } from "../components/helpers/logos";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { useGetUrls } from "../hooks/useGetUrls";
 
 const Gracias = () => {
   const data = useStaticQuery(
@@ -22,20 +23,11 @@ const Gracias = () => {
     }
   }
 
-  const [whastsppUrl] = useState(
-    "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ"
-  );
+  // const [whastsppUrl] = useState(
+  //   "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ"
+  // );
 
-  // useEffect(() => {
-  //   const get = async () => {
-  //     const response = await fetch(
-  //       "http://209.145.48.29:4000/links/621873e0c4b7aba94dbc3dd9"
-  //     );
-  //     const data = await response.json();
-  //     setWhatsappUrl(data.whatsappIncrementa);
-  //   };
-  //   get();
-  // }, []);
+  const whatsappUrl = useGetUrls();
 
   return (
     <div>
@@ -73,7 +65,7 @@ const Gracias = () => {
               <button
                 className="btn-green logo-container shadow-lg"
                 onClick={() => {
-                  window.open(whastsppUrl, "_blank");
+                  window.open(whatsappUrl, "_blank");
                 }}
               >
                 Unirme AL GRUPO

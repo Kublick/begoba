@@ -12,7 +12,7 @@ const S4 = () => {
   const [point, setPoint] = useState(false);
   const ventaRef = useRef();
 
-  let date = "April 30 2022 17:30:00";
+  let date = "May 30 2022 17:30:00";
 
   function timing() {
     setInterval(() => {
@@ -33,7 +33,7 @@ const S4 = () => {
     }
   }
 
-  const eventDate = "30 April 2022 16:30:00";
+  const eventDate = "30 May 2022 16:30:00";
   const videoUrl = "https://youtu.be/T7mFlCoj8XM";
 
   return (

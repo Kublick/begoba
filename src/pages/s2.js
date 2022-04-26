@@ -6,6 +6,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
+import { useGetUrls } from "../hooks/useGetUrls";
 
 const S2 = () => {
   let show = true;
@@ -21,7 +22,8 @@ const S2 = () => {
   }
 
   const videoUrl = "https://youtu.be/cre-RGf8CtY";
-  const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
+  const whatsappUrl = useGetUrls();
+  // const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
   const eventDate = "26 May 2022 15:30";
   return (
     <>
