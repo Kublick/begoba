@@ -8,7 +8,7 @@ const VideoVenta = () => {
   React.useEffect(() => {
     navigate("/");
   }, []);
-  let view = true;
+  let view = false;
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {

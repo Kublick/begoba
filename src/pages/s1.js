@@ -1,12 +1,15 @@
 import React from "react";
-import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
+import {
+  fbwhite,
+  notebookWhite,
+  telegramIcon,
+} from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
-import { useGetUrls } from "../hooks/useGetUrls";
 
 const S1 = () => {
   let show = true;
@@ -22,9 +25,10 @@ const S1 = () => {
   }
 
   const videoUrl = "https://youtu.be/QtKCnfgs48k";
-  const whatsappUrl = useGetUrls();
-  // const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
+  const manual =
+    "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
   const eventDate = "25 May 2022 15:30";
+  const telegramUrl = "https://t.me/+axdk9ItfKLgzMTZh";
 
   return (
     <>
@@ -71,26 +75,22 @@ const S1 = () => {
                 <div className="mx-2 flex flex-col items-center gap-4">
                   <button
                     className="btn-social bg-secondary"
-                    onClick={() =>
-                      window.open(
-                        "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional.pdf"
-                      )
-                    }
+                    onClick={() => window.open(manual)}
                   >
                     {notebookWhite} Cuaderno de Trabajo
                   </button>
 
                   <button
-                    className="btn-social bg-green-600"
-                    onClick={() => window.open(whatsappUrl)}
+                    className="btn-social bg-telegram"
+                    onClick={() => window.open(telegramUrl)}
                   >
-                    {wswhite} Grupo en Whatsapp
+                    {telegramIcon} Grupo en Telegram
                   </button>
                   <button
                     className=" btn-social bg-primary"
                     onClick={() =>
                       window.open(
-                        "http://www.facebook.com/groups/561601284963553/"
+                        "http://www.facebook.com/groups/tallerinternacional/"
                       )
                     }
                   >

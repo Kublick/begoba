@@ -1,6 +1,7 @@
-import { navigate } from "gatsby";
+// import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { headerLogo } from "../components/helpers/logos";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Regalo = () => {
   if (typeof window !== "undefined") {
@@ -9,9 +10,12 @@ const Regalo = () => {
     }
   }
 
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
+
+  const manual =
+    "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
 
   return (
     <>
@@ -24,19 +28,20 @@ const Regalo = () => {
         <h1 className="text-center text-2xl font-bold text-primary">
           !Felicidades por haber tomado acción y gracias por tu confianza!
         </h1>
-        <img
+        {/* <img
           src="https://media.giphy.com/media/3oz8xBkRsgPTnbK1GM/source.gif"
           className="regalo__img"
           alt="regalo"
+        /> */}
+
+        <StaticImage
+          src="../images/Portada.png"
+          alt="Portada"
+          className="my-6 cursor-pointer"
+          onClick={() => window.open(manual)}
         />
-        <button
-          className="btn-main px-6"
-          onClick={() =>
-            window.open(
-              "https://incrementafiles.s3.us-west-1.amazonaws.com/Nueva+Plantilla.pdf"
-            )
-          }
-        >
+
+        <button className="btn-main px-6" onClick={() => window.open(manual)}>
           Abrir mi Regalo
         </button>
       </div>
