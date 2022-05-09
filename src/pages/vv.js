@@ -17,10 +17,6 @@ const VideoVenta = () => {
     }
   }
 
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
-
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <div className="text-center">
