@@ -34,7 +34,7 @@ const SesionesEvento = () => {
     <div className="m-10">
       <div className="flex justify-center px-2 mt-10 lg:px-20 text-primary">
         <h1 className="text-3xl font-bold text-center md:text-4xl text-primary">
-          Serán 5 Clases en Directo y Gratruitas
+          Serán 5 Clases en Directo y Gratuitas
         </h1>
       </div>
       <div>
