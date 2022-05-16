@@ -36,6 +36,17 @@ export const EventoHero = () => {
               Tu Consulta
             </p>
           </div>
+          <div className="container flex flex-col items-center mt-12 text-center sm:text-2xl">
+            <p>En Este Entrenamiento Gratuito, Descubrirás:</p>
+            <p className="px-4 tracking-wider text-center ">
+              Cómo Tener Un Negocio De Consulta Exitoso, Con Servicios Y Precios
+              Correctos, Con Estrategias Sencillas Y Fáciles De Implementar Que
+              Te Generen Más Utilidades
+            </p>
+          </div>
+          <div className="my-10">
+            <Modal />
+          </div>
         </div>
 
         <div className="mt-8 sm:mt-0">
@@ -45,17 +56,6 @@ export const EventoHero = () => {
             alt="Imagen Berenice"
           />
         </div>
-      </div>
-      <div className="container flex flex-col items-center mt-12 text-center sm:text-3xl">
-        <p>En Este Entrenamiento Gratuito, Descubrirás:</p>
-        <p className="px-4 tracking-wider text-center ">
-          Cómo Tener Un Negocio De Consulta Exitoso, Con Servicios Y Precios
-          Correctos, Con Estrategias Sencillas Y Fáciles De Implementar Que Te
-          Generen Más Utilidades
-        </p>
-      </div>
-      <div className="my-10">
-        <Modal />
       </div>
     </div>
   );

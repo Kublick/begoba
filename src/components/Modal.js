@@ -19,7 +19,7 @@ export default function Modal() {
         <button
           type="button"
           onClick={openModal}
-          className="px-4 py-4 text-2xl text-white rounded-md bg-primary hover:bg-opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+          className="px-4 py-4 text-2xl text-white transition duration-1000 border-4 rounded-md shadow-lg border-mango bg-primary hover:bg-opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 shadow-mango"
         >
           !Quiero mi Lugar <span className="font-bold">GRATIS</span> para el
           Entrenamiento!
