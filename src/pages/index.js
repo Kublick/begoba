@@ -17,6 +17,7 @@ function IndexPage() {
     }
   }
   const formRef = useRef();
+
   function handleBackClick() {
     formRef.current.scrollIntoView({ behavior: "smooth" });
   }

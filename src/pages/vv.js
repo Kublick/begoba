@@ -42,12 +42,12 @@ const VideoVenta = () => {
     <>
       {view ? (
         <div>
-          <div className="bg-gray-100 py-10">
-            <div className="my-4 flex justify-center">
-              <span className="mb-4 scale-125 transform">{headerLogo} </span>
+          <div className="py-10 bg-gray-100">
+            <div className="flex justify-center my-4">
+              <span className="mb-4 transform scale-125">{headerLogo} </span>
             </div>
 
-            <div className="flex flex-col items-center gap-2 bg-mango py-6 font-bold text-white">
+            <div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
               <Countdown date={eventDate} renderer={renderer} zeroPadTime={2} />
             </div>
 
@@ -58,8 +58,8 @@ const VideoVenta = () => {
                   playing={true}
                 />
               </div> */}
-              <div className="mt-4 flex flex-col items-center gap-4 md:text-lg ">
-                <h1 className="text-center text-xl font-bold md:text-3xl">
+              <div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
+                <h1 className="text-xl font-bold text-center md:text-3xl">
                   ¡Tu ya eres éxito! Solo hagamos que se manifieste
                 </h1>
               </div>

@@ -16,6 +16,8 @@ import { StaticImage } from "gatsby-plugin-image";
 import { useWindowSize } from "../components/helpers/useWindowSize";
 
 const Venta = () => {
+  const saleDate = " June 6 2022 23:50";
+
   const [windowSize, setWindowSize] = useState("640");
   const size = useWindowSize();
 
@@ -47,15 +49,17 @@ const Venta = () => {
           <div>
             <p className="text-lg">
               <span className="font-bold">
-                BONO DE ACCION RAPIDA: 5 SESIONES INDIVIDUALES DE MENTORIA
+                BONO - ACCESO A 3 MENTORIAS INDIVIDUALES
               </span>{" "}
               uno a uno con la psicóloga Berenice Bastidas durante el
-              entrenamiento, donde podrás recibir de primera mano ayuda enfocada
+              entrenamiento, donde podrás recibir ayuda personalizada y enfocada
               únicamente en tu proyecto profesional.
             </p>
             <p>
-              Valorado en{" "}
-              <span className="font-semibold text-primary">$500 dólares</span>{" "}
+              <span className="font-semibold text-primary">
+                {" "}
+                Valorado en $300 dólares{" "}
+              </span>{" "}
             </p>
           </div>
         </div>
@@ -64,16 +68,54 @@ const Venta = () => {
           <div>
             <p className="text-lg">
               <span className="font-bold">
-                BONO DE ACCION RAPIDA: MANUAL HERRAMIENTAS DIGITALES
+                BONO - SISTEMA PARA QUE TUS PACIENTES NO ABANDONEN LA CONSULTA
               </span>{" "}
-              para que no tengas que pasar horas buscando herramientas buenas,
-              este manual en lista las mejores herramientas digitales y
-              plataformas con las que podrás trabajar y muchas de ellas en su
-              versión gratuita.
+              ¡Este bono esta increíble! Si a ti te sucede que el paciente
+              empieza su tratamiento de consultas y no lo termina, que abandona
+              el tratamiento, sin duda si necesitas tener este bono, este
+              sistema para que eso ya no te suceda.
             </p>
             <p>
-              Valorado en{" "}
-              <span className="font-semibold text-primary">$47 dólares</span>
+              <span className="font-semibold text-primary">
+                {" "}
+                Valorado en $297 dólares{" "}
+              </span>{" "}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center w-3/4 gap-2">
+          <div className="hidden sm:inline-block">{regalo}</div>
+          <div>
+            <p className="text-lg">
+              <span className="font-bold">BONO - METODOS DE PAGO ONLINE</span>{" "}
+              Aprenderás la metodología para recibir pagos por tus servicios de
+              consulta desde diferentes países del mundo, con esto logras poder
+              tener pacientes para tu consulta en línea desde diferentes países.
+            </p>
+            <p>
+              <span className="font-semibold text-primary">
+                Valorado en $197 dólares{" "}
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center w-3/4 gap-2">
+          <div className="hidden sm:inline-block">{regalo}</div>
+          <div>
+            <p className="text-lg">
+              <span className="font-bold">
+                BONO - LA LLAVE FACEBOOK E INSTAGRAM ADS
+              </span>{" "}
+              con este bono conseguirás crear anuncios potentes que
+              verdaderamente atraigan pacientes a tu consulta, lograras aprender
+              como configurar la publicidad en Instagram y Facebook y te
+              ahorraras los miles de dólares que te cobraría una agencia de
+              marketng por hacerte esto, por que lo sabrás hacer tu mismo.
+            </p>
+            <p>
+              <span className="font-semibold text-primary">
+                Valorado en $500 dólares{" "}
+              </span>
             </p>
           </div>
         </div>
@@ -184,6 +226,13 @@ const Venta = () => {
         <div className="flex justify-center">
           <div className="w-3/4 border-b-2 border-secondary"></div>
         </div>
+        <h1 className="pt-4 text-lg text-center md:text-2xl">
+          El entrenamiento{" "}
+          <span className="text-primary text-font-bold">
+            INCREMENTA TU CONSULTA
+          </span>{" "}
+          incluye:
+        </h1>
         <div className="grid gap-6 my-10 md:grid-cols-2">
           <div className="flex gap-2">
             <div className="w-6">{bullet}</div>
@@ -211,8 +260,10 @@ const Venta = () => {
               responder preguntas, aclarar dudas, obtener feedback de tus
               avances y ayudarte a lograr alcanzar tu meta.
               <span>
-                <br /> Valorado en{" "}
-                <span className="font-semibold text-primary">$597 dólares</span>
+                <br />
+                <span className="font-semibold text-primary">
+                  Valorado en $697 dólares
+                </span>
               </span>
             </p>
           </div>
@@ -247,8 +298,8 @@ const Venta = () => {
           <div className="flex gap-2">
             <div className="w-6">{bullet}</div>
             <p>
-              <span className="text-lg font-semibold text-primary">
-                ACCESO POR TODO UN AǸO AL PORTAL ONLINE
+              <span className="text-lg fonst-semibold text-primary">
+                ACCESO POR TODO UN AÑO A LA PLATAFORMA
               </span>{" "}
               para que así puedas ver y repetir las lecciones luego de concluir
               el programa las veces que tu preﬁeras.
@@ -268,6 +319,12 @@ const Venta = () => {
               lección te lleva a la acción con ejercicios detallados, de esta
               manera a medida que avanzas en el programa, también avanzas en tu
               negocio.
+              <span>
+                <br />
+                {/* <span className="font-semibold text-primary">
+                  Valorado en $697 dólares
+                </span> */}
+              </span>
             </p>
           </div>
           <div className="flex gap-2">
@@ -292,8 +349,11 @@ const Venta = () => {
       </div>
       <div className="">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="w-3/4 my-10 text-2xl text-center md:text-3xl lg:text-5xl">
-            SI ACCEDES HOY, CONSIGUES ESTOS RECURSOS DE FORMA 100% GRATUITA
+          <h2 className="w-3/4 text-center mt-10text-2xl md:text-3xl lg:text-5xl">
+            ¡Si accedes hoy además hay regalos para ti!
+          </h2>
+          <h2 className="w-3/4 mt-4 mb-10 text-2xl text-center md:text-3xl lg:text-5xl">
+            obtienes de forma 100% GRATUITA 5 Bonos de regalo
           </h2>
           <h2 className="flex p-4 text-2xl font-bold text-white rounded-lg bg-primary">
             Bonos de Regalo
@@ -303,19 +363,15 @@ const Venta = () => {
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 1: CREA Y VENDE TU PROPIO CURSO ONLINE
+                  BONO 1: HABLA FRENTE A LA CAMARA CON SEGURIDAD
                 </p>
                 <p>
-                  con este bono y sin la necesidad de ser un experto aprenderás
-                  a crear desde cero tu curso online y empezar a ganar de
-                  inmediato dinero con el por que además te voy a enseñar a
-                  venderlo.
+                  perderás el miedo y la vergüenza al hacer video, te sentirás
+                  en confianza total al hablar en redes sociales.
                 </p>
                 <p>
-                  Valorado en
                   <span className="font-semibold text-primary">
-                    {" "}
-                    $600 dólares{" "}
+                    Bono Valorado en $247 dólares{" "}
                   </span>
                 </p>
               </div>
@@ -332,29 +388,63 @@ const Venta = () => {
                   recurrente.
                 </p>
                 <p>
-                  Valorado en
                   <span className="font-semibold text-primary">
-                    {" "}
-                    $97 dólares{" "}
+                    Bono Valorado en $97 dólares
                   </span>
                 </p>
               </div>
             </div>
+
             <div className="flex items-center gap-2">
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 3: METODOS DE PAGO ONLINE
+                  BONO 3: CREA Y VENDE TU PROPIO CURSO ONLINE
                 </p>
                 <p>
                   Aprenderás la metodología para recibir pagos por tus servicios
                   de consulta desde diferentes países del mundo.
                 </p>
                 <p>
-                  Valorado en
                   <span className="font-semibold text-primary">
-                    {" "}
-                    $147 dólares{" "}
+                    Bono Valorado en $600 dólares
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            {/* <div className="flex items-center gap-2">
+              <div className="hidden sm:inline-block">{regalo}</div>
+              <div>
+                <p className="text-lg font-semibold text-secondary">
+                  BONO 1: METODOS DE PAGO ONLINE
+                </p>
+                <p>
+                  Aprenderás la metodología para recibir pagos por tus servicios
+                  de consulta desde diferentes países del mundo, con esto logras
+                  poder tener pacientes para tu consulta en línea desde
+                  diferentes países.
+                </p>
+                <p>
+                  <span className="font-semibold text-primary">
+                    Bono Valorado en $197 dólares{" "}
+                  </span>
+                </p>
+              </div>
+            </div> */}
+
+            <div className="flex items-center gap-2">
+              <div className="hidden sm:inline-block">{regalo}</div>
+              <div>
+                <p className="text-lg font-semibold text-secondary">
+                  BONO 4: CREACION DE CONTENIDOS
+                </p>
+                <p>
+                  perderás el miedo y la vergüenza de hablar en redes sociales.
+                </p>
+                <p>
+                  <span className="font-semibold text-primary">
+                    Bono Valorado en $297 dólares
                   </span>
                 </p>
               </div>
@@ -363,16 +453,17 @@ const Venta = () => {
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 4: HABLA FRENTE A LA CAMARA CON SEGURIDAD
+                  BONO 5: CATALOGO HERRAMIENTAS DIGITALES
                 </p>
                 <p>
-                  perderás el miedo y la vergüenza de hablar en redes sociales.
+                  para que no tengas que pasar horas buscando herramientas
+                  buenas, este manual en lista las mejores herramientas
+                  digitales y plataformas con las que podrás trabajar y muchas
+                  de ellas en su versión gratuita.
                 </p>
                 <p>
-                  Valorado en
                   <span className="font-semibold text-primary">
-                    {" "}
-                    $247 dólares{" "}
+                    Bono Valorado en $ 47 dólares
                   </span>
                 </p>
               </div>
@@ -478,7 +569,7 @@ const Venta = () => {
             cierra las inscripciones en:
           </h2>
           <div className="py-5">
-            <Counter date={"20 March 2022 00:00"} />
+            <Counter date={saleDate} />
           </div>
           <p className="w-3/4 px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
             Si tienes alguna pregunta referente al entrenamiento puedes enviar
