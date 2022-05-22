@@ -1,4 +1,4 @@
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
@@ -32,13 +32,6 @@ const VideoVenta = () => {
   };
 
   const eventDate = new Date("6 June 2022 00:00");
-
-  const lastSessionDate = new Date("30 May 2022 16:30");
-
-  if (Date.now() < lastSessionDate.getTime()) {
-    view = false;
-    navigate("/s4");
-  }
 
   return (
     <>
