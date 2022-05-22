@@ -29,7 +29,7 @@ const S3 = () => {
   const manual =
     "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
   const telegramUrl = "https://t.me/+axdk9ItfKLgzMTZh";
-  const eventDate = "27 May 2022 15:30";
+  const eventDate = "27 May 2022 16:30";
 
   return (
     <>

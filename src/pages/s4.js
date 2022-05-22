@@ -21,8 +21,8 @@ const S4 = () => {
 
       if (new Date(currentDate) > new Date(tempdate)) {
         setShow(true);
+        setPoint(true);
       }
-      setPoint(true);
     }, 10000);
   }
   timing();
