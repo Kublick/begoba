@@ -34,6 +34,7 @@ const S4 = () => {
   }
 
   const eventDate = "30 May 2022 16:30:00";
+
   const videoUrl = "https://youtu.be/T7mFlCoj8XM";
 
   return (

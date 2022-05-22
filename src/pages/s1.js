@@ -23,8 +23,8 @@ const S1 = () => {
 
   const videoUrl = "https://youtu.be/QtKCnfgs48k";
   const whatsappUrl = useGetUrls();
-  // const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
-  const eventDate = "25 May 2022 15:30";
+
+  const eventDate = "25 May 2022 16:30";
 
   return (
     <>
@@ -35,13 +35,13 @@ const S1 = () => {
           </header>
           <main>
             <div className="grid lg:grid-cols-4">
-              <div className="order-last flex flex-col gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
-                <div className="rounded-lg bg-secondary p-8 shadow-lg">
+              <div className="flex flex-col order-last gap-2 p-2 md:order-none lg:gap-6 lg:p-10">
+                <div className="p-8 rounded-lg shadow-lg bg-secondary">
                   <div className="flex items-center ">
                     <h2 className="text-3xl font-bold text-white">TIP</h2>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="ml-2 h-6 w-6 font-bold"
+                      className="w-6 h-6 ml-2 font-bold"
                       viewBox="0 0 24 24"
                       stroke="#fff"
                     >
@@ -68,7 +68,7 @@ const S1 = () => {
                   </div>
                 </div>
 
-                <div className="mx-2 flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-4 mx-2">
                   <button
                     className="btn-social bg-secondary"
                     onClick={() =>
@@ -81,7 +81,7 @@ const S1 = () => {
                   </button>
 
                   <button
-                    className="btn-social bg-green-600"
+                    className="bg-green-600 btn-social"
                     onClick={() => window.open(whatsappUrl)}
                   >
                     {wswhite} Grupo en Whatsapp
@@ -99,9 +99,9 @@ const S1 = () => {
                 </div>
               </div>
 
-              <div className="order-first bg-gray-100 py-8 shadow-lg lg:order-none lg:col-span-2">
+              <div className="order-first py-8 bg-gray-100 shadow-lg lg:order-none lg:col-span-2">
                 <div className="flex flex-col gap-2 md:gap-6">
-                  <h1 className="self-center text-center text-2xl font-semibold text-secondary md:w-3/4">
+                  <h1 className="self-center text-2xl font-semibold text-center text-secondary md:w-3/4">
                     Tu oportunidad de tener pacientes desde las redes sociales
                   </h1>
                   <div>
@@ -146,7 +146,7 @@ const S1 = () => {
               </div>
             </div>
           </main>
-          <div className="mx-2 grid gap-6 bg-gray-50 pt-8 md:grid-cols-2">
+          <div className="grid gap-6 pt-8 mx-2 bg-gray-50 md:grid-cols-2">
             <div>
               <CommentsFacebook />
             </div>

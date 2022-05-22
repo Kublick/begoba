@@ -24,7 +24,7 @@ const S3 = () => {
   const videoUrl = "https://youtu.be/r-3TcXuqk0A";
   // const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
   const whatsappUrl = useGetUrls();
-  const eventDate = "27 May 2022 15:30";
+  const eventDate = "27 May 2022 16:30";
 
   return (
     <>
