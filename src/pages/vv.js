@@ -18,7 +18,9 @@ const VideoVenta = () => {
 
   if (Date.now() < lastSessionDate.getTime()) {
     view = false;
-    navigate("/s4");
+    if (typeof window !== "undefined") {
+      navigate("/s4");
+    }
   }
 
   const renderer = ({ days, hours, minutes, seconds }) => {
