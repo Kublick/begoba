@@ -241,8 +241,8 @@ const Venta = () => {
                 PROGRAMA INTENSIVO DE 12 SEMANAS 100% ONLINE
               </span>{" "}
               donde aprenderás como lograr que los pacientes lleguen a ti con la
-              estrategia D.E.P.E. y logres incrementar tu numero de pacientes y
-              multiplicar tus ingresos.{" "}
+              estrategia del entrenamiento y logres incrementar tu numero de
+              pacientes y multiplicar tus ingresos de consultas.{" "}
               <span>
                 <br /> Valorado en{" "}
                 <span className="font-semibold text-primary">$997 dólares</span>
@@ -271,13 +271,13 @@ const Venta = () => {
             <div className="w-6">{bullet}</div>
             <p>
               <span className="text-lg font-semibold text-primary">
-                6 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD
+                8 MODULOS DE TRABAJO CON LECCIONES DE VIDEO EN HD
               </span>{" "}
-              donde siguiendo la estrategia D.E.P.E. avanzarás paso a paso de
-              forma ordenada, enfocada, pero sobre todo a tu ritmo por que tu
-              eliges tus propios horarios para ver las lecciones que ya témenos
-              pregrabadas y lo puedes hacer desde tu computadora o desde tu
-              celular.
+              donde siguiendo la estrategia de Incrementa Tu Consulta avanzarás
+              paso a paso de forma ordenada, enfocada, pero sobre todo a tu
+              ritmo por que tu eliges tus propios horarios para ver las
+              lecciones que ya témenos pregrabadas y lo puedes hacer desde tu
+              computadora o desde tu celular.
             </p>
           </div>
           <div className="flex gap-2">
@@ -298,7 +298,7 @@ const Venta = () => {
           <div className="flex gap-2">
             <div className="w-6">{bullet}</div>
             <p>
-              <span className="text-lg fonst-semibold text-primary">
+              <span className="text-lg font-semibold text-primary">
                 ACCESO POR TODO UN AÑO A LA PLATAFORMA
               </span>{" "}
               para que así puedas ver y repetir las lecciones luego de concluir
@@ -331,14 +331,16 @@ const Venta = () => {
             <div className="w-6">{bullet}</div>
             <p>
               <span className="text-lg font-semibold text-primary">
-                PERTENECER DE POR VIDA A LA COMUNIDAD INTERNACIONAL DE EXITOSAS
-                Y EXITOSOS VIP
+                MEMEBRESIA PARA PERTENECER DURANTE TODO UN AÑO A LA COMUNIDAD
+                INTERNACIONAL
               </span>{" "}
-              alumnos profesionales del entregamiento incrementa tu consulta, el
-              pertenecer a la comunidad es algo invaluable por que dentro de
-              ella podrás ir compartiendo los avances que vayas logrando con tus
-              compañeros, y empiezas a sentir el empuje de ser parte de una
-              tribu que creme no te va a dejar sola.
+              de alumnos profesionales del entrenamiento incrementa tu consulta,
+              el pertenecer a la comunidad es algo invaluable, ahí podrás hacer
+              relaciones internacionales, donde conocerás profesionales
+              increíbles con los que podrás hacer tus futuras colaboraciones,
+              además dentro de ella podrás ir compartiendo los avances que vayas
+              logrando con tus compañeros, y empiezas a sentir el empuje de ser
+              parte de una tribu que creme no te va a dejar sola.
               <span>
                 <br /> Valorado en{" "}
                 <span className="font-semibold text-primary">Invaluable</span>
@@ -366,7 +368,7 @@ const Venta = () => {
                   BONO 1: HABLA FRENTE A LA CAMARA CON SEGURIDAD
                 </p>
                 <p>
-                  perderás el miedo y la vergüenza al hacer video, te sentirás
+                  Perderás el miedo y la vergüenza al hacer video, te sentirás
                   en confianza total al hablar en redes sociales.
                 </p>
                 <p>
@@ -383,7 +385,7 @@ const Venta = () => {
                   BONO 2: TU E-BOOK
                 </p>
                 <p>
-                  este bono te servirá para aprender a crear y diseñar tu propio
+                  Este bono te servirá para aprender a crear y diseñar tu propio
                   libro digital el cual te generará dinero de forma automática y
                   recurrente.
                 </p>
@@ -440,7 +442,7 @@ const Venta = () => {
                   BONO 4: CREACION DE CONTENIDOS
                 </p>
                 <p>
-                  perderás el miedo y la vergüenza de hablar en redes sociales.
+                  Perderás el miedo y la vergüenza de hablar en redes sociales.
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
@@ -456,7 +458,7 @@ const Venta = () => {
                   BONO 5: CATALOGO HERRAMIENTAS DIGITALES
                 </p>
                 <p>
-                  para que no tengas que pasar horas buscando herramientas
+                  Para que no tengas que pasar horas buscando herramientas
                   buenas, este manual en lista las mejores herramientas
                   digitales y plataformas con las que podrás trabajar y muchas
                   de ellas en su versión gratuita.
@@ -475,7 +477,7 @@ const Venta = () => {
                 INCREMENTA TU CONSULTA
               </span>{" "}
               y además con los bonos de regalo tienes acceso a mas de{" "}
-              <span className="font-semibold text-secondary">$3,600</span>{" "}
+              <span className="font-semibold text-secondary">$4,500</span>{" "}
               dólares en contenido de valor y recursos. Si pagaras todo esto por
               separado te saldría en eso... Pero hoy tengo una invitación, es
               una oferta especial para ti, hoy tu puedes reservar tu inscripción
