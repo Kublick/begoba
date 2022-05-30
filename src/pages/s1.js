@@ -25,10 +25,9 @@ const S1 = () => {
   }
 
   const videoUrl = "https://youtu.be/QtKCnfgs48k";
-  const manual =
-    "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
+  const whatsappUrl = useGetUrls();
+
   const eventDate = "25 May 2022 16:30";
-  const telegramUrl = "https://t.me/+axdk9ItfKLgzMTZh";
 
   return (
     <>
@@ -81,8 +80,8 @@ const S1 = () => {
                   </button>
 
                   <button
-                    className="btn-social bg-telegram"
-                    onClick={() => window.open(telegramUrl)}
+                    className="bg-green-600 btn-social"
+                    onClick={() => window.open(whatsappUrl)}
                   >
                     {telegramIcon} Grupo en Telegram
                   </button>

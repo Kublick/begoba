@@ -26,9 +26,8 @@ const S3 = () => {
   }
 
   const videoUrl = "https://youtu.be/r-3TcXuqk0A";
-  const manual =
-    "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
-  const telegramUrl = "https://t.me/+axdk9ItfKLgzMTZh";
+  // const whatsappUrl = "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ";
+  const whatsappUrl = useGetUrls();
   const eventDate = "27 May 2022 16:30";
 
   return (

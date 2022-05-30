@@ -1,25 +1,19 @@
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
 
 const VideoVenta = () => {
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
   let view = true;
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
       // window.fbq("track", "PageView");
       window.fbq("track", "AddPaymentInfo");
-    }
-  }
-
-  const lastSessionDate = new Date("30 May 2022 06:00");
-
-  if (Date.now() < lastSessionDate.getTime()) {
-    view = false;
-    if (typeof window !== "undefined") {
-      navigate("/s4");
     }
   }
 
@@ -37,7 +31,7 @@ const VideoVenta = () => {
     );
   };
 
-  const eventDate = new Date("6 June 2022 00:00");
+  const saleEndDate = new Date("6 June 2022 00:00");
 
   return (
     <>
@@ -49,7 +43,11 @@ const VideoVenta = () => {
             </div>
 
             <div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
-              <Countdown date={eventDate} renderer={renderer} zeroPadTime={2} />
+              <Countdown
+                date={saleEndDate}
+                renderer={renderer}
+                zeroPadTime={2}
+              />
             </div>
 
             <div className="flex flex-col gap-4 py-10">
@@ -65,7 +63,7 @@ const VideoVenta = () => {
                 </h1>
               </div>
             </div>
-            <Venta />
+            <Venta saleEndDate={saleEndDate} />
           </div>
         </div>
       ) : null}

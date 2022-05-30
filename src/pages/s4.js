@@ -27,13 +27,12 @@ const S4 = () => {
   }
   timing();
 
-  if (view === true) {
-    if (point === true) {
-      ventaRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+  if (view === true && point === true) {
+    ventaRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
   const eventDate = "30 May 2022 16:30:00";
+
   const videoUrl = "https://youtu.be/T7mFlCoj8XM";
 
   return (

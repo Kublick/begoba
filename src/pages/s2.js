@@ -26,11 +26,9 @@ const S2 = () => {
   }
 
   const videoUrl = "https://youtu.be/cre-RGf8CtY";
-  const manual =
-    "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual-TallerInternacional.pdf";
-  const telegramUrl = "https://t.me/+axdk9ItfKLgzMTZh";
-  const eventDate = "26 May 2022 16:30";
+  const whatsappUrl = useGetUrls();
 
+  const eventDate = "26 May 2022 16:30";
   return (
     <>
       {show ? (
@@ -51,15 +49,19 @@ const S2 = () => {
                 <p className="font-semibold">!Nos vemos en los comentarios!</p>
                 <div
                   className="flex flex-col items-center gap-4 mx-2"
-                  onClick={() => window.open(manual)}
+                  onClick={() =>
+                    window.open(
+                      "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf"
+                    )
+                  }
                 >
                   <button className="btn-social bg-secondary">
                     {notebookWhite} Cuaderno de Trabajo
                   </button>
 
                   <button
-                    className="btn-social bg-telegram"
-                    onClick={() => window.open(telegramUrl)}
+                    className="bg-green-600 btn-social"
+                    onClick={() => window.open(whatsappUrl)}
                   >
                     {telegramIcon} Grupo en Telegram
                   </button>

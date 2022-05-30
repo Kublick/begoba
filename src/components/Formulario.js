@@ -97,7 +97,7 @@ export default class IndexPage extends React.Component {
                 placeholder="email"
               />
 
-              <input type="submit" className="btn-main" value="Registrarme" />
+              <input type="submit" className="btn-main" value="Regístrarme" />
             </form>
           </div>
         </div>

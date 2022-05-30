@@ -11,11 +11,11 @@ import {
   Instalogo,
   incrementaLogo,
 } from "../components/helpers/logos";
-
 import { StaticImage } from "gatsby-plugin-image";
 import { useWindowSize } from "../components/helpers/useWindowSize";
+import PropTypes from "prop-types";
 
-const Venta = () => {
+const Venta = ({ saleEndDate }) => {
   const [windowSize, setWindowSize] = useState("640");
   const size = useWindowSize();
 
@@ -47,17 +47,53 @@ const Venta = () => {
           <div>
             <p className="text-lg">
               <span className="font-bold">
-                BONO - SISTEMA PARA QUE TUS PACIENTES NO ABABDONEN LA CONSULTA
+                BONO - ACCESO A 3 MENTORIAS INDIVIDUALES
               </span>{" "}
               uno a uno con la psicóloga Berenice Bastidas durante el
-              entrenamiento, donde podrás recibir de primera mano ayuda enfocada
+              entrenamiento, donde podrás recibir ayuda personalizada y enfocada
               únicamente en tu proyecto profesional.
+            </p>
+            <p>
+              <span className="font-semibold text-primary">
+                {" "}
+                Valorado en $300 dólares{" "}
+              </span>{" "}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center w-3/4 gap-2">
+          <div className="hidden sm:inline-block">{regalo}</div>
+          <div>
+            <p className="text-lg">
+              <span className="font-bold">
+                BONO - SISTEMA PARA QUE TUS PACIENTES NO ABANDONEN LA CONSULTA
+              </span>{" "}
+              ¡Este bono esta increíble! Si a ti te sucede que el paciente
+              empieza su tratamiento de consultas y no lo termina, que abandona
+              el tratamiento, sin duda si necesitas tener este bono, este
+              sistema para que eso ya no te suceda.
             </p>
             <p>
               <span className="font-semibold text-primary">
                 {" "}
                 Valorado en $297 dólares{" "}
               </span>{" "}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center w-3/4 gap-2">
+          <div className="hidden sm:inline-block">{regalo}</div>
+          <div>
+            <p className="text-lg">
+              <span className="font-bold">BONO - METODOS DE PAGO ONLINE</span>{" "}
+              Aprenderás la metodología para recibir pagos por tus servicios de
+              consulta desde diferentes países del mundo, con esto logras poder
+              tener pacientes para tu consulta en línea desde diferentes países.
+            </p>
+            <p>
+              <span className="font-semibold text-primary">
+                Valorado en $197 dólares{" "}
+              </span>
             </p>
           </div>
         </div>
@@ -77,25 +113,6 @@ const Venta = () => {
             <p>
               <span className="font-semibold text-primary">
                 Valorado en $500 dólares{" "}
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center justify-center w-3/4 gap-2">
-          <div className="hidden sm:inline-block">{regalo}</div>
-          <div>
-            <p className="text-lg">
-              <span className="font-bold">
-                BONO - CATALOGO HERRAMIENTAS DIGITALES
-              </span>{" "}
-              para que no tengas que pasar horas buscando herramientas buenas,
-              este manual en lista las mejores herramientas digitales y
-              plataformas con las que podrás trabajar y muchas de ellas en su
-              versión gratuita.
-            </p>
-            <p>
-              <span className="font-semibold text-primary">
-                Valorado en $47 dólares{" "}
               </span>
             </p>
           </div>
@@ -195,7 +212,7 @@ const Venta = () => {
           online incrementa tu consulta
         </h2>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center px-4">
         <StaticImage
           src="../images/03beneficios.png"
           className=""
@@ -207,7 +224,7 @@ const Venta = () => {
         <div className="flex justify-center">
           <div className="w-3/4 border-b-2 border-secondary"></div>
         </div>
-        <h1 className="pt-4 text-center text-lg md:text-2xl">
+        <h1 className="pt-4 text-lg text-center md:text-2xl">
           El entrenamiento{" "}
           <span className="text-primary text-font-bold">
             INCREMENTA TU CONSULTA
@@ -245,7 +262,7 @@ const Venta = () => {
               <span>
                 <br />
                 <span className="font-semibold text-primary">
-                  Valorado en $597 dólares
+                  Valorado en $697 dólares
                 </span>
               </span>
             </p>
@@ -284,7 +301,7 @@ const Venta = () => {
             <div className="w-6">{bullet}</div>
             <p>
               <span className="text-lg font-semibold text-primary">
-                ACCESO POR TODO UN AǸO A LA PLATAFORMA
+                ACCESO POR TODO UN AÑO A LA PLATAFORMA
               </span>{" "}
               para que así puedas ver y repetir las lecciones luego de concluir
               el programa las veces que tu preﬁeras.
@@ -308,9 +325,9 @@ const Venta = () => {
               negocio.
               <span>
                 <br />
-                <span className="font-semibold text-primary">
+                {/* <span className="font-semibold text-primary">
                   Valorado en $697 dólares
-                </span>
+                </span> */}
               </span>
             </p>
           </div>
@@ -318,13 +335,16 @@ const Venta = () => {
             <div className="w-6">{bullet}</div>
             <p>
               <span className="text-lg font-semibold text-primary">
-                PERTENECER DE POR VIDA A LA COMUNIDAD INTERNACIONAL
+                MEMEBRESIA PARA PERTENECER DURANTE TODO UN AÑO A LA COMUNIDAD
+                INTERNACIONAL
               </span>{" "}
-              de alumnos profesionales del entregamiento incrementa tu consulta,
-              el pertenecer a la comunidad es algo invaluable por que dentro de
-              ella podrás ir compartiendo los avances que vayas logrando con tus
-              compañeros, y empiezas a sentir el empuje de ser parte de una
-              tribu que creme no te va a dejar sola.
+              de alumnos profesionales del entrenamiento incrementa tu consulta,
+              el pertenecer a la comunidad es algo invaluable, ahí podrás hacer
+              relaciones internacionales, donde conocerás profesionales
+              increíbles con los que podrás hacer tus futuras colaboraciones,
+              además dentro de ella podrás ir compartiendo los avances que vayas
+              logrando con tus compañeros, y empiezas a sentir el empuje de ser
+              parte de una tribu que creme no te va a dejar sola.
               <span>
                 <br />
                 <span className="font-semibold text-primary">
@@ -337,7 +357,7 @@ const Venta = () => {
       </div>
       <div className="">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="w-3/4 mt-10text-2xl text-center md:text-3xl lg:text-5xl">
+          <h2 className="w-3/4 text-center mt-10text-2xl md:text-3xl lg:text-5xl">
             ¡Si accedes hoy además hay regalos para ti!
           </h2>
           <h2 className="w-3/4 mt-4 mb-10 text-2xl text-center md:text-3xl lg:text-5xl">
@@ -352,17 +372,15 @@ const Venta = () => {
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 1: METODOS DE PAGO ONLINE
+                  BONO 1: HABLA FRENTE A LA CAMARA CON SEGURIDAD
                 </p>
                 <p>
-                  Aprenderás la metodología para recibir pagos por tus servicios
-                  de consulta desde diferentes países del mundo, con esto logras
-                  poder tener pacientes para tu consulta en línea desde
-                  diferentes países.
+                  Perderás el miedo y la vergüenza al hacer video, te sentirás
+                  en confianza total al hablar en redes sociales.
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
-                    Bono Valorado en $197 dólares{" "}
+                    Bono Valorado en $247 dólares{" "}
                   </span>
                 </p>
               </div>
@@ -374,39 +392,23 @@ const Venta = () => {
                   BONO 2: HABLA FRENTE A LA CAMARA CON SEGURIDAD
                 </p>
                 <p>
-                  perderás el miedo y la vergüenza al hacer video, te sentirás
-                  en confianza total al hablar en redes sociales.
-                </p>
-                <p>
-                  <span className="font-semibold text-primary">
-                    Bono Valorado en $97 dólares{" "}
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="hidden sm:inline-block">{regalo}</div>
-              <div>
-                <p className="text-lg font-semibold text-secondary">
-                  BONO 3: TU E-BOOK
-                </p>
-                <p>
-                  este bono te servirá para aprender a crear y diseñar tu propio
+                  Este bono te servirá para aprender a crear y diseñar tu propio
                   libro digital el cual te generará dinero de forma automática y
                   recurrente.
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
-                    Bono Valorado en $147 dólares
+                    Bono Valorado en $97 dólares
                   </span>
                 </p>
               </div>
             </div>
+
             <div className="flex items-center gap-2">
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 4: CREA Y VENDE TU PROPIO CURSO ONLINE
+                  BONO 3: CREA Y VENDE TU PROPIO CURSO ONLINE
                 </p>
                 <p>
                   con este bono y sin la necesidad de ser un experto aprenderás
@@ -416,7 +418,7 @@ const Venta = () => {
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
-                    Bono Valorado en $247 dólares
+                    Bono Valorado en $600 dólares
                   </span>
                 </p>
               </div>
@@ -434,23 +436,58 @@ const Venta = () => {
                 </p>
               </div> */}
             </div>
+
+            {/* <div className="flex items-center gap-2">
+              <div className="hidden sm:inline-block">{regalo}</div>
+              <div>
+                <p className="text-lg font-semibold text-secondary">
+                  BONO 1: METODOS DE PAGO ONLINE
+                </p>
+                <p>
+                  Aprenderás la metodología para recibir pagos por tus servicios
+                  de consulta desde diferentes países del mundo, con esto logras
+                  poder tener pacientes para tu consulta en línea desde
+                  diferentes países.
+                </p>
+                <p>
+                  <span className="font-semibold text-primary">
+                    Bono Valorado en $197 dólares{" "}
+                  </span>
+                </p>
+              </div>
+            </div> */}
+
             <div className="flex items-center gap-2">
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 5: CREACION DE CONTENIDOS
+                  BONO 4: CREACION DE CONTENIDOS
                 </p>
                 <p>
-                  crear contenido para Instagram y Facebook no tiene por que ser
-                  difícil, ni esclavizante, este bono lo he creado para llevarte
-                  de la mano click por click en la mejor herramienta del
-                  mercado, donde aprenderás a diseñar tu propio contenido para
-                  las redes sociales y te quedaran tan bien, tal cual como si
-                  las diseñará una agencia de marketing.
+                  Perderás el miedo y la vergüenza de hablar en redes sociales.
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
-                    Bono Valorado en $247 dólares
+                    Bono Valorado en $297 dólares
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="hidden sm:inline-block">{regalo}</div>
+              <div>
+                <p className="text-lg font-semibold text-secondary">
+                  BONO 5: CATALOGO HERRAMIENTAS DIGITALES
+                </p>
+                <p>
+                  Para que no tengas que pasar horas buscando herramientas
+                  buenas, este manual en lista las mejores herramientas
+                  digitales y plataformas con las que podrás trabajar y muchas
+                  de ellas en su versión gratuita.
+                </p>
+                <p>
+                  <span className="font-semibold text-primary">
+                    Bono Valorado en $ 47 dólares
                   </span>
                 </p>
               </div>
@@ -492,7 +529,7 @@ const Venta = () => {
           <h2 className="px-4 text-2xl font-bold text-center text-white md:w-3/4 lg:px-0 lg:text-4xl">
             ¿Listo para crear la vida que sueñas?
           </h2>
-          <h2 className="py-4 text-xl font-semibold text-center">
+          <h2 className="p-4 text-xl font-semibold text-center">
             ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
           </h2>
         </div>
@@ -556,7 +593,7 @@ const Venta = () => {
             cierra las inscripciones en:
           </h2>
           <div className="py-5">
-            <Counter date={"20 March 2022 00:00"} />
+            <Counter date={saleEndDate} />
           </div>
           <p className="w-3/4 px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
             Si tienes alguna pregunta referente al entrenamiento puedes enviar
@@ -689,3 +726,7 @@ const Venta = () => {
 };
 
 export default Venta;
+
+Venta.propTypes = {
+  saleEndDate: PropTypes.instanceOf(Date),
+};
