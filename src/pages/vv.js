@@ -31,7 +31,7 @@ const VideoVenta = () => {
     );
   };
 
-  const saleEndDate = new Date("6 June 2022 00:00");
+  const saleEndDate = new Date("7 June 2022 00:00");
 
   return (
     <>
