@@ -3,16 +3,17 @@ import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
 import { useGetUrls } from "../hooks/useGetUrls";
 
 const S1 = () => {
-  let show = true;
-  // React.UseEffect(() => {
-  //   navigate("/");
-  // }, []);
+  let show = false;
+
+  React.useEffect(() => {
+    navigate("/s4");
+  }, []);
 
   if (typeof window !== "undefined") {
     if (window.fbq != null) {
