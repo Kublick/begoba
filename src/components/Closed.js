@@ -1,7 +1,7 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-// import FormularioClosed from "../components/FormularioClosed";
+import FormularioClosed from "../components/FormularioClosed";
 import { useWindowSize } from "../components/helpers/useWindowSize";
 
 const Closed = () => {
@@ -29,7 +29,7 @@ const Closed = () => {
             </div>
           </div>
         </div>
-        {/* <div className="mt-4 text-center text-3xl font-bold text-mango">
+        <div className="mt-4 text-center text-3xl font-bold text-mango">
           <h1>!LLEGAS TARDE!</h1>
           <h1>Incrementa tu consulta ha cerrado sus puertas</h1>
         </div>
@@ -57,7 +57,7 @@ const Closed = () => {
           <div className="order-first md:order-last">
             <FormularioClosed />
           </div>
-        </div> */}
+        </div>
       </div>
 
       <div className="my-8">
@@ -86,9 +86,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de Guatamela
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -97,9 +94,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de Colombia
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -159,9 +153,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de Colombia
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -170,9 +161,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de Peru
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -181,9 +169,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de Republica Dominicana
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -192,9 +177,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumno de Bolivia
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -203,9 +185,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumno de el Salvador
-            </p>
           </div>
           <div className="my-10">
             <ReactPlayer
@@ -214,9 +193,6 @@ const Closed = () => {
               height={320}
               controls={true}
             />
-            <p className="text-center font-semibold mt-2 text-primary">
-              Alumna de el Salvador
-            </p>
           </div>
         </div>
       </div>

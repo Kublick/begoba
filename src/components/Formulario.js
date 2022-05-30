@@ -61,10 +61,9 @@ export default class IndexPage extends React.Component {
     return (
       <>
         <div className="container flex justify-center ">
-          <div className="flex flex-col items-center px-8 py-4 shadow-md min-w-3/4 justify-content center rounded-xl bg-secondary">
-            <p className="mb-2 font-semibold text-white font-3xl">
-              Regístrate al entrenamiento{" "}
-              <span className="font-bold">Gratuito</span>
+          <div className="flex flex-col items-center gap-2 px-8 py-4 shadow-md min-w-3/4 justify-content center rounded-xl bg-secondary">
+            <p className="font-semibold text-white font-3xl">
+              Registrate <span className="font-bold">GRATIS</span>
             </p>
 
             <form onSubmit={this._handleSubmit} className="flex flex-col gap-4">

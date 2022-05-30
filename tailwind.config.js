@@ -5,7 +5,6 @@ module.exports = {
     fontFamily: {
       display: ["Montserrat", "sans-serif"],
       body: ["Montserrat", "sans-serif"],
-      dancing: ["Dancing Script"],
     },
     extend: {
       colors: {
