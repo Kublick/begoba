@@ -11,13 +11,11 @@ import {
   Instalogo,
   incrementaLogo,
 } from "../components/helpers/logos";
-
 import { StaticImage } from "gatsby-plugin-image";
 import { useWindowSize } from "../components/helpers/useWindowSize";
+import PropTypes from "prop-types";
 
-const Venta = () => {
-  const saleDate = " June 6 2022 23:50";
-
+const Venta = ({ saleEndDate }) => {
   const [windowSize, setWindowSize] = useState("640");
   const size = useWindowSize();
 
@@ -214,7 +212,7 @@ const Venta = () => {
           online incrementa tu consulta
         </h2>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center px-4">
         <StaticImage
           src="../images/03beneficios.png"
           className=""
@@ -507,7 +505,7 @@ const Venta = () => {
           <h2 className="px-4 text-2xl font-bold text-center text-white md:w-3/4 lg:px-0 lg:text-4xl">
             ¿Listo para crear la vida que sueñas?
           </h2>
-          <h2 className="py-4 text-xl font-semibold text-center">
+          <h2 className="p-4 text-xl font-semibold text-center">
             ELIGE EL PLAN QUE MEJOR SE ADAPTE A TÍ
           </h2>
         </div>
@@ -571,7 +569,7 @@ const Venta = () => {
             cierra las inscripciones en:
           </h2>
           <div className="py-5">
-            <Counter date={saleDate} />
+            <Counter date={saleEndDate} />
           </div>
           <p className="w-3/4 px-8 text-center md:w-3/4 md:px-0 md:text-2xl">
             Si tienes alguna pregunta referente al entrenamiento puedes enviar
@@ -704,3 +702,7 @@ const Venta = () => {
 };
 
 export default Venta;
+
+Venta.propTypes = {
+  saleEndDate: PropTypes.instanceOf(Date),
+};

@@ -31,7 +31,7 @@ const VideoVenta = () => {
     );
   };
 
-  const eventDate = new Date("6 June 2022 00:00");
+  const saleEndDate = new Date("6 June 2022 00:00");
 
   return (
     <>
@@ -43,7 +43,11 @@ const VideoVenta = () => {
             </div>
 
             <div className="flex flex-col items-center gap-2 py-6 font-bold text-white bg-mango">
-              <Countdown date={eventDate} renderer={renderer} zeroPadTime={2} />
+              <Countdown
+                date={saleEndDate}
+                renderer={renderer}
+                zeroPadTime={2}
+              />
             </div>
 
             <div className="flex flex-col gap-4 py-10">
@@ -59,7 +63,7 @@ const VideoVenta = () => {
                 </h1>
               </div>
             </div>
-            <Venta />
+            <Venta saleEndDate={saleEndDate} />
           </div>
         </div>
       ) : null}
