@@ -39,8 +39,8 @@ const Venta = ({ saleEndDate }) => {
     <>
       <div className="flex flex-col items-center gap-4 mb-10">
         <h1 className="text-xl font-semibold text-center text-primary md:text-3xl">
-          Bonos de Acción Rápida (bonos BAR solo disponibles{" "}
-          <span className="font-bold">HOY</span> )
+          Bonos de Acción Rápida (bonos BAR solo disponibles las primeras{" "}
+          <span className="font-bold">24 horas</span> )
         </h1>
         <div className="flex items-center justify-center w-3/4 gap-2">
           <div className="hidden sm:inline-block">{regalo}</div>
@@ -242,8 +242,10 @@ const Venta = ({ saleEndDate }) => {
               estrategia del entrenamiento y logres incrementar tu numero de
               pacientes y multiplicar tus ingresos de consultas.{" "}
               <span>
-                <br /> Valorado en{" "}
-                <span className="font-semibold text-primary">$997 dólares</span>
+                <br />
+                <span className="font-semibold text-primary">
+                  Valorado en $997 dólares
+                </span>
               </span>
             </p>
           </div>
@@ -286,10 +288,12 @@ const Venta = ({ saleEndDate }) => {
               </span>{" "}
               para que sepas exactamente en dónde debes de enfocarte cada
               semana, para así lograr avanzar a pasos seguros y que así ya nada
-              te detenga triunfar
+              te detenga triunfar.
               <span>
-                <br /> Valorado en{" "}
-                <span className="font-semibold text-primary">$47 dólares</span>
+                <br />
+                <span className="font-semibold text-primary">
+                  Valorado en $47 dólares
+                </span>
               </span>
             </p>
           </div>
@@ -302,8 +306,10 @@ const Venta = ({ saleEndDate }) => {
               para que así puedas ver y repetir las lecciones luego de concluir
               el programa las veces que tu preﬁeras.
               <span>
-                <br /> Valorado en{" "}
-                <span className="font-semibold text-primary">$497 dólares</span>
+                <br />
+                <span className="font-semibold text-primary">
+                  Valorado en $497 dólares
+                </span>
               </span>
             </p>
           </div>
@@ -340,8 +346,10 @@ const Venta = ({ saleEndDate }) => {
               logrando con tus compañeros, y empiezas a sentir el empuje de ser
               parte de una tribu que creme no te va a dejar sola.
               <span>
-                <br /> Valorado en{" "}
-                <span className="font-semibold text-primary">Invaluable</span>
+                <br />
+                <span className="font-semibold text-primary">
+                  Valorado en Invaluable
+                </span>
               </span>
             </p>
           </div>
@@ -358,6 +366,7 @@ const Venta = ({ saleEndDate }) => {
           <h2 className="flex p-4 text-2xl font-bold text-white rounded-lg bg-primary">
             Bonos de Regalo
           </h2>
+
           <div className="flex flex-col w-3/4 gap-4 py-10 md:mx-0 md:w-1/2">
             <div className="flex items-center gap-2">
               <div className="hidden sm:inline-block">{regalo}</div>
@@ -380,7 +389,7 @@ const Venta = ({ saleEndDate }) => {
               <div className="hidden sm:inline-block">{regalo}</div>
               <div>
                 <p className="text-lg font-semibold text-secondary">
-                  BONO 2: TU E-BOOK
+                  BONO 2: HABLA FRENTE A LA CAMARA CON SEGURIDAD
                 </p>
                 <p>
                   Este bono te servirá para aprender a crear y diseñar tu propio
@@ -402,8 +411,10 @@ const Venta = ({ saleEndDate }) => {
                   BONO 3: CREA Y VENDE TU PROPIO CURSO ONLINE
                 </p>
                 <p>
-                  Aprenderás la metodología para recibir pagos por tus servicios
-                  de consulta desde diferentes países del mundo.
+                  con este bono y sin la necesidad de ser un experto aprenderás
+                  a crear desde cero tu curso online y empezar a ganar de
+                  inmediato dinero con el por que además te voy a enseñar a
+                  venderlo.
                 </p>
                 <p>
                   <span className="font-semibold text-primary">
@@ -411,6 +422,19 @@ const Venta = ({ saleEndDate }) => {
                   </span>
                 </p>
               </div>
+              {/* <div>
+                <p className="text-lg font-semibold text-secondary">
+                BONO 5: CREACION DE CONTENIDOS 
+                </p>
+                <p>
+                crear contenido para Instagram y Facebook no tiene por que ser difícil, ni esclavizante, este bono lo he creado para llevarte de la mano click por click en la mejor herramienta del mercado, donde aprenderás a diseñar tu propio contenido para las redes sociales y te quedaran tan bien, tal cual como si las diseñará una agencia de marketing.
+                </p>
+                <p>
+                  <span className="font-semibold text-primary">
+                    Bono Valorado en $247 dólares
+                  </span>
+                </p>
+              </div> */}
             </div>
 
             {/* <div className="flex items-center gap-2">

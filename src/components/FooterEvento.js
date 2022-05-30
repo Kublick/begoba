@@ -1,15 +1,10 @@
 import React from "react";
 // import { graphql, useStaticQuery } from "gatsby";
 // import { GatsbyImage } from "gatsby-plugin-image";
-import {
-  whitelogo,
-  fbsecondary,
-  ytwhite,
-  inswhite,
-} from "../components/helpers/logos";
-import PropTypes from "prop-types";
+import { whitelogo, fbsecondary, ytwhite, inswhite } from "./helpers/logos";
+// import PropTypes from "prop-types";
 
-const Footer = (props) => {
+const Footer = () => {
   // const data = useStaticQuery(
   //   graphql`
   //     {
@@ -69,14 +64,7 @@ const Footer = (props) => {
 						/>
 					</div>
 				</div> */}
-        <div className="flex justify-center">
-          <button
-            className="w-full py-1 text-white border-2 md:w-3/4 md:px-4 bg-primary border-mango rounded-xl hover:bg-primary-dark hover:border-primary-dark"
-            onClick={props.handleBackClick}
-          >
-            Taller GRATUITO cómo GANAR $5,000 dólares con tu consulta
-          </button>
-        </div>
+
         <div></div>
       </div>
       <div className="border-t-8 border-b-8 border-t-mango border-b-primary" />
@@ -141,7 +129,3 @@ const Footer = (props) => {
 };
 
 export default Footer;
-
-Footer.propTypes = {
-  handleBackClick: PropTypes.func,
-};

@@ -1,12 +1,16 @@
 import React from "react";
-import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
+import {
+  fbwhite,
+  notebookWhite,
+  telegramIcon,
+} from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
-import { useGetUrls } from "../hooks/useGetUrls";
+// import { useGetUrls } from "../hooks/useGetUrls";
 
 const S3 = () => {
   let show = true;
@@ -70,24 +74,24 @@ const S3 = () => {
                 <div className="flex flex-col items-center gap-4 mx-2">
                   <button
                     className="btn-social bg-secondary"
-                    onClick={() =>
-                      window.open(
-                        "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional_01.pdf"
-                      )
-                    }
+                    onClick={() => window.open(manual)}
                   >
                     {notebookWhite} Cuaderno de Trabajo
                   </button>
 
                   <button
-                    className="bg-green-600 btn-social"
-                    onClick={() => window.open(whatsappUrl)}
+                    className="bg-telegram btn-social"
+                    onClick={() => window.open(telegramUrl)}
                   >
-                    {wswhite} Grupo en Whatsapp
+                    {telegramIcon} Grupo en Telegram
                   </button>
                   <button
                     className=" btn-social bg-primary"
-                    onClick={() => window.open(videoUrl)}
+                    onClick={() =>
+                      window.open(
+                        "http://www.facebook.com/groups/tallerinternacional/"
+                      )
+                    }
                   >
                     {fbwhite} No te lo pierdas
                   </button>

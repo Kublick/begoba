@@ -1,12 +1,15 @@
 import React from "react";
-import { fbwhite, wswhite, notebookWhite } from "../components/helpers/logos";
+import {
+  fbwhite,
+  notebookWhite,
+  telegramIcon,
+} from "../components/helpers/logos";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link } from "gatsby";
 import CommentsFacebook from "../components/CommentsFacebook";
 import ReactPlayer from "react-player";
-import { useGetUrls } from "../hooks/useGetUrls";
 
 const S1 = () => {
   let show = true;
@@ -71,11 +74,7 @@ const S1 = () => {
                 <div className="flex flex-col items-center gap-4 mx-2">
                   <button
                     className="btn-social bg-secondary"
-                    onClick={() =>
-                      window.open(
-                        "https://incrementafiles.s3.us-west-1.amazonaws.com/Manual+del+Taller+Internacional.pdf"
-                      )
-                    }
+                    onClick={() => window.open(manual)}
                   >
                     {notebookWhite} Cuaderno de Trabajo
                   </button>
@@ -84,13 +83,13 @@ const S1 = () => {
                     className="bg-green-600 btn-social"
                     onClick={() => window.open(whatsappUrl)}
                   >
-                    {wswhite} Grupo en Whatsapp
+                    {telegramIcon} Grupo en Telegram
                   </button>
                   <button
                     className=" btn-social bg-primary"
                     onClick={() =>
                       window.open(
-                        "http://www.facebook.com/groups/561601284963553/"
+                        "http://www.facebook.com/groups/tallerinternacional/"
                       )
                     }
                   >

@@ -1,11 +1,11 @@
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 import React from "react";
 import { mainLogo } from "../components/helpers/logos";
 
 const Regalo = () => {
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
 
   const redirect = () => {
     window.open(

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +12,7 @@ body {
 }
 
 .btn-main {
-  @apply rounded-xl border-4 border-mango bg-primary py-2 text-white;
+  @apply py-2 text-white border-4 rounded-xl border-mango bg-primary;
 }
 
 .btn-main:hover {
@@ -19,23 +20,23 @@ body {
 }
 
 .btn-main-mango {
-  @apply rounded-xl border-4 border-mango bg-mango px-4 py-2 text-white hover:border-mango-btn hover:bg-mango-btn;
+  @apply px-4 py-2 text-white border-4 rounded-xl border-mango bg-mango hover:border-mango-btn hover:bg-mango-btn;
 }
 
 .btn-green {
-  @apply rounded-full border-4 border-white bg-whats px-6 text-2xl font-bold text-white shadow-lg;
+  @apply px-6 text-2xl font-bold text-white border-4 border-white rounded-full shadow-lg bg-whats;
 }
 
 .btn-telegram {
-  @apply rounded-full border-4 border-white bg-telegram px-6 text-2xl font-bold text-white shadow-lg;
+  @apply px-6 text-2xl font-bold text-white border-4 border-white rounded-full shadow-lg bg-telegram;
 }
 
 .btn-social {
-  @apply mx-2 flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold text-white lg:w-64 lg:py-4;
+  @apply flex items-center w-full gap-2 px-4 py-2 mx-2 text-sm font-semibold text-white rounded-lg lg:w-64 lg:py-4;
 }
 
 .btn-social-big {
-  @apply flex w-full items-center gap-2 rounded-lg px-8 py-4 text-sm font-semibold text-white;
+  @apply flex items-center w-full gap-2 px-8 py-4 text-sm font-semibold text-white rounded-lg;
 }
 
 .logos {
@@ -44,27 +45,27 @@ body {
 }
 
 .sesiones-circle {
-  @apply flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-lg font-bold text-white;
+  @apply flex items-center justify-center w-10 h-10 text-lg font-bold text-white rounded-full bg-secondary;
 }
 
 .sesiones-text {
-  @apply ml-8 w-2/3 border-b-8 px-4 pb-4 text-xl font-bold;
+  @apply w-2/3 px-4 pb-4 ml-8 text-xl font-bold border-b-8;
 }
 
 .title {
-  @apply text-center text-2xl font-bold text-primary md:text-4xl;
+  @apply text-2xl font-bold text-center text-primary md:text-4xl;
 }
 
 .footer-btn-secondary {
-  @apply flex h-16 w-32 items-center justify-center rounded-md bg-secondary text-white;
+  @apply flex items-center justify-center w-32 h-16 text-white rounded-md bg-secondary;
 }
 
 .footer-btn-primary {
-  @apply flex h-16 w-32 items-center justify-center rounded-md bg-primary text-white;
+  @apply flex items-center justify-center w-32 h-16 text-white rounded-md bg-primary;
 }
 
 .white-btn {
-  @apply flex h-12 w-12 items-center justify-center rounded-full bg-white;
+  @apply flex items-center justify-center w-12 h-12 bg-white rounded-full;
 }
 
 .footer-text {
