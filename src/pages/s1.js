@@ -12,7 +12,7 @@ const S1 = () => {
   let show = false;
 
   React.useEffect(() => {
-    navigate("/s4");
+    navigate("/vv");
   }, []);
 
   if (typeof window !== "undefined") {

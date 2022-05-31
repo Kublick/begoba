@@ -9,9 +9,9 @@ import ReactPlayer from "react-player";
 import { useGetUrls } from "../hooks/useGetUrls";
 
 const S2 = () => {
-  let show = true;
+  let show = false;
   React.useEffect(() => {
-    navigate("/s4");
+    navigate("/vv");
   }, []);
 
   if (typeof window !== "undefined") {

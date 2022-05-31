@@ -8,6 +8,7 @@ import Footer from "../components/Footer";
 import PropTypes from "prop-types";
 // import { navigate } from "gatsby";
 import Closed from "../components/Closed";
+import { navigate } from "gatsby";
 // import Countdown from "react-countdown";
 
 function IndexPage() {
@@ -24,9 +25,9 @@ function IndexPage() {
 
   const show = true;
 
-  // React.useEffect(() => {
-  //   navigate("/vv");
-  // }, []);
+  React.useEffect(() => {
+    navigate("/vv");
+  }, []);
 
   return (
     <>

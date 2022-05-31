@@ -3,6 +3,7 @@ import React from "react";
 import Countdown from "react-countdown";
 import { headerLogo } from "../components/helpers/logos";
 import Venta from "../components/Venta";
+import Videoplayer from "../components/Videoplayer";
 
 const VideoVenta = () => {
   // React.useEffect(() => {
@@ -51,12 +52,12 @@ const VideoVenta = () => {
             </div>
 
             <div className="flex flex-col gap-4 py-10">
-              {/* <div className="col-span-2 px-10">
+              <div className="col-span-2 px-10">
                 <Videoplayer
-                  url={"https://youtu.be/q0LBG3uvFV4?start=5m34s"}
+                  url={"https://youtu.be/T7mFlCoj8XM?t=648"}
                   playing={true}
                 />
-              </div> */}
+              </div>
               <div className="flex flex-col items-center gap-4 mt-4 md:text-lg ">
                 <h1 className="text-xl font-bold text-center md:text-3xl">
                   ¡Tu ya eres éxito! Solo hagamos que se manifieste
