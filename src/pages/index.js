@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import PropTypes from "prop-types";
 // import { navigate } from "gatsby";
 import Closed from "../components/Closed";
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 // import Countdown from "react-countdown";
 
 function IndexPage() {
@@ -23,11 +23,7 @@ function IndexPage() {
     formRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  const show = true;
-
-  React.useEffect(() => {
-    navigate("/vv");
-  }, []);
+  const show = false;
 
   return (
     <>

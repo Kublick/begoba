@@ -11,7 +11,7 @@ import { useGetUrls } from "../hooks/useGetUrls";
 const S3 = () => {
   let show = false;
   React.useEffect(() => {
-    navigate("/vv");
+    navigate("/");
   }, []);
 
   if (typeof window !== "undefined") {

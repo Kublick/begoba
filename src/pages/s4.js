@@ -9,7 +9,7 @@ const S4 = () => {
   let view = false;
 
   React.useEffect(() => {
-    navigate("/vv");
+    navigate("/");
   }, []);
 
   const [show, setShow] = useState(false);

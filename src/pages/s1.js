@@ -12,7 +12,7 @@ const S1 = () => {
   let show = false;
 
   React.useEffect(() => {
-    navigate("/vv");
+    navigate("/");
   }, []);
 
   if (typeof window !== "undefined") {
