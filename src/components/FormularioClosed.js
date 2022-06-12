@@ -30,6 +30,7 @@ export default class IndexPage extends React.Component {
     });
 
     const data = new FormData(e.target);
+
     fetch("https://psicologaberenicebastidas.activehosted.com/proc.php", {
       method: "POST",
       body: data,
@@ -63,8 +64,8 @@ export default class IndexPage extends React.Component {
             </p>
 
             <form onSubmit={this._handleSubmit} className="flex flex-col gap-4">
-              <input type="hidden" name="u" value="35" />
-              <input type="hidden" name="f" value="35" />
+              <input type="hidden" name="u" value="37" />
+              <input type="hidden" name="f" value="37" />
               <input type="hidden" name="s" />
               <input type="hidden" name="c" value="0" />
               <input type="hidden" name="m" value="0" />
@@ -73,7 +74,7 @@ export default class IndexPage extends React.Component {
               <input
                 type="hidden"
                 name="or"
-                value="6a5cecc1c09be1b91d59478251ae64c5"
+                value="c6737596da77376561bd9e1fad39ef71"
               />
 
               <input

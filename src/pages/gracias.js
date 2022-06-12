@@ -1,6 +1,6 @@
 import React from "react";
 import { mainLogo } from "../components/helpers/logos";
-import { graphql, navigate, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { useGetUrls } from "../hooks/useGetUrls";
 
@@ -27,9 +27,6 @@ const Gracias = () => {
   //   "https://chat.whatsapp.com/G66dTyIDAr53wAlBl6dHFZ"
   // );
 
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
   const whatsappUrl = useGetUrls();
 
   return (
