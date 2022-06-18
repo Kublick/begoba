@@ -16,6 +16,7 @@ const FormularioWebinar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setFormError("");
     if (
       Object.keys(form).length === 0 ||
       form.email === "" ||
@@ -40,7 +41,7 @@ const FormularioWebinar = () => {
           setForm({});
         }
         setTimeout(() => {
-          navigate("webinar/gracias");
+          navigate("/webinar/gracias");
           setFormError("");
         }, 2000);
       })
