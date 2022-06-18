@@ -11,7 +11,12 @@ const Gracias = () => {
       {
         desktop: file(relativePath: { eq: "webinar_bere_noback.png" }) {
           childImageSharp {
-            gatsbyImageData(quality: 90, width: 320, layout: CONSTRAINED)
+            gatsbyImageData(
+              quality: 90
+              width: 474
+              height: 620
+              layout: CONSTRAINED
+            )
           }
         }
       }
@@ -32,11 +37,11 @@ const Gracias = () => {
 
   return (
     <div className="flex flex-col h-screen justify-center align-middle bg-transparent">
-      <div className="grid lg:grid-cols-4 bg-transparent ">
-        <div className="hidden py-24 md:bg-gradient-to-r from-secondary  to-white lg:grid relative">
+      <div className="grid lg:grid-cols-4 bg-transparent min-h-[720px]">
+        <div className="hidden py-24 md:bg-gradient-to-r from-secondary  to-white lg:grid ">
           <GatsbyImage
             image={data.desktop.childImageSharp.gatsbyImageData}
-            className="absolute bottom-0 "
+            className="min-w-[320px] lg:flex-auto my-22"
             alt="Imagen Berenice"
           />
         </div>
