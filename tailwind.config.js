@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       display: ["Montserrat", "sans-serif"],
       body: ["Montserrat", "sans-serif"],
+      webinar: ["Hammersmith One", "sans-serif"],
     },
     extend: {
       colors: {

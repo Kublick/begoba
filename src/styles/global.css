@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Outfit:wght@400;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +9,29 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.wiggle {
+  position: relative;
+  animation: 2.5s rocking infinite;
+}
+
+@keyframes rocking {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .btn-main {
@@ -23,7 +47,11 @@ body {
 }
 
 .btn-green {
-  @apply rounded-full border-4 border-white bg-whats px-6 text-2xl font-bold text-white shadow-lg;
+  @apply rounded-full border-4 border-white bg-whats px-6 md:text-lg font-bold text-white shadow-lg;
+}
+
+.btn-secondary {
+  @apply rounded-full  bg-secondary px-6 text-2xl font-bold text-white shadow-lg;
 }
 
 .btn-telegram {
