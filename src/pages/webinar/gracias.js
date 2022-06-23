@@ -38,10 +38,10 @@ const Gracias = () => {
   return (
     <div className="flex flex-col h-screen justify-center align-middle bg-transparent">
       <div className="grid lg:grid-cols-4 bg-transparent min-h-[720px]">
-        <div className="hidden py-24 md:bg-gradient-to-r from-secondary  to-white lg:grid ">
+        <div className="hidden py-24 md:bg-gradient-to-r from-secondary  to-white lg:grid container ">
           <GatsbyImage
             image={data.desktop.childImageSharp.gatsbyImageData}
-            className="min-w-[320px] lg:flex-auto my-22"
+            className="my-22 min-w-0 z-10"
             alt="Imagen Berenice"
           />
         </div>
