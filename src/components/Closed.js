@@ -194,6 +194,22 @@ const Closed = () => {
               controls={true}
             />
           </div>
+          <div className="my-10">
+            <ReactPlayer
+              url="https://youtu.be/kEHTwr5Gyc8n0"
+              width={320}
+              height={320}
+              controls={true}
+            />
+          </div>
+          <div className="my-10">
+            <ReactPlayer
+              url=" https://youtu.be/gQuyYgoGIA8"
+              width={320}
+              height={320}
+              controls={true}
+            />
+          </div>
         </div>
       </div>
     </>
