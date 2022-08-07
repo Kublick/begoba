@@ -2,15 +2,15 @@ import React, { useState, useRef } from "react";
 import SesionHeader from "../components/SesionHeader";
 import Videoplayer from "../components/Videoplayer";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link, navigate } from "gatsby";
+import { Link } from "gatsby";
 import Venta from "../components/Venta";
 
 const S4 = () => {
-  let view = false;
+  let view = true;
 
-  React.useEffect(() => {
-    navigate("/");
-  }, []);
+  // React.useEffect(() => {
+  //   navigate("/");
+  // }, []);
 
   const [show, setShow] = useState(false);
   const [point, setPoint] = useState(false);
